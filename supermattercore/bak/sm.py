@@ -265,3 +265,33 @@ class Pump:
             deltaNu = calc_transfer_moles(inlet, outlet, deltaP, self.own_V)
 
     pass
+
+class TurbinePipes(NamedTuple):
+    inlet: PipeNet
+    outlet: PipeNet
+class TEGPipes(NamedTuple):
+    hi: TurbinePipes
+    lo: TurbinePipes
+
+class TurbineCirc:
+    kinetic_friction = 5e3 # Pa
+    static_friction = 10e3 # Pa
+    stored_energy = 0
+    def extract_air(self, nets: TurbinePipes) -> tuple[TurbinePipes, Optional[ct.Quantity]]:
+        return nets, None
+
+class ThermoElectricGen:
+    idle_power  = 100 # W
+    max_power = 500e3 # W
+    eta_thermal = 0.65
+    circ_hi: TurbineCirc
+    """circ1 -- North [out=E] (or West)"""
+    circ_lo: TurbineCirc
+    """circ2 -- South [out=W] (or East [])"""
+
+    def process(self, state: TEGPipes) -> TEGPipes:
+        hipipes, lopipes = state
+        hipipes, hi_proc = self.circ_hi.extract_air(hipipes)
+        lopipes, lo_proc = self.circ_lo.extract_air(lopipes)
+        # ...
+        return state
