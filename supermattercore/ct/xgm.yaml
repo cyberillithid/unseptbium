@@ -1,4 +1,4 @@
-
+# Cantera input file for rough estimation/emulation of XGM byond gasdynamics
 units: {length: cm, time: s, quantity: mol, activation-energy: kcal/mol}
 
 phases:

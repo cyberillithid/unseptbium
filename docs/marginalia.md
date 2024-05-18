@@ -1,21 +1,5 @@
 # Math model of supermatter core engine
 
-- [x] Gas  (space: 5 x 3)
-- [x] Core 
-- [x] Emitter   obj/machinery/emitter
-    - TODO: check the power draw (seems faulty)
-- [x] Canister     machinery/portable_atmospherics/canister (empty , nitrogen/engine_setup)
-- [x] Pipe machinery/atmospherics/pipe/simple      
-- [x] Radiator pipes              pipe/simple/heat_exchanging
-- [ ] Pump           atmospherics/binary/pump
-    - [ ] Hi power                       pump/high_power
-- [ ] Injector       atmospherics/unary/outlet_injector
-- [ ] Vent                              vent_pump/engine
-- [x] Heat exchanger atmospherics/unary/heat_exchanger
-- [ ] Filter                      omni/filter
-- [ ] Turbine                     binary/circulator
-- [ ] TEG      obj/machinery/generator
-
 useless contour:
 - full 16x7 + 1
 - perim 17+14+14

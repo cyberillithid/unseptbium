@@ -1,7 +1,9 @@
+"""An attempt to rewrite model to be cantera-less and with proper physical units inlined everywhere"""
+
 import astropy.units as u
 from astropy.units import Quantity
 
-import cantera as ct
+# import cantera as ct
 import numpy as np
 import scipy.constants as C
 from typing import NamedTuple, Optional

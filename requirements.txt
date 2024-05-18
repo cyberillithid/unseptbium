@@ -41,7 +41,6 @@ ruamel.yaml==0.18.6
 ruamel.yaml.clib==0.2.8
 scipy==1.13.0
 six==1.16.0
--e git+ssh://git@github.com/cyberillithid/supermattercore.git@84a6233af462ada4db982f6e742f304d603d4993#egg=ss13
 stack-data==0.6.3
 tomli==2.0.1
 tornado==6.4

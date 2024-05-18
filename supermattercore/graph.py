@@ -1,3 +1,5 @@
+"""BYOND DMM analysis and graph parsing utilities"""
+
 from typing import NamedTuple
 from enum import Enum, IntEnum
 from typing_extensions import Self

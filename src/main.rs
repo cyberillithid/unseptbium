@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 use ss13::test_reference;
-use dmm_tools::dmm::{Coord3, Map, Prefab};
+use dmm_tools::dmm::Map;
 fn main() {
     let result = test_reference(1400, 88).unwrap();
     println!("Hallo, {}", result);
@@ -26,5 +26,5 @@ fn main() {
         }
     } // cycle
     let s = serde_json::to_string(&ret).unwrap();
-    std::fs::write("./map.json", s);
+    let _ = std::fs::write("./map.json", s);
 }
