@@ -1,0 +1,30 @@
+[package]
+name = "ss13"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ss13"
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "ss13_cli"
+path = "src/main.rs"
+
+[dependencies]
+pyo3 = "0.20.0"
+serde = "1.0.193"
+serde_derive = "1.0.137"
+serde_json = "1.0.108"
+png = "0.17.9"
+
+[dependencies.dreammaker]
+git = "https://github.com/SpaceManiac/SpacemanDMM.git"
+tag = "suite-1.8"
+package = "dreammaker"
+
+[dependencies.dmm-tools]
+git = "https://github.com/SpaceManiac/SpacemanDMM.git"
+tag = "suite-1.8"
+package = "dmm-tools"

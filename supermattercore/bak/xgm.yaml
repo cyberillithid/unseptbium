@@ -1,0 +1,38 @@
+
+units: {length: cm, time: s, quantity: mol, activation-energy: kcal/mol}
+
+phases:
+- name: xgm
+  thermo: ideal-gas
+  elements: [O, H, C, N, Ph]
+  species: [N2, O2, CO2, Ph]
+
+elements:
+- symbol: Ph
+  atomic-weight: 405 # 504 is physical
+  atomic-number: 172
+
+species:
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: constant-cp
+    cp0: 28.314 J/mol/K
+
+- name: O2
+  composition: {O: 2}
+  thermo:
+    model: constant-cp
+    cp0: 28.314 J/mol/K
+
+- name: CO2
+  composition: {C: 1, O: 2}
+  thermo:
+    model: constant-cp
+    cp0: 38.314 J/mol/K
+
+- name: Ph
+  composition: {Ph: 1}
+  thermo:
+    model: constant-cp
+    cp0: 208.314 J/mol/K
