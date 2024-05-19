@@ -111,23 +111,7 @@ T_COSMIC_MICROWAVE_BACKGROUND = 3.15
 T_MINIMAL = 2.7
 
 class HeatExchanger:
-    """
-    
-    Heat-exchangers work over the total pipeline, piece by piece.
-It takes `density` = $\nu/V = 1 /V_m = p/RT$;
-
-calculates thermal-conductivity multiplier $\lambda$ as $\min(1, \dfrac{\nu}{V} / \dfrac{p_{c, air}}{RT_{c, air}})$
-= $\min(1, \dfrac{1/V_m}{1/V_{m,c,air}}) = \min(1, \dfrac{V_{m,c,air}}{V_m}) $
-
-$S = 2\,\mathrm{m}^2$; $f = 0.04$ => $S_{eff} = 0.08$?
-
-$\Delta Q = \Delta Q_\odot - \Delta Q_r$; 
-
-solar radiation surplus is $\Delta Q_\odot = E_\odot fS \lambda$, $E_\odot = 200 \mathrm{W}/\mathrm{m}^2$;
-
-radiation loss is $\Delta Q_r = S \sigma \lambda (T - T_0)^4$, $\sigma$ -- Стефана-Больцмана, $T_0 = 3.15$ K
-
-    """
+    """ cf.    """
     space_no: int
     plate_no: int
     T_plates: list[float]
@@ -170,6 +154,18 @@ radiation loss is $\Delta Q_r = S \sigma \lambda (T - T_0)^4$, $\sigma$ -- Ст�
         dQ2 = - (Q2 / q.mass) * self.plate_no
         s.UV = s.u + dQ + dQ2, s.v
         return ct.Quantity(s, mass = q.mass), dQ, dQ2
+    
+    def cool_analyt(self, q: ct.Quantity):
+        s : ct.Solution = q.phase
+        assert self.plate_no == 0
+        Td = s.T - T_COSMIC_MICROWAVE_BACKGROUND
+        Cve = s.cv_mole * max(q.moles, q.volume / AIR_VMOLAR)
+        Tcool = (3*self.space_no*C.sigma*2/Cve + Td**-3)**(-1/3.)
+        dTrad = (self.space_no*0.04*2*200)/Cve
+        dT = Td - Tcool - dTrad
+        dQ = (dT * s.cv_mole * q.moles) / q.mass
+        s.UV = s.u - dQ, s.v
+        return ct.Quantity(s, mass=q.mass), dT, dQ
 
 
 IDEAL_GAS_ENTROPY_CONSTANT = 1164    # (mol^3 * s^3) / (kg^3 * L)
@@ -223,6 +219,7 @@ class PipeNet: # (NamedTuple):
             return self
         if q is None:
             return self
+        raise NotImplementedError("???")
         
 
 
@@ -273,12 +270,34 @@ class TEGPipes(NamedTuple):
     hi: TurbinePipes
     lo: TurbinePipes
 
+KAPPA = 0.666 # adiabatic exp - 1 (gamma=1.66 here)
+
 class TurbineCirc:
     kinetic_friction = 5e3 # Pa
     static_friction = 10e3 # Pa
     stored_energy = 0
+    eta_kinetic = 0.04 #+kin-to-electric
+    volume_ratio = 0.2 # ?
+    in_V  = 0.2  # own volumes
+    out_V = 0.2
     def extract_air(self, nets: TurbinePipes) -> tuple[TurbinePipes, Optional[ct.Quantity]]:
-        return nets, None
+        # check input vs air1 in DM
+        inl, outl = nets
+        inP, outP = inl.P, outl.P
+        deltaP = inP-outP
+        rm = None
+        if deltaP>0 and inl.T>0:
+            # has things
+            deltaNu = (deltaP*inl.V/R_IDEAL_GAS/inl.T)/3
+            capUsed = min(1, (deltaP*inl.V/3)/(inP*self.in_V))
+            nRT = min(deltaP*inl.V, inP*self.in_V)
+            self.stored_energy += nRT/KAPPA * (1-self.volume_ratio**KAPPA) * self.eta_kinetic
+            rm = inl.sub(deltaNu)
+        return nets, rm
+    def getE(self):
+        se = self.stored_energy
+        self.stored_energy = 0
+        return se
 
 class ThermoElectricGen:
     idle_power  = 100 # W
@@ -293,5 +312,28 @@ class ThermoElectricGen:
         hipipes, lopipes = state
         hipipes, hi_proc = self.circ_hi.extract_air(hipipes)
         lopipes, lo_proc = self.circ_lo.extract_air(lopipes)
-        # ...
-        return state
+        prevgen = last_gen
+        if hi_proc and lo_proc: #Not None
+            hiC,loC = hi_proc.Cp, lo_proc.Cp
+            dT = abs(lo_proc.T-hi_proc.T)
+            if dT>0 and hiC>0 and loC>0:
+                dE = dT*loC*hiC/(loC+hiC)
+                dQ = dE*(1-self.eta_thermal)
+                if lo_proc.T>hi_proc.T:
+                    lo_proc.T = lo_proc.T - dE/loC
+                    hi_proc.T = hi_proc.T + dQ/hiC
+                else:
+                    lo_proc.T = lo_proc.T + dQ/loC
+                    hi_proc.T = hi_proc.T - dE/hiC
+            hiin, hiout = hipipes
+            loin, loout = lopipes
+            hiout += hi_proc
+            loout += lo_proc
+        if eff_gen>self.max_power:
+            stored_P *=0.5
+        storedP += dE*self.eta_thermal + self.circ_hi.getE() + self.circ_lo.getE()
+        last_gen = storedP*.4
+        storedP -= last_gen
+        eff_gen = (last_gen+prevgen)/2
+        # gen_power(eff_gen)
+        return TEGPipes(TurbinePipes(hiin,hiout),TurbinePipes(loin,loout))
