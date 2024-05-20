@@ -3,6 +3,8 @@ import numpy as np
 import scipy.constants as C
 from typing import NamedTuple, Optional
 from dataclasses import dataclass
+import logging
+
 
 MACHINERY_TICK = 2 # seconds
 
@@ -175,17 +177,21 @@ class PipeNet: # (NamedTuple):
     Also simulates segments of it, if V != qty.volume."""
     V: float
     qty: Optional[ct.Quantity]
+    _V0: Optional[float] = None
+    @property
+    def V0(self) -> float:
+        return self._V0 if self._V0 else self.V 
     @property
     def T(self) -> float:
         return 0 if self.qty is None else self.qty.phase.T
     @property
     def Nu(self) -> float:
         """kmole"""
-        return 0 if self.qty is None else self.qty.moles * self.qty.volume / self.V
+        return 0 if self.qty is None else self.qty.moles * (self.V / self.qty.volume)
     @property
-    def Cp(self) -> float:
+    def C(self) -> float:
         if self.qty is None: return 0
-        return self.Nu * self.qty.phase.cp_mole
+        return self.Nu * self.qty.phase.cv_mole
     @property
     def P(self) -> float:
         return 0 if self.qty is None else self.qty.phase.P
@@ -211,56 +217,104 @@ class PipeNet: # (NamedTuple):
         if self.qty is None:
             return None
         q = ct.Quantity(self.qty.phase, moles=moles)
-        self.qty.moles -= moles
+        self.qty.moles -= moles # -- also changes qty.V, so we need to...
+        self.V -= q.V
+        self.grow(q.V)
         return q
-    def __add__(self, q: Optional[ct.Quantity]):
+
+    def segment(self, V: float):
+        return PipeNet(V=V, qty=self.qty, _V0=self.V)
+    def grow(self, dV: float):
+        if self.qty is None:
+            self.V += dV
+            return self
+        oldNu = self.qty.moles
+        oldV = self.qty.V
+        s = self.qty.phase
+        t,p = s.TP
+        p /= (oldV + dV)/oldV
+        s.TP = t,p
+        self.qty = ct.Quantity(s, moles=oldNu)
+        self.V += dV
+        return self
+        
+    def __iadd__(self, q: Optional[ct.Quantity]):
         if self.qty is None:
             self.qty = q
+            propV = self.V
+            self.V = q.V
+            self.grow(propV-q.V)
             return self
         if q is None:
             return self
-        raise NotImplementedError("???")
-        
-
-
-
-
-def calc_transfer_moles(inlet: PipeNet, outlet: PipeNet, deltaP: float, defV: float) -> float:
-    """Imitates calc_transfer_moles of original code"""
-    if inlet.T == 0 or inlet.Nu == 0: 
-        return 0 # Nothing to pump
-    outV = outlet.V + defV
-    src_tot_Nu = inlet.Nu/inlet.V*defV # Scaled for 200L or something
-    airT = inlet.T
-    if outlet.T > 0 and outlet.Nu > 0:
-        # approximate mixture temp to re-calc
-        eNu = deltaP*outV/outlet.T/R_IDEAL_GAS/1e3 # kMoles
-        sinkCp = outlet.Cp
-        srcCp = inlet.Cp * eNu / src_tot_Nu
-        airT = (outlet.T * sinkCp + inlet.T*srcCp) / (sinkCp + srcCp)
-    return deltaP*outV/airT/R_IDEAL_GAS/1e3 # kMoles
+        newV = q.volume
+        self.qty.constant = q.constant = 'UV'
+        self.qty += q
+        return self.grow(-newV)
 
 MIN_KMOLES_PUMP = 1e-5 # 0.01 moles
 ATMOS_PUMP_EFFICIENCY = 2.5 # KPD 40%
 
-def pump_gas(inlet: PipeNet, outlet: PipeNet, transferNu: float = 0, availablePower: float = 0):
-    """Imitates pump_gas of original code; modifies nets, returns power draw in W"""
-    if inlet.Nu < MIN_KMOLES_PUMP: return 0
-    transferNu = min(transferNu, inlet.Nu) if transferNu else inlet.Nu
-    specific_power = specific_power()
+PumpLogger = logging.getLogger('ct.sm.Pump')
 
+def calc_transfer_moles(source: PipeNet, sink: PipeNet, deltaP: float) -> float:
+    """Imitates calc_transfer_moles of original code. 
+    Gets segments of whole network as input."""
+    if source.T == 0 or source.Nu == 0: 
+        return 0 # Nothing to pump
+    outV = sink.V0 # full volume
+    src_Nu = source.Nu # just the owned source -- `source total moles`
+    airT = source.T
+    if sink.T > 0 and sink.Nu > 0:
+        # approximate mixture temp to re-calc
+        eNu = deltaP*outV/sink.T/ct.constants.gas_constant # kMoles
+        sinkC = sink.C # total heat cap
+        srcC = source.C * eNu / src_Nu
+        airT = (sink.T * sinkC + source.C*srcC) / (sinkC + srcC)
+    return deltaP*outV/airT/ct.constants.gas_constant # kMoles
+
+def pump_gas(inlet: PipeNet, outlet: PipeNet, transferNu: float = 0, availablePower: float = 0) -> float|None:
+    """Imitates pump_gas of original code; modifies nets, returns power draw in W"""
+    if inlet.Nu < MIN_KMOLES_PUMP: 
+        return None # Nothing to move
+
+    transferNu = min(transferNu, inlet.Nu) if transferNu else inlet.Nu
+    # V Calculate specific power
+    usedT = outlet.T if outlet.T > 0 else inlet.T
+    srcS = inlet.S_13
+    sinkS = outlet.S_13
+    specific_entropy = sinkS - srcS
+    specific_power = -specific_entropy*usedT if specific_entropy<0 else 0
+    PumpLogger.info(f'Source entropy {srcS:.5g} J/mol/K -> Sink entropy {sinkS:.5g} J/mol/K')
+    PumpLogger.info(f'Specific entropy change {specific_entropy:.5g} J/mol/K')
+    PumpLogger.info(f'Specific power {specific_power:.6g} W/mol')
+    transferNu = min(transferNu, availablePower/specific_power/1e3) if specific_power else transferNu
+    PumpLogger.info(f'Transferred {transferNu*1e3:.6g} mols')
+    return specific_power*transferNu,transferNu
+
+@dataclass
 class Pump:
-    idle_power = 150 # W?
     power_rating = 30e3 # W
     target_P = 15e6 # Pa
-    own_V = PUMP_DEFAULT_VOLUME # 0.2 m^3
+    own_V_in = PUMP_DEFAULT_VOLUME # 0.2 m^3
+    own_V_out = PUMP_DEFAULT_VOLUME # 0.2 m^3
+    idle_power = 150 # W?
 
     def process(self, inlet: PipeNet, outlet: PipeNet) -> float:
         """Modifies inlet and outlet, returns power draw"""
-        deltaP = self.target_P - outlet.phase.P 
-        if (deltaP > 10) and (inlet.phase.T > 0 ): # or `inlet.mass > 0`?
-            deltaNu = calc_transfer_moles(inlet, outlet, deltaP, self.own_V)
+        deltaP = self.target_P - outlet.P 
+        if (deltaP <= 10) or (inlet.T <= 0):
+            return 0 # or `inlet.mass > 0`?
+        Vin,Vout = self.own_V_in, self.own_V_out
+        own_inlet  =  inlet.segment(Vin)  if Vin  else inlet
+        own_outlet = outlet.segment(Vout) if Vout else outlet
 
+        deltaNu = calc_transfer_moles(own_inlet, own_outlet, deltaP)
+        power_draw, moles = pump_gas(own_inlet, own_outlet, deltaNu, self.power_rating)
+        if moles:
+            qty = inlet.sub(moles)
+            outlet += qty
+        return power_draw
     pass
 
 class TurbinePipes(NamedTuple):
@@ -314,7 +368,7 @@ class ThermoElectricGen:
         lopipes, lo_proc = self.circ_lo.extract_air(lopipes)
         prevgen = last_gen
         if hi_proc and lo_proc: #Not None
-            hiC,loC = hi_proc.Cp, lo_proc.Cp
+            hiC,loC = hi_proc.C, lo_proc.C
             dT = abs(lo_proc.T-hi_proc.T)
             if dT>0 and hiC>0 and loC>0:
                 dE = dT*loC*hiC/(loC+hiC)
