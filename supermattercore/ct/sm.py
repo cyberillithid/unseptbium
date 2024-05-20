@@ -285,6 +285,7 @@ def pump_gas(inlet: PipeNet, outlet: PipeNet, transferNu: float = 0, availablePo
     sinkS = outlet.S_13
     specific_entropy = sinkS - srcS
     specific_power = -specific_entropy*usedT if specific_entropy<0 else 0
+    specific_power /= ATMOS_PUMP_EFFICIENCY # magical coeff.
     PumpLogger.info(f'Source entropy {srcS:.5g} J/mol/K -> Sink entropy {sinkS:.5g} J/mol/K')
     PumpLogger.info(f'Specific entropy change {specific_entropy:.5g} J/mol/K')
     PumpLogger.info(f'Specific power {specific_power:.6g} W/mol')
