@@ -15,6 +15,12 @@ class Direction(IntEnum):
     SOUTHWEST = 10
     UP        = 16 # //reserved for future use
     DOWN      = 32
+    @classmethod
+    def cardinals(cls) -> list[Self]:
+        return [
+            Direction.NORTH, Direction.SOUTH, 
+            Direction.EAST, Direction.WEST
+        ]
     def __invert__(self) -> Self:
         ret,arg = 0, int(self)
         if arg & Direction.NORTH: ret |= Direction.SOUTH
@@ -41,6 +47,11 @@ class Direction(IntEnum):
     @property
     def is_composite(self) -> bool:
         return (abs(self.dx) ^ abs(self.dy)) == 0
+    def split(self) -> set[Self]:
+        return set([
+            Direction.from_dxdy(self.dx, 0),
+            Direction.from_dxdy(0, self.dy),
+        ])
     def move1(self, xy: tuple[int, int]) -> tuple[int,int]:
         x,y = xy
         return (x+self.dx, y+self.dy)

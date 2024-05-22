@@ -10,7 +10,7 @@ mode of operation.
 The project (currently) consists of:
 - Rust package, which implements (using [Spacemaniac's DMM tools](https://github.com/SpaceManiac/SpacemanDMM), ):
   - binary CLI executable for extraction of relevant map segment (status: WIP, dirty hack)
-  - dynamic library with Python bindings for map parsing (inspired by [StrongDMM](https://github.com/SpaiR/StrongDMM) SpacemanDMM bindings) (status: not implemented),
+  - dynamic library with Python bindings for map parsing (inspired by [StrongDMM](https://github.com/SpaiR/StrongDMM) SpacemanDMM bindings) (status: WIP, some dirty hacks),
 - Python realisation of blocks of supermatter core mathematical model (status: to be reimplemented),
 - a plethora of Jupyter Notebook scripts with tests.
 

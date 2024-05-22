@@ -2,8 +2,9 @@
 
 As the first estimation, the block model of the supermatter reactor (its pneumohydraulic scheme mostly) could be presented as a... semi-directed graph?
 
-Typical timescale in all cases given here is the atmospheric module tick of `SSprocessing` (which works on pipe networks) $\Delta \tau = 1$ second.
-`SSmachinery` tick (for SM core) is 2 seconds.
+Typical timescale in all cases given here is the 
+<!-- atmospheric module tick of `SSprocessing` (which works on pipe networks) $\Delta \tau = 1$ second. -->
+`SSmachinery` tick (for SM core) $\Delta\tau = 2$ seconds.
 
 ## Blocks
 
