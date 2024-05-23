@@ -1,9 +1,9 @@
 use std::collections::HashMap;
 
 use dreammaker::{constants::Constant, DMError};
-use pyo3::{prelude::*}; //  types::{PyList, PyNone, PyTuple}
+use pyo3::{exceptions::PyTypeError, prelude::*}; //  types::{PyList, PyNone, PyTuple}
 
-use dmm_tools::dmm::{Map}; // , Prefab
+use dmm_tools::dmm::Map; // , Prefab
 
 pub fn test_reference(a: usize, b: usize) -> Result<usize, ()> {
     Ok(a+b)
@@ -17,6 +17,7 @@ struct Ss13Map {
 }
 
 #[pyclass]
+#[derive(PartialEq)]
 /// A minimal sub-implementation, because I don't need finer details for now.
 enum ByondConst {
     Null { },
@@ -66,6 +67,16 @@ impl ByondConst {
             ByondConst::New { arg1, arg2 } => format!("ByondConst.New({}, {})", arg1, arg2),
             ByondConst::Call { arg1, arg2 } => format!("ByondConst.Call({}, {})", arg1, arg2),
             ByondConst::Prefab { arg1, arg2 } => format!("ByondConst.Prefab({}, {})", arg1, arg2),
+        }
+    }
+    fn __eq__(&self, other: &Self) -> bool {
+        self == other
+    }
+    fn __int__ (&self) -> PyResult<isize> {
+        match self {
+            ByondConst::Null {  } => Ok(0),
+            ByondConst::Float { f } => Ok(f.round() as isize),
+            _ => Err(PyErr::new::<PyTypeError, _>("Not a numeric"))
         }
     }
 }
@@ -142,7 +153,7 @@ impl Ss13Map {
 /// (mainly for pneumohydrothermal schematics purposes)
 /// implemented in Rust.
 #[pymodule]
-fn ss13(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn ss13_usb (m: &Bound<'_, PyModule>) -> PyResult<()> {
     // m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
     m.add_class::<Ss13Map>()?;
     m.add_class::<ByondConst>()?;

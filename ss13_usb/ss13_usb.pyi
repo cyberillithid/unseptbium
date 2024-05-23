@@ -1,0 +1,26 @@
+from typing_extensions import Self
+from . import Coords2, Prefab
+# from typing import NewType
+
+class ByondConst:
+    # Enum types
+    Null: type[Self]
+    String: type[Self]
+    Resource: type[Self]
+    Float: type[Self]
+    # not implemented properly//: type[Self]
+    List: type[Self]
+    New: type[Self]
+    Call: type[Self]
+    Prefab: type[Self]
+    def __repr__(self) -> str: ...
+    def __eq__(self, other: Self) -> str : ...
+    def __int__(self) -> int: ...
+
+
+class Ss13Map:
+    def __init__(self, filename: str) -> None: ...
+    def __repr__(self) -> str: ...
+    def __str__(self) -> str: ...
+    def __getitem__(self, coords: Coords2) -> list[Prefab]: ...
+    def find(self, path: str) -> list[Coords2]: ...

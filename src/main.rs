@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use ss13::test_reference;
+use ss13_usb::test_reference;
 use dmm_tools::dmm::Map;
 fn main() {
     let result = test_reference(1400, 88).unwrap();

@@ -50,7 +50,7 @@ Then, easily enough, $\Delta Q = \overline{h} \Delta T \dfrac{C_tC_1}{C_t+C_1}$,
 Thus effective Newton's heat transfer coefficient $h=\overline{h} / (C_t^{-1}+C_1^{-1})$.
 
 ## Model evaluation
-Technically, atmos module processes all the pipes in succession. Thus, for a single pipe network that is cooled by $n$ spaced and $m$ turfed radiator pipes, $n$ heat radiations and $m$ heat transfers are performed isochorically iteratively.
+Technically, atmos module processes all the pipes in succession. Thus, for a single pipe network that is cooled by $n$ spaced and $m$ turfed radiator pipes, $n$ heat radiations and $m$ heat transfers are performed isochorically iteratively, de-facto somewhat simulating a numerical integration of heat loss over length of the pipe network.
 
 Since neither amount of substance $\nu$ nor volume $V$ change with isochoric heat radiation, molar volume $V_m$ stays constant and efficiency $\eta$ does not change; nor does change $h$, since gases are calorically perfect. This means that the only 'moving parts' here are the temperature (singular $T$ for the pipe network and $T_i,\,i\in[1;m]$ for turf temperatures).
 
