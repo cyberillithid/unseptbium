@@ -9,13 +9,18 @@ mode of operation.
 
 The project (currently) consists of:
 - Rust package, which implements (using [Spacemaniac's DMM tools](https://github.com/SpaceManiac/SpacemanDMM), ):
-  - binary CLI executable for extraction of relevant map segment (status: WIP, dirty hack)
-  - dynamic library with Python bindings for map parsing (inspired by [StrongDMM](https://github.com/SpaiR/StrongDMM) SpacemanDMM bindings) (status: WIP, some dirty hacks),
+  - a dynamic library with Python bindings for map parsing (inspired by [StrongDMM](https://github.com/SpaiR/StrongDMM) SpacemanDMM bindings) (status: WIP, some dirty hacks),
 - Python realisation of blocks of supermatter core mathematical model (status: to be reimplemented),
 - a plethora of Jupyter Notebook scripts with tests.
 
 Planned extra features:
 - rendering of block model as draw.io-diagram (or maybe plain SVG? or CAD drawing?)
 - power/heat balance solution.
+- eventually systems-analysis approach for design of maximum efficiency SM reactors.
 
 Mathematical model (as well as the relevant physics and reference Nebula code implementation analysis) is explained in the [documentation](./docs/math.md).
+
+## Showcase of current results
+
+![Exodus SM core piping graph](./docs/graph/exodus.png)
+![ScavStation's Ministation SM core piping graph](./docs/graph/mollusc.png)

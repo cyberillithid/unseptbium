@@ -40,3 +40,14 @@ so we deem it to be a bit less than full 2.5 x 1x1 m ?
 
 
 ref.stat -- expansion... into hot loop, I think. or something. yeah, bad choice. gotta re-`debug` it for cold loop later.
+
+
+## Things to change (probably)
+
+/datum/codex_entry/supermatter
+
+SM core monitoring template to use `Ex*` instead of `PH`
+@ `nano\templates\supermatter_monitor.tmpl` : 63
+
+
+metodika-teplovogo-raschyota-teploobmennogo-apparata-dlya-ohlazhdeniya-vozduha-pered-kompressorom-dvigatelya-vozdushno-kosmicheskogo-samolyota.pdf

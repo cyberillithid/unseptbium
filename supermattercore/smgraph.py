@@ -31,9 +31,10 @@ def custom_rename(ssm, stored_objs, pipenetset):
 
 _hedef = lambda herad,hecond: '' if (herad+hecond)==0 else f'(rad {herad}, cond {hecond})'
 
-def gen_graph(stored_objs, pipenetset, reprint = False):
+def gen_graph(stored_objs, pipenetset, reprint = False, corevol=0):
     newnodes = [*[f'{k}({v.volume}L){_hedef(*v.he_summ())}' for k,v in pipenetset.nets_defs.items()],  *[f'{sy}{i+1}' for sy in stored_objs for i in range(len(stored_objs[sy]))]]
-    newedges = {('Room', 'SM1'), ('SM1', 'Room'), ('Room', 'PI1'), ('PO1', 'Room')} # , ('T(hot)1', 'G'), ('G', 'T(cold)1')}
+    roomn = f'Room ({corevol:.3g} m³)'
+    newedges = {(roomn, 'SM1'), ('SM1', roomn), (roomn, 'PI1'), ('PO1', roomn)} # , ('T(hot)1', 'G'), ('G', 'T(cold)1')}
 
     for k in stored_objs:
         for i,o in enumerate(stored_objs[k]):
@@ -70,7 +71,7 @@ def do_all(ssm, do_rename=True):
     stored_objs, pipes0 = split_to_obj_pipes(follow_networks(ssm, first, smcore))
     pipenetset = merge_pipes(pipes0)
     if do_rename: custom_rename(ssm, stored_objs, pipenetset)
-    newnodes,newedges=gen_graph(stored_objs, pipenetset)
+    newnodes,newedges=gen_graph(stored_objs, pipenetset, corevol=core_volume)
     return newnodes, newedges, stored_objs, pipenetset
 
 

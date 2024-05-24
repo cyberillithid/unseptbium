@@ -16,4 +16,4 @@ The git history helpfully shows the comment that is lost in the mists of time in
 
 This warrants extra meditation on how the blasphemous unit of 
 $\mathrm{\dfrac{mol^{7/3}\,K}{J^{2/3}\,kg^{2/3}\,\mathcal{l}}}$
-appears in the current form.
+appears in the current form (obviously, the same way `ln (P/P0)` works in commonly-used entropy definition)

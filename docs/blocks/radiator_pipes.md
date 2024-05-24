@@ -11,6 +11,8 @@ Brief stats:
 
 Radiator pipes, as implemented in the Nebula codebase, have two drastically different modes of operation. In both cases, though, each plate successively modifies state of the whole pipe-network.
 
+Heating tick is $\Delta\tau=2$ sec, as per all machinery as well.
+
 ## Physical basis
 
 (hints: $h$ is; $\lambda$ is ; ...)
@@ -98,3 +100,9 @@ $$\dfrac{\Delta Q_{sp}}{\Delta \tau} = \dfrac{T - T_{sp}}{\Delta \tau} c_{v,m} \
 where $T_d={T-T_{CMB}}$, $C_{ve} = c_{v,m} \max(\nu, \dfrac{V}{V_{m,ref}})$,
 
 or, alternatively, $(T-T_{sp})/\Delta\tau = T_d(1 - \dfrac{1}{\sqrt[3]{k_1T_d^3+1}})-k_2$ -- and this looks unintegratable. On the other hand, we may easily substitute time with space with the approach described above; then for $\tau=\tau_1$ temperature would be $T(n\tau_1)$? Still, this would work only for standalone cooling.
+
+
+### More discussion marginalia
+
+> regarding yesterday's discussion about convection, I did find a source in a textbook that suggests that increasing the density of the gas will increase the thermal *conductivity* of the the gas, up to a certain point
+> and iirc it is a linear relationship so it *sorta* makes sense

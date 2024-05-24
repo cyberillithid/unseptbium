@@ -186,6 +186,6 @@ if __name__ == '__main__':
     servers.add_server("arcadia", "bay", ('ibid.cf', 21025))
     servers.add_server("lohi", "bay", ('nebula.lohikar.io', 7777))
 
-    for x in ['scav', 'lohi']:
+    for x in ['scav', 'lohi', 'arcadia']:
         print(x)
         print(servers.get_server_info(x).raw_data)

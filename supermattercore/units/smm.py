@@ -18,6 +18,7 @@ PumpLogger = logging.getLogger('ct.sm.Pump')
 
 hp =  u.def_unit('hitpts')
 atm = u.def_unit('atm', 101325*u.Pa)
+EER = u.def_unit('EER')
 
 MACHINERY_TICK = 2 * u.s # seconds
 PIPENET_TICK = 1 * u.s # seconds
@@ -73,7 +74,7 @@ class GasSpecies:
 
 GasO2 = GasSpecies('O2', 0.032 *u.kg/u.mol)
 GasN2 = GasSpecies('N2', 0.028 *u.kg/u.mol)
-GasPh = GasSpecies('Ph', 0.405 *u.kg/u.mol, 200)
+GasPh = GasSpecies('Ph', 0.405 *u.kg/u.mol, 200*u.J/u.mol/u.K)
 
 @dataclass
 class GasMixture:
@@ -123,7 +124,6 @@ class GasMixture:
         gas = GasSpecies.get(k)
         mu, cv = gas.mu, gas.cv
         safe_T = max(self.T, T_MINIMAL) #TCMB in code
-        u_conv = u.K*u.mol**2/u.J/u.kg
         # partial_P = self.nus[k] * R_IDEAL_GAS * self.T / self.V
         return R_IDEAL_GAS * (
             math.log(
@@ -131,6 +131,13 @@ class GasMixture:
                     self.nus[k] * safe_T) * (mu*cv*safe_T)**(2/3) + 1
             ) + 15
         )
+
+    @property
+    def thermal_E(self):
+        return self.T * self.C
+    @thermal_E.setter
+    def thermal_E(self, value: Quantity[u.J]):
+        self.T = value / self.C
 
     def __add__(self, other: Self | None) -> Self:
         """Consumes both mixtures and combines their volumes"""
@@ -172,6 +179,17 @@ class GasMixture:
         self.T = Q1 / self.C
         return self
 
+@dataclass
+class PipeNetwork:
+    gases: list[GasMixture]
+
+    def equalize(self):
+        if len(self.gases) <= 1: return
+        ref = self.gases[0] + self.gases[1]
+        for i in range(2, len(self.gases)):
+            ref += self.gases[i]
+        for i in range(len(self.gases)):
+            self.gases[i] = ref * (ref.V / self.gases[i].V)
 
 class HeatExchanger:
     n: int
@@ -225,10 +243,11 @@ def calc_transfer_moles(source: GasMixture, sink: GasMixture, delta_p: Quantity[
 
 def pump_gas(
         source: GasMixture, sink: GasMixture, 
-        delta_nu: Quantity[u.mol], power_rating: Quantity[u.W]
+        delta_nu: Quantity[u.mol], power_rating: Quantity[u.W],
+        debug_name: str = ''
         ) -> tuple[Quantity[u.W], Quantity[u.mol]]:
     if source.Nu < MIN_MOLES_PUMP: 
-        return None,None # Nothing to move
+        return 0*u.W, 0*u.mol # Nothing to move
     transferNu = min(delta_nu, source.Nu) if delta_nu is None else source.Nu
     # V Calculate specific power
     usedT = sink.T if sink.T > 0 else source.T
@@ -237,22 +256,38 @@ def pump_gas(
     specific_entropy = sinkS - srcS
     specific_power = -specific_entropy*usedT if specific_entropy<0 else 0*u.J/u.mol
     specific_power /= ATMOS_PUMP_EFFICIENCY # magical coeff.
-    PumpLogger.info(f'Source entropy {srcS:.6g} -> Sink entropy {sinkS:.6g}')
-    PumpLogger.info(f'Specific entropy change {specific_entropy:.6g}')
-    PumpLogger.info(f'Specific power {specific_power:.6g}')
+    PumpLogger.info(f'{debug_name}: Source entropy {srcS:.6g} -> Sink entropy {sinkS:.6g}')
+    PumpLogger.info(f'{debug_name}: Specific entropy change {specific_entropy:.6g}')
+    PumpLogger.info(f'{debug_name}: Specific power {specific_power:.6g}')
     transferNu = min(transferNu, power_rating*u.s/specific_power) if specific_power.value>0 else transferNu
-    PumpLogger.info(f'Transferred {transferNu:.6g}')
+    transferNu = transferNu.to(u.mol)
+    PumpLogger.info(f'{debug_name}: Transferred {transferNu:.6g} in fact')
     return specific_power*transferNu,transferNu
 
 
 @dataclass
 class Pump:
-    V_in = 200*u.L
-    V_out = 200*u.L
-    P_max = 30*u.kW
-    target_p = 15*u.MPa
+    name: str
+    V_in : Quantity[u.L]= 200*u.L
+    V_out: Quantity[u.L] = 200*u.L
+    P_max:    Quantity[u.W] = 30*u.kW # .to(u.W)
+    target_p: Quantity[u.Pa] = 15*u.MPa #.to(u.Pa)
+    inlet : GasMixture|None = None
+    outlet: GasMixture|None = None
 
-    def pump(self, inlet: GasMixture, outlet: GasMixture):
+    def reconnect_in(self, inlet: GasMixture):
+        inlet.V += self.V_in
+        self.inlet = inlet
+    def connect(self, inlet: GasMixture, outlet: GasMixture):
+        inlet.V += self.V_in
+        self.inlet = inlet
+        outlet.V += self.V_out
+        self.outlet = outlet
+
+    def pump(self): #, inlet: GasMixture, outlet: GasMixture):
+        if self.inlet is None: return 0
+        if self.outlet is None: return 0
+        inlet,outlet = self.inlet, self.outlet
         delta_p = self.target_p - outlet.p
         if delta_p <= 10*u.Pa or inlet.T <= 0*u.K:
             return 0*u.W
@@ -261,8 +296,130 @@ class Pump:
         sink = outlet * (self.V_out/outlet.V) if self.V_out!=0 else outlet*1
         # PumpLogger.info(source)
         delta_nu = calc_transfer_moles(source, sink, delta_p)
-        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max)
+        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max, self.name)
         if moles > 0:
             qty = inlet.sub(moles)
             outlet += qty
         return w_draw
+
+@dataclass
+class Turbine:
+    name: str
+    V_in = 400*u.L
+    V_out = 200*u.L
+    inlet: GasMixture|None = None
+    outlet: GasMixture|None = None
+    def connect(self, inlet: GasMixture, outlet: GasMixture):
+        inlet.V += self.V_in
+        self.inlet = inlet
+        outlet.V += self.V_out
+        self.outlet = outlet
+    def take_air(self) -> tuple[GasMixture|None, Quantity[u.J]]:
+        dP = max(0*u.Pa, self.inlet.p-self.outlet.p-5*u.kPa)
+        if dP < 5*u.kPa:
+            return None, 0*u.J
+        dnumax = dP * self.inlet.V /3/self.inlet.T/R_IDEAL_GAS
+        E_i = min(dP*self.inlet.V, self.inlet.p*self.V_in)
+        etaK,fv,kappa = 0.04, 0.2, 0.66
+        etaV = etaK / kappa * (1 - fv**kappa)
+        E = (etaV*E_i).to(u.kJ)
+        vol_cap_frac = min (dP * self.inlet.V/3/self.inlet.p/self.V_in, 1)
+        nu_can_use_max = self.V_in/self.inlet.V*self.inlet.Nu
+        nu_use = min(dnumax, nu_can_use_max)
+        gret = self.inlet.sub(nu_use)
+        SmLogger.info(f'{self.name}: inP = {self.inlet.p.to(u.kPa):.4g}, outP={self.outlet.p.to(u.kPa):.4g}')
+        SmLogger.info(f'{self.name}: dP={dP:.4g}, {dnumax=}, {E=}')
+        SmLogger.info(f'{self.name}: {vol_cap_frac=:.4g}, frac nu{gret.Nu/nu_can_use_max:.4g}')
+        return gret, E
+    def push_air(self, new: GasMixture) -> GasMixture:
+        self.outlet += new
+        SmLogger.info(f'{self.name}: merged: {self.inlet.p=}, {self.outlet.p=}')
+
+@dataclass
+class TEG:
+    hot: Turbine
+    cold: Turbine
+    eta:float = 0.65
+    def process(self):
+        cold, E1 = self.cold.take_air()
+        hot , E2 = self.hot.take_air()
+        if hot is None or cold is None:
+            self.cold.push_air(cold)
+            self.hot.push_air(hot)
+            return E1+E2    
+        dT = hot.T - cold.T
+        C1 = cold.C*hot.C/(cold.C+hot.C)
+        dE = dT*C1
+        ET = self.eta*dE if dE>0 else 0
+        dQ = dE - ET
+        if dT>0:
+            cold.T += dQ/cold.C
+            hot.T -= dE/hot.C
+        self.cold.push_air(cold)
+        self.hot.push_air(hot)
+        return ET+E1+E2
+
+SM_EER_EMIT = 10 * hp / EER
+
+SM_T_CRIT = 5000 * u.K
+SM_LAMDA = 700 * (EER**(2/3))
+SM_THERM_K = 1e4 * u.J / EER
+SM_OXY_K = 15e3 * EER / u.mol
+SM_USB_K = 1.5e3 * EER / u.mol
+SM_MAX_DMG = 4.5 * hp
+SM_ETA_GAS = 0.25
+SM_ETA_N2 = 0.15
+SM_ETA_RXN = 1.1
+SM_DMG_TEMP = 150 * u.K / hp
+SM_DMG_EER_VAC = 10 * EER / hp
+# SM_REF_HEALTH = 1000 * hp
+# SM_MAX_HEALTH = 1000 * hp
+SM_REF_EER = 300 * EER
+SM_REF_TEMP = 800 * u.K
+SM_EER_OXY = 450 * EER
+SM_EER_N2 = 200 * EER
+
+@dataclass
+class Supermatter:
+    room: GasMixture
+    eer: Quantity[EER] = 0*EER # `power`
+    health = 1000 * hp # starting
+    # --- stats
+    def process(self):
+        if not self.damage():
+            self.react()
+            self.decay()
+    def damage(self):
+        if self.room.p == 0:
+            self.health -= max(self.eer-15*EER, 0)/ SM_DMG_EER_VAC
+            return True
+        d_i = (self.eer / SM_REF_EER) * SM_MAX_DMG
+        d_T = (self.room.T - SM_T_CRIT) / SM_DMG_TEMP
+        if d_T > d_i :
+            self.health -= d_i
+            return False
+        if d_T < -SM_MAX_DMG: # healing
+            self.health += SM_MAX_DMG
+        else:
+            self.health -= d_T
+        self.health = max(self.health, 1000*hp)
+        return self.health < 0
+    def react(self):
+        f_O = self.room.nus.get('O2', 0*u.mol) - SM_ETA_N2 * self.room.nus.get('N2',0*u.mol)
+        f_O /= self.room.Nu
+        f_O = max(min(f_O, 1), 0)
+        P_E = (400 if f_O>0.8 else 250)*EER
+        dP_rxn = (P_E/SM_LAMDA)**3 * (self.room.T / SM_REF_TEMP) * f_O
+        self.eer += dP_rxn
+        EP = SM_ETA_RXN*self.eer
+        ET = (self.room.T - 273.15*u.K) * EER / u.K
+        nu_Ex = max(EP/SM_USB_K, 0*u.mol)
+        nu_O2 = max((EP+ET)/SM_OXY_K, 0*u.mol)
+        self.room.nus['Ph'] = self.room.nus.get('Ph', 0*u.mol) + nu_Ex
+        self.room.nus['O2'] = self.room.nus.get('O2', 0*u.mol) + nu_O2
+        self.room.thermal_E += SM_THERM_K * EP
+        if self.room.T > 1e4*u.K:
+            print('OVERHEATED')
+            self.room.T = 1e4*u.K
+    def decay(self):
+        self.eer -= (self.eer / SM_LAMDA)**3

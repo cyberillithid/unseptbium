@@ -2,7 +2,9 @@ use std::collections::HashMap;
 
 use ss13_usb::test_reference;
 use dmm_tools::dmm::Map;
-fn main() {
+
+/// parses a fixed-name thing to generate map.json
+fn old_main() {
     let result = test_reference(1400, 88).unwrap();
     println!("Hallo, {}", result);
     let map = Map::from_file(
@@ -27,4 +29,10 @@ fn main() {
     } // cycle
     let s = serde_json::to_string(&ret).unwrap();
     let _ = std::fs::write("./map.json", s);
+}
+
+fn main() {
+    let neb_root = "E:\\Code\\opensource\\games\\Nebula\\";
+    let path = "/code/_helpers/unsorted.dm";
+    // neb_root + path
 }
