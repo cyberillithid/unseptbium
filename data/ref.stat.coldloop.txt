@@ -1,0 +1,360 @@
+The gas pump: source entropy: 155.13 J/Kmol --> sink entropy: 150000 J/Kmol
+The gas pump: specific entropy change = 149845 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 623.903 mol
+The gas pump: sink stat = 0 K, 0 mol, 0 kPa
+The gas pump: merged-sink stat = 293.15 K, 623.903 mol, 7599.37 kPa
+The gas pump: source entropy: 156.61 J/Kmol --> sink entropy: 191.48 J/Kmol
+The gas pump: specific entropy change = 34.87 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 519.919 mol
+The gas pump: sink stat = 293.15 K, 7.66465 mol, 93.3584 kPa
+The gas pump: merged-sink stat = 293.15 K, 527.584 mol, 6426.17 kPa
+The gas pump: source entropy: 158.09 J/Kmol --> sink entropy: 186.44 J/Kmol
+The gas pump: specific entropy change = 28.35 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 433.266 mol
+The gas pump: sink stat = 293.073 K, 14.0519 mol, 171.112 kPa
+The gas pump: merged-sink stat = 293.073 K, 447.318 mol, 5447.08 kPa
+The gas pump: source entropy: 159.58 J/Kmol --> sink entropy: 183.77 J/Kmol
+The gas pump: specific entropy change = 24.19 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 361.055 mol
+The gas pump: sink stat = 292.972 K, 19.3745 mol, 235.846 kPa
+The gas pump: merged-sink stat = 292.972 K, 380.429 mol, 4630.96 kPa
+The gas pump: source entropy: 161.08 J/Kmol --> sink entropy: 182.06 J/Kmol
+The gas pump: specific entropy change = 20.99 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 300.879 mol
+The gas pump: sink stat = 292.857 K, 23.8101 mol, 289.727 kPa
+The gas pump: merged-sink stat = 292.857 K, 324.689 mol, 3950.89 kPa
+The gas pump: source entropy: 162.58 J/Kmol --> sink entropy: 180.87 J/Kmol
+The gas pump: specific entropy change = 18.29 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 250.732 mol
+The gas pump: sink stat = 292.736 K, 27.5064 mol, 334.565 kPa
+The gas pump: merged-sink stat = 292.736 K, 278.239 mol, 3384.27 kPa
+The gas pump: source entropy: 164.08 J/Kmol --> sink entropy: 179.99 J/Kmol
+The gas pump: specific entropy change = 15.91 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 208.944 mol
+The gas pump: sink stat = 292.61 K, 30.5867 mol, 371.871 kPa
+The gas pump: merged-sink stat = 293.081 K, 239.53 mol, 2916.89 kPa
+The gas pump: source entropy: 165.58 J/Kmol --> sink entropy: 179.32 J/Kmol
+The gas pump: specific entropy change = 13.74 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 174.12 mol
+The gas pump: sink stat = 292.522 K, 33.1535 mol, 402.958 kPa
+The gas pump: merged-sink stat = 293.05 K, 207.273 mol, 2523.8 kPa
+The gas pump: source entropy: 167.08 J/Kmol --> sink entropy: 178.8 J/Kmol
+The gas pump: specific entropy change = 11.72 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 145.1 mol
+The gas pump: sink stat = 292.428 K, 35.2926 mol, 428.819 kPa
+The gas pump: merged-sink stat = 293.009 K, 180.392 mol, 2196.19 kPa
+The gas pump: source entropy: 168.59 J/Kmol --> sink entropy: 178.39 J/Kmol
+The gas pump: specific entropy change = 9.8 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 120.917 mol
+The gas pump: sink stat = 292.329 K, 37.0751 mol, 450.325 kPa
+The gas pump: merged-sink stat = 292.957 K, 157.992 mol, 1923.13 kPa
+The gas pump: source entropy: 170.1 J/Kmol --> sink entropy: 178.07 J/Kmol
+The gas pump: specific entropy change = 7.97 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 100.764 mol
+The gas pump: sink stat = 292.226 K, 38.5606 mol, 468.203 kPa
+The gas pump: merged-sink stat = 292.894 K, 139.324 mol, 1695.54 kPa
+The gas pump: source entropy: 171.61 J/Kmol --> sink entropy: 177.81 J/Kmol
+The gas pump: specific entropy change = 6.2 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 83.9698 mol
+The gas pump: sink stat = 292.119 K, 39.7985 mol, 483.056 kPa
+The gas pump: merged-sink stat = 292.818 K, 123.768 mol, 1505.84 kPa
+The gas pump: source entropy: 173.12 J/Kmol --> sink entropy: 177.6 J/Kmol
+The gas pump: specific entropy change = 4.48 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 69.9748 mol
+The gas pump: sink stat = 292.008 K, 40.8301 mol, 495.388 kPa
+The gas pump: merged-sink stat = 292.729 K, 110.805 mol, 1347.71 kPa
+The gas pump: source entropy: 174.63 J/Kmol --> sink entropy: 177.42 J/Kmol
+The gas pump: specific entropy change = 2.79 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 58.3124 mol
+The gas pump: sink stat = 291.894 K, 41.6897 mol, 505.621 kPa
+The gas pump: merged-sink stat = 292.626 K, 100.002 mol, 1215.89 kPa
+The gas pump: source entropy: 176.14 J/Kmol --> sink entropy: 177.28 J/Kmol
+The gas pump: specific entropy change = 1.14 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 48.5936 mol
+The gas pump: sink stat = 291.777 K, 42.4061 mol, 514.104 kPa
+The gas pump: merged-sink stat = 292.51 K, 90.9997 mol, 1105.99 kPa
+The gas pump: source entropy: 177.65 J/Kmol --> sink entropy: 177.17 J/Kmol
+The gas pump: specific entropy change = -0.48 J/Kmol
+The gas pump: specific power = 56.5 W/mol
+The gas pump: moles transferred = 40.4947 mol
+The gas pump: sink stat = 291.658 K, 43.003 mol, 521.128 kPa
+The gas pump: merged-sink stat = 292.382 K, 83.4977 mol, 1014.37 kPa
+The gas pump: source entropy: 179.17 J/Kmol --> sink entropy: 177.08 J/Kmol
+The gas pump: specific entropy change = -2.09 J/Kmol
+The gas pump: specific power = 243.9 W/mol
+The gas pump: moles transferred = 33.7456 mol
+The gas pump: sink stat = 291.536 K, 43.5005 mol, 526.937 kPa
+The gas pump: merged-sink stat = 292.241 K, 77.2461 mol, 937.971 kPa
+The gas pump: source entropy: 180.68 J/Kmol --> sink entropy: 177 J/Kmol
+The gas pump: specific entropy change = -3.68 J/Kmol
+The gas pump: specific power = 429.2 W/mol
+The gas pump: moles transferred = 28.1213 mol
+The gas pump: sink stat = 291.414 K, 43.9151 mol, 531.736 kPa
+The gas pump: merged-sink stat = 292.092 K, 72.0364 mol, 874.264 kPa
+The gas pump: source entropy: 182.19 J/Kmol --> sink entropy: 176.93 J/Kmol
+The gas pump: specific entropy change = -5.26 J/Kmol
+The gas pump: specific power = 612.8 W/mol
+The gas pump: moles transferred = 23.4344 mol
+The gas pump: sink stat = 291.294 K, 44.2606 mol, 535.698 kPa
+The gas pump: merged-sink stat = 291.937 K, 67.695 mol, 821.138 kPa
+The gas pump: source entropy: 183.71 J/Kmol --> sink entropy: 176.88 J/Kmol
+The gas pump: specific entropy change = -6.83 J/Kmol
+The gas pump: specific power = 795 W/mol
+The gas pump: moles transferred = 19.5287 mol
+The gas pump: sink stat = 291.172 K, 44.5485 mol, 538.957 kPa
+The gas pump: merged-sink stat = 291.775 K, 64.0771 mol, 776.824 kPa
+The gas pump: source entropy: 185.22 J/Kmol --> sink entropy: 176.84 J/Kmol
+The gas pump: specific entropy change = -8.38 J/Kmol
+The gas pump: specific power = 976 W/mol
+The gas pump: moles transferred = 16.2739 mol
+The gas pump: sink stat = 291.049 K, 44.7884 mol, 541.629 kPa
+The gas pump: merged-sink stat = 291.609 K, 61.0623 mol, 739.852 kPa
+The gas pump: source entropy: 186.74 J/Kmol --> sink entropy: 176.8 J/Kmol
+The gas pump: specific entropy change = -9.93 J/Kmol
+The gas pump: specific power = 1155.9 W/mol
+The gas pump: moles transferred = 13.5616 mol
+The gas pump: sink stat = 290.924 K, 44.9883 mol, 543.814 kPa
+The gas pump: merged-sink stat = 291.44 K, 58.5499 mol, 708.999 kPa
+The gas pump: source entropy: 188.25 J/Kmol --> sink entropy: 176.77 J/Kmol
+The gas pump: specific entropy change = -11.48 J/Kmol
+The gas pump: specific power = 1335 W/mol
+The gas pump: moles transferred = 11.3013 mol
+The gas pump: sink stat = 290.798 K, 45.1549 mol, 545.591 kPa
+The gas pump: merged-sink stat = 291.269 K, 56.4562 mol, 683.245 kPa
+The gas pump: source entropy: 189.76 J/Kmol --> sink entropy: 176.75 J/Kmol
+The gas pump: specific entropy change = -13.02 J/Kmol
+The gas pump: specific power = 1513.3 W/mol
+The gas pump: moles transferred = 9.41779 mol
+The gas pump: sink stat = 290.671 K, 45.2937 mol, 547.029 kPa
+The gas pump: merged-sink stat = 291.098 K, 54.7115 mol, 661.742 kPa
+The gas pump: source entropy: 191.28 J/Kmol --> sink entropy: 176.73 J/Kmol
+The gas pump: specific entropy change = -14.55 J/Kmol
+The gas pump: specific power = 1691 W/mol
+The gas pump: moles transferred = 7.84816 mol
+The gas pump: sink stat = 290.543 K, 45.4094 mol, 548.185 kPa
+The gas pump: merged-sink stat = 290.927 K, 53.2576 mol, 643.779 kPa
+The gas pump: source entropy: 192.79 J/Kmol --> sink entropy: 176.71 J/Kmol
+The gas pump: specific entropy change = -16.08 J/Kmol
+The gas pump: specific power = 1868.1 W/mol
+The gas pump: moles transferred = 6.54013 mol
+The gas pump: sink stat = 290.414 K, 45.5058 mol, 549.105 kPa
+The gas pump: merged-sink stat = 290.758 K, 52.0459 mol, 628.766 kPa
+The gas pump: source entropy: 194.31 J/Kmol --> sink entropy: 176.7 J/Kmol
+The gas pump: specific entropy change = -17.61 J/Kmol
+The gas pump: specific power = 2044.7 W/mol
+The gas pump: moles transferred = 5.45012 mol
+The gas pump: sink stat = 290.284 K, 45.5862 mol, 549.829 kPa
+The gas pump: merged-sink stat = 290.59 K, 51.0363 mol, 616.214 kPa
+The gas pump: source entropy: 195.82 J/Kmol --> sink entropy: 176.69 J/Kmol
+The gas pump: specific entropy change = -19.13 J/Kmol
+The gas pump: specific power = 2220.8 W/mol
+The gas pump: moles transferred = 4.54177 mol
+The gas pump: sink stat = 290.154 K, 45.6531 mol, 550.389 kPa
+The gas pump: merged-sink stat = 290.425 K, 50.1949 mol, 605.71 kPa
+The gas pump: source entropy: 197.34 J/Kmol --> sink entropy: 176.68 J/Kmol
+The gas pump: specific entropy change = -20.66 J/Kmol
+The gas pump: specific power = 2396.6 W/mol
+The gas pump: moles transferred = 3.78481 mol
+The gas pump: sink stat = 290.023 K, 45.7089 mol, 550.814 kPa
+The gas pump: merged-sink stat = 290.262 K, 49.4937 mol, 596.914 kPa
+The gas pump: source entropy: 198.85 J/Kmol --> sink entropy: 176.67 J/Kmol
+The gas pump: specific entropy change = -22.18 J/Kmol
+The gas pump: specific power = 2572 W/mol
+The gas pump: moles transferred = 3.15401 mol
+The gas pump: sink stat = 289.892 K, 45.7554 mol, 551.124 kPa
+The gas pump: merged-sink stat = 290.102 K, 48.9094 mol, 589.541 kPa
+The gas pump: source entropy: 200.37 J/Kmol --> sink entropy: 176.67 J/Kmol
+The gas pump: specific entropy change = -23.7 J/Kmol
+The gas pump: specific power = 2747.1 W/mol
+The gas pump: moles transferred = 2.62834 mol
+The gas pump: sink stat = 289.76 K, 45.7942 mol, 551.34 kPa
+The gas pump: merged-sink stat = 289.944 K, 48.4225 mol, 583.353 kPa
+The gas pump: source entropy: 201.88 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -25.22 J/Kmol
+The gas pump: specific power = 2921.8 W/mol
+The gas pump: moles transferred = 2.19029 mol
+The gas pump: sink stat = 289.627 K, 45.8265 mol, 551.477 kPa
+The gas pump: merged-sink stat = 289.788 K, 48.0168 mol, 578.155 kPa
+The gas pump: source entropy: 203.4 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -26.74 J/Kmol
+The gas pump: specific power = 3096.3 W/mol
+The gas pump: moles transferred = 1.82524 mol
+The gas pump: sink stat = 289.495 K, 45.8534 mol, 551.548 kPa
+The gas pump: merged-sink stat = 289.635 K, 47.6786 mol, 573.779 kPa
+The gas pump: source entropy: 204.91 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -28.26 J/Kmol
+The gas pump: specific power = 3270.6 W/mol
+The gas pump: moles transferred = 1.52104 mol
+The gas pump: sink stat = 289.362 K, 45.8758 mol, 551.564 kPa
+The gas pump: merged-sink stat = 289.484 K, 47.3968 mol, 570.091 kPa
+The gas pump: source entropy: 206.43 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -29.77 J/Kmol
+The gas pump: specific power = 3444.6 W/mol
+The gas pump: moles transferred = 1.26754 mol
+The gas pump: sink stat = 289.229 K, 45.8945 mol, 551.535 kPa
+The gas pump: merged-sink stat = 289.334 K, 47.162 mol, 566.974 kPa
+The gas pump: source entropy: 207.94 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -31.29 J/Kmol
+The gas pump: specific power = 3618.4 W/mol
+The gas pump: moles transferred = 1.05629 mol
+The gas pump: sink stat = 289.096 K, 45.9101 mol, 551.468 kPa
+The gas pump: merged-sink stat = 289.187 K, 46.9664 mol, 564.334 kPa
+The gas pump: source entropy: 209.46 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -32.81 J/Kmol
+The gas pump: specific power = 3791.9 W/mol
+The gas pump: moles transferred = 0.880243 mol
+The gas pump: sink stat = 288.962 K, 45.923 mol, 551.369 kPa
+The gas pump: merged-sink stat = 289.041 K, 46.8032 mol, 562.09 kPa
+The gas pump: source entropy: 210.97 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -34.32 J/Kmol
+The gas pump: specific power = 3965.3 W/mol
+The gas pump: moles transferred = 0.733543 mol
+The gas pump: sink stat = 288.828 K, 45.9338 mol, 551.244 kPa
+The gas pump: merged-sink stat = 288.896 K, 46.6673 mol, 560.178 kPa
+The gas pump: source entropy: 212.49 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -35.84 J/Kmol
+The gas pump: specific power = 4138.4 W/mol
+The gas pump: moles transferred = 0.611293 mol
+The gas pump: sink stat = 288.694 K, 45.9429 mol, 551.096 kPa
+The gas pump: merged-sink stat = 288.753 K, 46.5542 mol, 558.542 kPa
+The gas pump: source entropy: 214 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -37.35 J/Kmol
+The gas pump: specific power = 4311.4 W/mol
+The gas pump: moles transferred = 0.509411 mol
+The gas pump: sink stat = 288.56 K, 45.9504 mol, 550.93 kPa
+The gas pump: merged-sink stat = 288.611 K, 46.4598 mol, 557.135 kPa
+The gas pump: source entropy: 215.52 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -38.87 J/Kmol
+The gas pump: specific power = 4484.2 W/mol
+The gas pump: moles transferred = 0.42451 mol
+The gas pump: sink stat = 288.428 K, 45.9566 mol, 550.754 kPa
+The gas pump: merged-sink stat = 288.472 K, 46.3811 mol, 555.924 kPa
+The gas pump: source entropy: 217.03 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -40.38 J/Kmol
+The gas pump: specific power = 4656.9 W/mol
+The gas pump: moles transferred = 0.35376 mol
+The gas pump: sink stat = 288.3 K, 45.9618 mol, 550.57 kPa
+The gas pump: merged-sink stat = 288.337 K, 46.3156 mol, 554.88 kPa
+The gas pump: source entropy: 218.55 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -41.9 J/Kmol
+The gas pump: specific power = 4829.4 W/mol
+The gas pump: moles transferred = 0.2948 mol
+The gas pump: sink stat = 288.171 K, 45.9662 mol, 550.377 kPa
+The gas pump: merged-sink stat = 288.203 K, 46.261 mol, 553.968 kPa
+The gas pump: source entropy: 220.06 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -43.41 J/Kmol
+The gas pump: specific power = 5001.7 W/mol
+The gas pump: moles transferred = 0.245667 mol
+The gas pump: sink stat = 288.043 K, 45.9698 mol, 550.174 kPa
+The gas pump: merged-sink stat = 288.07 K, 46.2155 mol, 553.167 kPa
+The gas pump: source entropy: 221.58 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -44.93 J/Kmol
+The gas pump: specific power = 5173.9 W/mol
+The gas pump: moles transferred = 0.204723 mol
+The gas pump: sink stat = 287.914 K, 45.9728 mol, 549.964 kPa
+The gas pump: merged-sink stat = 287.937 K, 46.1775 mol, 552.458 kPa
+The gas pump: source entropy: 223.09 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -46.44 J/Kmol
+The gas pump: specific power = 5345.9 W/mol
+The gas pump: moles transferred = 0.170606 mol
+The gas pump: sink stat = 287.785 K, 45.9753 mol, 549.748 kPa
+The gas pump: merged-sink stat = 287.805 K, 46.1459 mol, 551.826 kPa
+The gas pump: source entropy: 224.61 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -47.95 J/Kmol
+The gas pump: specific power = 5517.7 W/mol
+The gas pump: moles transferred = 0.142173 mol
+The gas pump: sink stat = 287.656 K, 45.9774 mol, 549.527 kPa
+The gas pump: merged-sink stat = 287.673 K, 46.1196 mol, 551.259 kPa
+The gas pump: source entropy: 226.12 J/Kmol --> sink entropy: 176.65 J/Kmol
+The gas pump: specific entropy change = -49.47 J/Kmol
+The gas pump: specific power = 5689.4 W/mol
+The gas pump: moles transferred = 0.118477 mol
+The gas pump: sink stat = 287.527 K, 45.9792 mol, 549.302 kPa
+The gas pump: merged-sink stat = 287.542 K, 46.0977 mol, 550.745 kPa
+The gas pump: source entropy: 227.64 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -50.98 J/Kmol
+The gas pump: specific power = 5860.9 W/mol
+The gas pump: moles transferred = 0.0987309 mol
+The gas pump: sink stat = 287.398 K, 45.9806 mol, 549.073 kPa
+The gas pump: merged-sink stat = 287.411 K, 46.0793 mol, 550.275 kPa
+The gas pump: source entropy: 229.15 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -52.5 J/Kmol
+The gas pump: specific power = 6032.2 W/mol
+The gas pump: moles transferred = 0.0822809 mol
+The gas pump: sink stat = 287.269 K, 45.9818 mol, 548.841 kPa
+The gas pump: merged-sink stat = 287.28 K, 46.0641 mol, 549.844 kPa
+The gas pump: source entropy: 230.67 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -54.01 J/Kmol
+The gas pump: specific power = 6203.4 W/mol
+The gas pump: moles transferred = 0.0685674 mol
+The gas pump: sink stat = 287.14 K, 45.9829 mol, 548.607 kPa
+The gas pump: merged-sink stat = 287.149 K, 46.0515 mol, 549.442 kPa
+The gas pump: source entropy: 232.18 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -55.52 J/Kmol
+The gas pump: specific power = 6374.4 W/mol
+The gas pump: moles transferred = 0.0571395 mol
+The gas pump: sink stat = 287.011 K, 45.9837 mol, 548.37 kPa
+The gas pump: merged-sink stat = 287.019 K, 46.0408 mol, 549.066 kPa
+The gas pump: source entropy: 233.7 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -57.04 J/Kmol
+The gas pump: specific power = 6545.1 W/mol
+The gas pump: moles transferred = 0.0476229 mol
+The gas pump: sink stat = 286.882 K, 45.9844 mol, 548.132 kPa
+The gas pump: merged-sink stat = 286.889 K, 46.032 mol, 548.712 kPa
+The gas pump: source entropy: 235.21 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -58.55 J/Kmol
+The gas pump: specific power = 6715.7 W/mol
+The gas pump: moles transferred = 0.0396895 mol
+The gas pump: sink stat = 286.753 K, 45.985 mol, 547.893 kPa
+The gas pump: merged-sink stat = 286.759 K, 46.0247 mol, 548.376 kPa
+The gas pump: source entropy: 236.73 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -60.06 J/Kmol
+The gas pump: specific power = 6886.3 W/mol
+The gas pump: moles transferred = 0.0330746 mol
+The gas pump: sink stat = 286.624 K, 45.9855 mol, 547.652 kPa
+The gas pump: merged-sink stat = 286.629 K, 46.0186 mol, 548.055 kPa
+The gas pump: source entropy: 238.24 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -61.58 J/Kmol
+The gas pump: specific power = 7056.7 W/mol
+The gas pump: moles transferred = 0.0275622 mol
+The gas pump: sink stat = 286.495 K, 45.9859 mol, 547.41 kPa
+The gas pump: merged-sink stat = 286.499 K, 46.0135 mol, 547.746 kPa
+The gas pump: source entropy: 239.76 J/Kmol --> sink entropy: 176.66 J/Kmol
+The gas pump: specific entropy change = -63.09 J/Kmol
+The gas pump: specific power = 7226.9 W/mol
+The gas pump: moles transferred = 0.0229685 mol
+The gas pump: sink stat = 286.366 K, 45.9862 mol, 547.167 kPa
+The gas pump: merged-sink stat = 286.369 K, 46.0092 mol, 547.448 kPa
+The gas pump: source entropy: 241.27 J/Kmol --> sink entropy: 176.67 J/Kmol
+The gas pump: specific entropy change = -64.61 J/Kmol
+The gas pump: specific power = 7397 W/mol
+The gas pump: moles transferred = 0.0191404 mol
+The gas pump: sink stat = 286.237 K, 45.9865 mol, 546.924 kPa
+The gas pump: merged-sink stat = 286.24 K, 46.0056 mol, 547.157 kPa
+The gas pump: source entropy: 242.78 J/Kmol --> sink entropy: 176.67 J/Kmol
+The gas pump: specific entropy change = -66.12 J/Kmol
+The gas pump: specific power = 7566.5 W/mol
+The gas pump: moles transferred = 0.0159571 mol
+The gas pump: sink stat = 286.108 K, 45.9867 mol, 546.68 kPa
+The gas pump: merged-sink stat = 286.11 K, 46.0027 mol, 546.875 kPa
+The gas pump: source entropy: 244.3 J/Kmol --> sink entropy: 176.67 J/Kmol
+The gas pump: specific entropy change = -67.63 J/Kmol
+The gas pump: specific power = 7736.3 W/mol
+The gas pump: moles transferred = 0.0132976 mol
+The gas pump: sink stat = 285.979 K, 45.9869 mol, 546.436 kPa
+The gas pump: merged-sink stat = 285.981 K, 46.0002 mol, 546.598 kPa

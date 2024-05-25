@@ -16,44 +16,41 @@ SmLogger   = logging.getLogger('ct.sm')
 PumpLogger = logging.getLogger('ct.sm.Pump')
 # SmLogger.setLevel(logging.DEBUG)
 
-hp =  u.def_unit('hitpts')
-atm = u.def_unit('atm', 101325*u.Pa)
-EER = u.def_unit('EER')
-
-MACHINERY_TICK = 2 * u.s # seconds
-PIPENET_TICK = 1 * u.s # seconds
+MACHINERY_TICK = 2 #* u.s # seconds
+PIPENET_TICK = 1   #* u.s # seconds
 
 EMITTER_BURST = 4 # or 3 tho?
-POWERED_EMITTER_DMG = 142.22 * hp
+POWERED_EMITTER_DMG = 142.22 #* hp
 
-EMITTER_POWER_CONS = 100 * u.kW # W
-EMITTER_FULL_TIME = 6.4 * u.s # sec
+EMITTER_POWER_CONS = 100 # * u.kW # W
+EMITTER_FULL_TIME = 6.4  # * u.s # sec
 
-PUMP_DEFAULT_VOLUME = 200 * u.L
-SIMPLE_PIPE_VOLUME  = 70 * u.L
+PUMP_DEFAULT_VOLUME = 200 # * u.L
+SIMPLE_PIPE_VOLUME  = 70  # * u.L
 
-MIN_MOLES_PUMP = 0.01 * u.mol
+MIN_MOLES_PUMP = 0.01 # * u.mol
 
-PIPE_HE_SURFACE = 2 * u.m**2
+PIPE_HE_SURFACE = 2 # * u.m**2
 
-CANISTER_VOLUME = 1000 * u.L
-ENG_CANISTER_PRESSURE = 90 * atm
+CANISTER_VOLUME = 1000 #* u.L
+ENG_CANISTER_PRESSURE = 90 #* atm
 
-AIR_PCRIT = 3771 * u.kPa 
-AIR_TCRIT = 132.65 * u.K
+AIR_PCRIT = 3771   # * u.kPa 
+AIR_TCRIT = 132.65 # * u.K
 
-R_IDEAL_GAS = 8.31 * u.J / u.K / u.mol
-AIR_VMOLAR: Quantity[u.L/u.mol] = R_IDEAL_GAS * AIR_TCRIT / AIR_PCRIT
+R_IDEAL_GAS = 8.31 #* u.J / u.K / u.mol
+# AIR_VMOLAR: Quantity[u.L/u.mol] = R_IDEAL_GAS * AIR_TCRIT / AIR_PCRIT
+AIR_VMOLAR = R_IDEAL_GAS * AIR_TCRIT / AIR_PCRIT
 
-T_COSMIC_MICROWAVE_BACKGROUND = 3.15 * u.K
-T_MINIMAL = 2.7 * u.K
+T_COSMIC_MICROWAVE_BACKGROUND = 3.15 #* u.K
+T_MINIMAL = 2.7 #* u.K
 
-SPECIFIC_ENTROPY_VACUUM = 150000 * u.J / u.mol / u.K
-IDEAL_GAS_ENTROPY_CONSTANT = 1164 * u.K*u.mol/u.l / (u.J*u.kg/u.mol**2)**(2/3) # * (u.mol * u.s / u.kg)**3 / (u.L) # -- looks like shit
+SPECIFIC_ENTROPY_VACUUM = 150000  #* u.J / u.mol / u.K
+IDEAL_GAS_ENTROPY_CONSTANT = 1164 # * u.K*u.mol/u.l / (u.J*u.kg/u.mol**2)**(2/3) # * (u.mol * u.s / u.kg)**3 / (u.L) # -- looks like shit
 
-CELL_VOLUME = 2500 * u.L
+CELL_VOLUME = 2500 #* u.L
 
-STEFAN_BOLTZMANN_CONSTANT = 5.6704e-8 * u.W / u.m**2 / u.K**4
+STEFAN_BOLTZMANN_CONSTANT = 5.6704e-8 # * u.W / u.m**2 / u.K**4
 
 ATMOS_PUMP_EFFICIENCY = 2.5
 
@@ -62,8 +59,8 @@ KnownGas = Literal['N2'] | Literal['O2'] | Literal['Ph']
 @dataclass
 class GasSpecies:
     name: KnownGas
-    mu: Quantity[u.kg/u.mol]
-    cv: Quantity[u.J/u.mol/u.K] = 20 * u.J/u.mol/u.K
+    mu: float # Quantity[u.kg/u.mol]
+    cv: float = 20 # Quantity[u.J/u.mol/u.K] = 20 * u.J/u.mol/u.K
     @classmethod
     def get(cls, n: KnownGas):
         match n:
@@ -72,9 +69,9 @@ class GasSpecies:
             case 'Ph': return GasPh
             case _: raise NotImplementedError
 
-GasO2 = GasSpecies('O2', 0.032 *u.kg/u.mol)
-GasN2 = GasSpecies('N2', 0.028 *u.kg/u.mol)
-GasPh = GasSpecies('Ph', 0.405 *u.kg/u.mol, 200*u.J/u.mol/u.K)
+GasO2 = GasSpecies('O2', 0.032) # *u.kg/u.mol)
+GasN2 = GasSpecies('N2', 0.028) # *u.kg/u.mol)
+GasPh = GasSpecies('Ph', 0.405, 200) # *u.kg/u.mol, 200)
 
 @dataclass
 class GasMixture:
@@ -124,6 +121,7 @@ class GasMixture:
         gas = GasSpecies.get(k)
         mu, cv = gas.mu, gas.cv
         safe_T = max(self.T, T_MINIMAL) #TCMB in code
+        u_conv = u.K*u.mol**2/u.J/u.kg
         # partial_P = self.nus[k] * R_IDEAL_GAS * self.T / self.V
         return R_IDEAL_GAS * (
             math.log(
@@ -141,8 +139,8 @@ class GasMixture:
 
     def __add__(self, other: Self | None) -> Self:
         """Consumes both mixtures and combines their volumes"""
-        if other is None: return GasMixture(self.T, self.V, self.nus)
-        V1 = self.V.to(u.L) + other.V.to(u.L)
+        if other is None: return self
+        V1 = self.V + other.V
         ret = GasMixture(self.T, V1, self.nus)
         ret += other
         return ret
@@ -150,7 +148,7 @@ class GasMixture:
     def __mul__(self, other: float) -> Self:
         """Returns a fractional fragment (for networks and subs)"""
         ret = GasMixture(
-            self.T * 1,
+            self.T,
             self.V * other,
             {k: v * other for k,v in self.nus.items()} if self.nus else {}
         )
@@ -169,48 +167,17 @@ class GasMixture:
     def __iadd__(self, other: Self | None):
         """Merges matter into current, keeping V=const"""
         if other is None: return self
-        # Q1 = self.C*self.T + other.C*other.T if abs(self.T - other.T)>0.5*u.K else None
-        if abs(self.T - other.T) > 0.5*u.K:
-            Cs = self.C + other.C
-            if Cs != 0 *u.J/u.K:
-                self.T = (self.T*self.C + other.T * other.C)/Cs
+        Q1 = self.C*self.T + other.C*other.T
         snus = self.nus if self.nus else {}
         onus = other.nus if other.nus else {}
         gases = set(snus.keys()) | set(onus.keys())
-        nus = {k: (snus.get(k, 0*u.mol) + onus.get(k, 0*u.mol)).to(u.mol)
+        nus = {k: snus.get(k, 0*u.mol) + onus.get(k, 0*u.mol) 
                for k in gases}
         self.nus = nus
+        self.T = Q1 / self.C
         return self
 
-@dataclass
-class PipeNetwork:
-    gases: dict[str, GasMixture]
 
-    def equalize(self):
-        if len(self.gases) <= 1: return
-        ks = [*self.gases.keys()]
-        ref = self.gases[ks[0]] + self.gases[ks[1]]
-        Q0 = self.gases[ks[0]].thermal_E + self.gases[ks[1]].thermal_E 
-        for i in ks[2:]:
-            ref = ref + self.gases[i]
-            Q0 += self.gases[i].thermal_E
-        ref.T = Q0 / ref.C if ref.C > 0 else ref.T
-        for i in ks:
-            self.gases[i] = ref * ((self.gases[i].V.to(u.L)) / ref.V) if self.gases[i] else None
-    
-    def add(self, name: str, V: Quantity[u.L], T0=T_MINIMAL,nus=None):
-        if name in self.gases:
-            self.gases[name].V = V
-        else:
-            if V == 0:
-                self.gases[name] = None
-            else:
-                self.gases[name] = GasMixture(T0, V, nus if nus else {})
-    
-    @property
-    def V(self) -> Quantity[u.L]:
-        return sum([k.V for k in self.gases.values() if k])
-            
 class HeatExchanger:
     n: int
 
@@ -227,23 +194,18 @@ class HeatExchanger:
 
     def cool(self, gas: GasMixture):
         PSolEff = self.qSol * self.area * self.f_insolated * u.s
-        if gas.C == 0 * u.J/u.K: return gas # nothing to do here
-        t0 = gas.T * 1
         for _ in range(self.n):
             eta = min(AIR_VMOLAR/(gas.V/gas.Nu), 1)
-            Teff4 = (gas.T**4 - T_COSMIC_MICROWAVE_BACKGROUND**4)
-            dQ = PSolEff - u.s* self.area * STEFAN_BOLTZMANN_CONSTANT * Teff4
+            Teff = (gas.T - T_COSMIC_MICROWAVE_BACKGROUND)
+            dQ = PSolEff - u.s* self.area * STEFAN_BOLTZMANN_CONSTANT * Teff**4
             dT = dQ * eta / gas.C
-            gas.T = gas.T + dT
-            # SmLogger.info(f'{(eta*dQ).to(u.J)}, {gas.T}')
-        SmLogger.info(f'last {(eta*dQ).to(u.J)}; Per {self.n} pipes {t0:.2f} -> {gas.T:.2f} ({t0-gas.T:.4g} loss)')
+            gas.T += dT
         return gas
 
     def approx_cool(self, gas: GasMixture) -> float:
         """Approximates without modifying"""
         PSolEff = self.qSol * self.area * self.f_insolated * self.n * u.s
         Td = gas.T - T_COSMIC_MICROWAVE_BACKGROUND
-        if gas.C == 0 * u.J/u.K: return 0 # nothing to do here
         Cve = gas.cv_mole * max(gas.Nu, gas.V / AIR_VMOLAR)
         k1 = 3*self.n*STEFAN_BOLTZMANN_CONSTANT*self.area*u.s/Cve
         Tcool = (k1 + Td**-3)**(-1/3.)
@@ -255,7 +217,7 @@ def calc_transfer_moles(source: GasMixture, sink: GasMixture, delta_p: Quantity[
     """Estimates moles to transfer, as per orig. code"""
     if source.T == 0 or source.Nu == 0: 
         return 0 # Nothing to pump
-    outV = sink.V + (sink._V0 if sink._V0 is not None else 0*u.L) # full volume
+    outV = sink._V0 # full volume
     src_Nu = source.Nu # just the owned source -- `source total moles`
     airT = source.T
     if sink.T > 0 and sink.Nu > 0:
@@ -268,12 +230,11 @@ def calc_transfer_moles(source: GasMixture, sink: GasMixture, delta_p: Quantity[
 
 def pump_gas(
         source: GasMixture, sink: GasMixture, 
-        delta_nu: Quantity[u.mol], power_rating: Quantity[u.W],
-        debug_name: str = ''
+        delta_nu: Quantity[u.mol], power_rating: Quantity[u.W]
         ) -> tuple[Quantity[u.W], Quantity[u.mol]]:
     if source.Nu < MIN_MOLES_PUMP: 
         return 0*u.W, 0*u.mol # Nothing to move
-    transferNu = min(delta_nu, source.Nu) if delta_nu is not None else source.Nu
+    transferNu = min(delta_nu, source.Nu) if delta_nu is None else source.Nu
     # V Calculate specific power
     usedT = sink.T if sink.T > 0 else source.T
     srcS = source.S
@@ -281,167 +242,73 @@ def pump_gas(
     specific_entropy = sinkS - srcS
     specific_power = -specific_entropy*usedT if specific_entropy<0 else 0*u.J/u.mol
     specific_power /= ATMOS_PUMP_EFFICIENCY # magical coeff.
-    PumpLogger.info(f'{debug_name}: Source entropy {srcS:.6g} -> Sink entropy {sinkS:.6g}')
-    PumpLogger.info(f'{debug_name}: Specific entropy change {specific_entropy:.6g}')
-    PumpLogger.info(f'{debug_name}: Specific power {specific_power:.6g}')
+    PumpLogger.info(f'Source entropy {srcS:.6g} -> Sink entropy {sinkS:.6g}')
+    PumpLogger.info(f'Specific entropy change {specific_entropy:.6g}')
+    PumpLogger.info(f'Specific power {specific_power:.6g}')
     transferNu = min(transferNu, power_rating*u.s/specific_power) if specific_power.value>0 else transferNu
-    transferNu = transferNu.to(u.mol)
-    PumpLogger.info(f'{debug_name}: Transferred {transferNu:.6g} in fact')
-    PumpLogger.info(f'{debug_name}: Sink stat = {sink.T:.5g}, {sink.Nu:.6g}, {sink.p.to(u.kPa):.6g}')
+    PumpLogger.info(f'Transferred {transferNu:.6g}')
     return specific_power*transferNu,transferNu
 
 
 @dataclass
 class Pump:
-    name: str
     V_in : Quantity[u.L]= 200*u.L
     V_out: Quantity[u.L] = 200*u.L
     P_max:    Quantity[u.W] = 30*u.kW # .to(u.W)
     target_p: Quantity[u.Pa] = 15*u.MPa #.to(u.Pa)
-    inlet : PipeNetwork|None = None
-    outlet: PipeNetwork|None = None
+    inlet : GasMixture|None = None
+    outlet: GasMixture|None = None
 
-    def reconnect_in(self, inlet: PipeNetwork):
-        inlet.add(self.name, self.V_in)
+    def connect_in(self, inlet: GasMixture):
+        inlet.V += self.V_in
         self.inlet = inlet
-    def connect(self, inlet: PipeNetwork, outlet: PipeNetwork):
-        inlet.add(self.name, self.V_in)
-        self.inlet = inlet
-        inlet.equalize()
-        outlet.add(self.name, self.V_out)
+    def connect_out(self, outlet: GasMixture):
+        outlet.V += self.V_out
         self.outlet = outlet
-        outlet.equalize()
 
     def pump(self): #, inlet: GasMixture, outlet: GasMixture):
         if self.inlet is None: return 0
         if self.outlet is None: return 0
-        inlet,outlet = self.inlet.gases[self.name], self.outlet.gases[self.name]
-        if inlet is None: inlet = self.inlet.gases['room']
-        if outlet is None: outlet = self.outlet.gases['room']
+        inlet,outlet = self.inlet, self.outlet
         delta_p = self.target_p - outlet.p
         if delta_p <= 10*u.Pa or inlet.T <= 0*u.K:
-            PumpLogger.info(f'{self.name}: dP {delta_p} skip')
             return 0*u.W
         # Gets a own-volume segment -- or everything for env.
-        source = inlet # * (self.V_in/inlet.V)  if self.V_in !=0 else inlet *1
-        sink = outlet  # * (self.V_out/outlet.V) if self.V_out!=0 else outlet*1
+        source = inlet * (self.V_in/inlet.V)  if self.V_in !=0 else inlet *1
+        sink = outlet * (self.V_out/outlet.V) if self.V_out!=0 else outlet*1
         # PumpLogger.info(source)
         delta_nu = calc_transfer_moles(source, sink, delta_p)
-        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max, self.name)
+        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max)
         if moles > 0:
             qty = inlet.sub(moles)
             outlet += qty
-            PumpLogger.info(f'{self.name} Merged-sink stat: {outlet.T:.7g}, {outlet.Nu:.4g}, {outlet.p.to(u.kPa):.6g}')
         return w_draw
-
-
-@dataclass
-class OutletInjector:
-    name: str
-    V_in : Quantity[u.L]= 700*u.L
-    P_max:    Quantity[u.W] = 45*u.kW # .to(u.W)
-    target_V: Quantity[u.L] = 50*u.L # actually L/2s
-    inlet : PipeNetwork|None = None
-    room: GasMixture|None = None
-
-    def connect(self, inlet: PipeNetwork, room: GasMixture):
-        inlet.add(self.name, self.V_in)
-        self.inlet = inlet
-        inlet.equalize()
-        self.room = room
-        
-    def pump(self): #, inlet: GasMixture, outlet: GasMixture):
-        if self.inlet is None: return 0
-        if self.room is None: return 0
-        inlet,outlet = self.inlet.gases[self.name], self.room
-        assert inlet is not None #: inlet = self.inlet.gases['room']
-        
-        source = inlet # * (self.V_in/inlet.V)  if self.V_in !=0 else inlet *1
-        sink = outlet  # * (self.V_out/outlet.V) if self.V_out!=0 else outlet*1
-        # PumpLogger.info(source)
-        delta_nu = (self.target_V / source.V) * source.Nu
-        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max, self.name)
-        if moles > 0:
-            qty = inlet.sub(moles)
-            outlet += qty
-            PumpLogger.info(f'{self.name} Merged-sink stat: {outlet.T:.7g}, {outlet.Nu / (outlet.V/CELL_VOLUME):.4g}, {outlet.p.to(u.kPa):.6g}')
-        return w_draw
-
-
-
-@dataclass
-class VentPump:
-    name: str
-    V_out : Quantity[u.L]= 200*u.L
-    P_max:    Quantity[u.W] = 30*u.kW # .to(u.W)
-    ex_P : Quantity[u.Pa] = 1*atm
-    outlet : PipeNetwork|None = None
-    room: GasMixture|None = None
-
-    def connect(self,  room: GasMixture, outlet: PipeNetwork):
-        outlet.add(self.name, self.V_out)
-        self.outlet = outlet
-        outlet.equalize()
-        self.room = room
-        
-    def pump(self): #, inlet: GasMixture, outlet: GasMixture):
-        if self.outlet is None: return 0
-        if self.room is None: return 0
-        inlet,outlet = self.room, self.outlet.gases[self.name]
-        assert outlet is not None #: inlet = self.inlet.gases['room']
-        
-        source = inlet # * (self.V_in/inlet.V)  if self.V_in !=0 else inlet *1
-        sink = outlet  # * (self.V_out/outlet.V) if self.V_out!=0 else outlet*1
-        # PumpLogger.info(source)
-        delta_p = 10*u.MPa # default pressure delta val
-        delta_p = min(delta_p, self.room.p - self.ex_P)
-        PumpLogger.info(f'{self.name} target dP={delta_p.to(u.kPa)}')
-        if delta_p < 0.5*u.kPa:
-            return 0
-        delta_nu = calc_transfer_moles(self.room, sink, delta_p) / (self.room.V / CELL_VOLUME)
-        w_draw, moles = pump_gas(source, sink, delta_nu, self.P_max, self.name)
-        if moles > 0:
-            qty = inlet.sub(moles)
-            outlet += qty
-            PumpLogger.info(f'{self.name} Merged-sink stat: {outlet.T:.7g}, {outlet.Nu:.4g}, {outlet.p.to(u.kPa):.6g}')
-        return w_draw
-
 
 @dataclass
 class Turbine:
-    name: str
     V_in = 400*u.L
     V_out = 200*u.L
-    inlet:  PipeNetwork|None = None
-    outlet: PipeNetwork|None = None
-    def connect(self, inlet: PipeNetwork, outlet: PipeNetwork):
-        inlet.add(self.name, self.V_in)
+    inlet: GasMixture|None = None
+    outlet: GasMixture|None = None
+    def connect(self, inlet: GasMixture, outlet: GasMixture):
+        inlet.V += self.V_in
         self.inlet = inlet
-        outlet.add(self.name, self.V_out)
+        outlet.V += self.V_out
         self.outlet = outlet
     def take_air(self) -> tuple[GasMixture|None, Quantity[u.J]]:
-        src = self.inlet.gases[self.name]
-        sink = self.outlet.gases[self.name]
-        dP = max(0*u.Pa, src.p-sink.p-5*u.kPa)
+        dP = max(0*u.Pa, self.inlet.p-self.outlet.p-5*u.kPa)
         if dP < 5*u.kPa:
             return None, 0*u.J
-        dnumax = dP * self.inlet.V /3/src.T/R_IDEAL_GAS
-        E_i = min(dP*self.inlet.V,    src.p*self.V_in)
+        dnumax = dP * self.inlet.V /3/self.inlet.T/R_IDEAL_GAS
+        E_i = min(dP*self.inlet.V, self.inlet.p*self.V_in)
         etaK,fv,kappa = 0.04, 0.2, 0.66
         etaV = etaK / kappa * (1 - fv**kappa)
-        E = (etaV*E_i).to(u.kJ)
-        vol_cap_frac = min (dP * self.inlet.V/3/src.p/self.V_in, 1)
-        nu_can_use_max = src.Nu # self.V_in/self.inlet.V*
-        nu_use = min(dnumax, nu_can_use_max)
-        SmLogger.info(f'{self.name}: inP = {src.p.to(u.kPa):.4g}, outP={sink.p.to(u.kPa):.4g}')
-        gret = src.sub(nu_use)
-        SmLogger.info(f'{self.name}: inP[red] = {src.p.to(u.kPa):.4g}')
-        SmLogger.info(f'{self.name}: dP={dP:.4g}, {dnumax=}, {E=}')
-        SmLogger.info(f'{self.name}: {vol_cap_frac=:.4g}, frac nu{gret.Nu/nu_can_use_max:.4g}')
+        E = etaV*E_i
+        nu_use = min(dnumax, self.V_in/self.inlet.V*self.inlet.Nu)
+        gret = self.inlet.sub(nu_use)
         return gret, E
     def push_air(self, new: GasMixture) -> GasMixture:
-        self.outlet.gases[self.name] += new
-        SmLogger.info(f'{self.name}: merged: inP={self.inlet.gases[self.name].p:.5g}, outP={self.outlet.gases[self.name].p:.5g}')
+        self.outlet += new
 
 @dataclass
 class TEG:

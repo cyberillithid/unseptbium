@@ -1,0 +1,771 @@
+
+The gas pump: source entropy: 155.13 J/Kmol --> sink entropy: 150000 J/Kmol
+The gas pump: specific entropy change = 149845 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 623.903 mol
+The gas pump: sink stat = 0 K, 0 mol, 0 kPa
+The gas pump: merged-sink stat = 293.15 K, 623.903 mol, 7599.37 kPa
+The gas pump: source entropy: 156.61 J/Kmol --> sink entropy: 191.48 J/Kmol
+The gas pump: specific entropy change = 34.87 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 519.919 mol
+The gas pump: sink stat = 293.15 K, 7.66465 mol, 93.3584 kPa
+The gas pump: merged-sink stat = 293.15 K, 527.584 mol, 6426.17 kPa
+-9.20324 J -- new t 293.149 K
+-9.20285 J -- new t 293.146 K
+-9.20275 J -- new t 293.145 K
+-9.20236 J -- new t 293.142 K
+-9.20226 J -- new t 293.142 K
+-9.20187 J -- new t 293.139 K
+-9.20177 J -- new t 293.138 K
+-9.20138 J -- new t 293.135 K
+-9.20128 J -- new t 293.134 K
+-9.20119 J -- new t 293.133 K
+-9.20099 J -- new t 293.132 K
+-9.2006 J -- new t 293.129 K
+-9.2005 J -- new t 293.128 K
+-9.20041 J -- new t 293.127 K
+-9.20031 J -- new t 293.126 K
+-9.20021 J -- new t 293.126 K
+-9.19982 J -- new t 293.123 K
+-9.19972 J -- new t 293.122 K
+-9.19962 J -- new t 293.121 K
+-9.19953 J -- new t 293.12 K
+-9.19943 J -- new t 293.119 K
+-9.19933 J -- new t 293.119 K
+-9.19923 J -- new t 293.118 K
+-9.19914 J -- new t 293.117 K
+-9.19904 J -- new t 293.116 K
+-9.19894 J -- new t 293.116 K
+-9.19884 J -- new t 293.115 K
+-9.19875 J -- new t 293.114 K
+-9.19865 J -- new t 293.113 K
+-9.19826 J -- new t 293.11 K
+-9.19816 J -- new t 293.11 K
+-9.19806 J -- new t 293.109 K
+-9.19796 J -- new t 293.108 K
+-9.19787 J -- new t 293.107 K
+-9.19777 J -- new t 293.107 K
+-9.19767 J -- new t 293.106 K
+-9.19757 J -- new t 293.105 K
+-9.19748 J -- new t 293.104 K
+-9.19738 J -- new t 293.103 K
+-9.19728 J -- new t 293.103 K
+-9.19718 J -- new t 293.102 K
+-9.19709 J -- new t 293.101 K
+-9.1967 J -- new t 293.098 K
+-9.1966 J -- new t 293.097 K
+-9.1965 J -- new t 293.097 K
+-9.1964 J -- new t 293.096 K
+-9.19631 J -- new t 293.095 K
+-9.19621 J -- new t 293.094 K
+-9.19611 J -- new t 293.094 K
+-9.19601 J -- new t 293.093 K
+-9.19591 J -- new t 293.092 K
+-9.19582 J -- new t 293.091 K
+-9.19572 J -- new t 293.09 K
+-9.19562 J -- new t 293.09 K
+-9.19552 J -- new t 293.089 K
+-9.19513 J -- new t 293.086 K
+-9.19504 J -- new t 293.085 K
+-9.19494 J -- new t 293.084 K
+-9.19484 J -- new t 293.084 K
+-9.19474 J -- new t 293.083 K
+-9.19465 J -- new t 293.082 K
+-9.19455 J -- new t 293.081 K
+-9.19445 J -- new t 293.081 K
+-9.19435 J -- new t 293.08 K
+-9.19425 J -- new t 293.079 K
+-9.19416 J -- new t 293.078 K
+-9.19406 J -- new t 293.078 K
+-9.19396 J -- new t 293.077 K
+-9.19357 J -- new t 293.074 K
+-9.19347 J -- new t 293.073 K
+-9.19338 J -- new t 293.072 K
+-9.19328 J -- new t 293.071 K
+-9.19318 J -- new t 293.071 K
+-9.19308 J -- new t 293.07 K
+-9.19299 J -- new t 293.069 K
+-9.19289 J -- new t 293.068 K
+-9.19279 J -- new t 293.068 K
+-9.19269 J -- new t 293.067 K
+-9.1926 J -- new t 293.066 K
+-9.1925 J -- new t 293.065 K
+-9.1924 J -- new t 293.065 K
+-9.19201 J -- new t 293.061 K
+-9.19191 J -- new t 293.061 K
+-9.19181 J -- new t 293.06 K
+-9.19172 J -- new t 293.059 K
+-9.19162 J -- new t 293.058 K
+-9.19152 J -- new t 293.058 K
+-9.19142 J -- new t 293.057 K
+-9.19133 J -- new t 293.056 K
+-9.19123 J -- new t 293.055 K
+-9.19113 J -- new t 293.055 K
+-9.19103 J -- new t 293.054 K
+-9.19094 J -- new t 293.053 K
+-9.19084 J -- new t 293.052 K
+-9.19045 J -- new t 293.049 K
+-9.19035 J -- new t 293.049 K
+-9.19025 J -- new t 293.048 K
+-9.19016 J -- new t 293.047 K
+-9.19006 J -- new t 293.046 K
+-9.18996 J -- new t 293.045 K
+-9.18986 J -- new t 293.045 K
+-9.18977 J -- new t 293.044 K
+-9.18967 J -- new t 293.043 K
+-9.18957 J -- new t 293.042 K
+-9.18947 J -- new t 293.042 K
+-9.18938 J -- new t 293.041 K
+-9.18928 J -- new t 293.04 K
+-9.18889 J -- new t 293.037 K
+-9.18879 J -- new t 293.036 K
+-9.18869 J -- new t 293.036 K
+-9.18859 J -- new t 293.035 K
+-9.1885 J -- new t 293.034 K
+-9.1884 J -- new t 293.033 K
+-9.1883 J -- new t 293.033 K
+-9.1882 J -- new t 293.032 K
+-9.18811 J -- new t 293.031 K
+-9.18801 J -- new t 293.03 K
+-9.18791 J -- new t 293.029 K
+-9.18781 J -- new t 293.029 K
+-9.18772 J -- new t 293.028 K
+-9.18733 J -- new t 293.025 K
+-9.18723 J -- new t 293.024 K
+-9.18713 J -- new t 293.023 K
+-9.18703 J -- new t 293.023 K
+-9.18694 J -- new t 293.022 K
+-9.18684 J -- new t 293.021 K
+-9.18674 J -- new t 293.02 K
+-9.18664 J -- new t 293.02 K
+-9.18655 J -- new t 293.019 K
+-9.18645 J -- new t 293.018 K
+-9.18635 J -- new t 293.017 K
+-9.18625 J -- new t 293.016 K
+-9.18616 J -- new t 293.016 K
+-9.18577 J -- new t 293.013 K
+-9.18567 J -- new t 293.012 K
+-9.18557 J -- new t 293.011 K
+-9.18547 J -- new t 293.01 K
+-9.18538 J -- new t 293.01 K
+-9.18528 J -- new t 293.009 K
+-9.18518 J -- new t 293.008 K
+-9.18508 J -- new t 293.007 K
+-9.18499 J -- new t 293.007 K
+-9.18489 J -- new t 293.006 K
+-9.18479 J -- new t 293.005 K
+-9.18469 J -- new t 293.004 K
+The gas pump: source entropy: 158.09 J/Kmol --> sink entropy: 186.44 J/Kmol
+The gas pump: specific entropy change = 28.35 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 433.266 mol
+The gas pump: sink stat = 293.073 K, 14.0519 mol, 171.112 kPa
+The gas pump: merged-sink stat = 293.073 K, 447.318 mol, 5447.08 kPa
+-16.8546 J -- new t 293.073 K
+-16.8539 J -- new t 293.07 K
+-16.8537 J -- new t 293.069 K
+-16.853 J -- new t 293.066 K
+-16.8529 J -- new t 293.065 K
+-16.8521 J -- new t 293.062 K
+-16.852 J -- new t 293.061 K
+-16.8512 J -- new t 293.058 K
+-16.8511 J -- new t 293.057 K
+-16.8509 J -- new t 293.057 K
+-16.8505 J -- new t 293.055 K
+-16.8498 J -- new t 293.052 K
+-16.8496 J -- new t 293.051 K
+-16.8495 J -- new t 293.051 K
+-16.8493 J -- new t 293.05 K
+-16.8491 J -- new t 293.049 K
+-16.8484 J -- new t 293.046 K
+-16.8482 J -- new t 293.045 K
+-16.848 J -- new t 293.044 K
+-16.8478 J -- new t 293.044 K
+-16.8477 J -- new t 293.043 K
+-16.8475 J -- new t 293.042 K
+-16.8473 J -- new t 293.041 K
+-16.8471 J -- new t 293.041 K
+-16.8469 J -- new t 293.04 K
+-16.8468 J -- new t 293.039 K
+-16.8466 J -- new t 293.038 K
+-16.8464 J -- new t 293.038 K
+-16.8462 J -- new t 293.037 K
+-16.8455 J -- new t 293.034 K
+-16.8453 J -- new t 293.033 K
+-16.8452 J -- new t 293.032 K
+-16.845 J -- new t 293.031 K
+-16.8448 J -- new t 293.031 K
+-16.8446 J -- new t 293.03 K
+-16.8444 J -- new t 293.029 K
+-16.8443 J -- new t 293.028 K
+-16.8441 J -- new t 293.028 K
+-16.8439 J -- new t 293.027 K
+-16.8437 J -- new t 293.026 K
+-16.8435 J -- new t 293.025 K
+-16.8434 J -- new t 293.025 K
+-16.8427 J -- new t 293.022 K
+-16.8425 J -- new t 293.021 K
+-16.8423 J -- new t 293.02 K
+-16.8421 J -- new t 293.019 K
+-16.8419 J -- new t 293.018 K
+-16.8418 J -- new t 293.018 K
+-16.8416 J -- new t 293.017 K
+-16.8414 J -- new t 293.016 K
+-16.8412 J -- new t 293.015 K
+-16.841 J -- new t 293.015 K
+-16.8409 J -- new t 293.014 K
+-16.8407 J -- new t 293.013 K
+-16.8405 J -- new t 293.012 K
+-16.8398 J -- new t 293.009 K
+-16.8396 J -- new t 293.009 K
+-16.8394 J -- new t 293.008 K
+-16.8393 J -- new t 293.007 K
+-16.8391 J -- new t 293.006 K
+-16.8389 J -- new t 293.006 K
+-16.8387 J -- new t 293.005 K
+-16.8385 J -- new t 293.004 K
+-16.8384 J -- new t 293.003 K
+-16.8382 J -- new t 293.002 K
+-16.838 J -- new t 293.002 K
+-16.8378 J -- new t 293.001 K
+-16.8376 J -- new t 293 K
+-16.8369 J -- new t 292.997 K
+-16.8368 J -- new t 292.996 K
+-16.8366 J -- new t 292.996 K
+-16.8364 J -- new t 292.995 K
+-16.8362 J -- new t 292.994 K
+-16.836 J -- new t 292.993 K
+-16.8359 J -- new t 292.993 K
+-16.8357 J -- new t 292.992 K
+-16.8355 J -- new t 292.991 K
+-16.8353 J -- new t 292.99 K
+-16.8351 J -- new t 292.99 K
+-16.835 J -- new t 292.989 K
+-16.8348 J -- new t 292.988 K
+-16.8341 J -- new t 292.985 K
+-16.8339 J -- new t 292.984 K
+-16.8337 J -- new t 292.983 K
+-16.8335 J -- new t 292.983 K
+-16.8334 J -- new t 292.982 K
+-16.8332 J -- new t 292.981 K
+-16.833 J -- new t 292.98 K
+-16.8328 J -- new t 292.98 K
+-16.8326 J -- new t 292.979 K
+-16.8325 J -- new t 292.978 K
+-16.8323 J -- new t 292.977 K
+-16.8321 J -- new t 292.977 K
+-16.8319 J -- new t 292.976 K
+-16.8312 J -- new t 292.973 K
+-16.831 J -- new t 292.972 K
+-16.8309 J -- new t 292.971 K
+-16.8307 J -- new t 292.97 K
+-16.8305 J -- new t 292.97 K
+-16.8303 J -- new t 292.969 K
+-16.8301 J -- new t 292.968 K
+-16.83 J -- new t 292.967 K
+-16.8298 J -- new t 292.967 K
+-16.8296 J -- new t 292.966 K
+-16.8294 J -- new t 292.965 K
+-16.8292 J -- new t 292.964 K
+-16.8291 J -- new t 292.964 K
+-16.8284 J -- new t 292.961 K
+-16.8282 J -- new t 292.96 K
+-16.828 J -- new t 292.959 K
+-16.8278 J -- new t 292.958 K
+-16.8276 J -- new t 292.957 K
+-16.8275 J -- new t 292.957 K
+-16.8273 J -- new t 292.956 K
+-16.8271 J -- new t 292.955 K
+-16.8269 J -- new t 292.954 K
+-16.8267 J -- new t 292.954 K
+-16.8266 J -- new t 292.953 K
+-16.8264 J -- new t 292.952 K
+-16.8262 J -- new t 292.951 K
+-16.8255 J -- new t 292.948 K
+-16.8253 J -- new t 292.948 K
+-16.8251 J -- new t 292.947 K
+-16.825 J -- new t 292.946 K
+-16.8248 J -- new t 292.945 K
+-16.8246 J -- new t 292.944 K
+-16.8244 J -- new t 292.944 K
+-16.8242 J -- new t 292.943 K
+-16.8241 J -- new t 292.942 K
+-16.8239 J -- new t 292.941 K
+-16.8237 J -- new t 292.941 K
+-16.8235 J -- new t 292.94 K
+-16.8233 J -- new t 292.939 K
+-16.8226 J -- new t 292.936 K
+-16.8225 J -- new t 292.935 K
+-16.8223 J -- new t 292.935 K
+-16.8221 J -- new t 292.934 K
+-16.8219 J -- new t 292.933 K
+-16.8217 J -- new t 292.932 K
+-16.8216 J -- new t 292.932 K
+-16.8214 J -- new t 292.931 K
+-16.8212 J -- new t 292.93 K
+-16.821 J -- new t 292.929 K
+-16.8208 J -- new t 292.928 K
+-16.8207 J -- new t 292.928 K
+The gas pump: source entropy: 159.58 J/Kmol --> sink entropy: 183.77 J/Kmol
+The gas pump: specific entropy change = 24.19 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 361.055 mol
+The gas pump: sink stat = 292.972 K, 19.3745 mol, 235.846 kPa
+The gas pump: merged-sink stat = 292.972 K, 380.429 mol, 4630.96 kPa
+-23.2061 J -- new t 292.971 K
+-23.2051 J -- new t 292.968 K
+-23.2048 J -- new t 292.967 K
+-23.2039 J -- new t 292.964 K
+-23.2036 J -- new t 292.963 K
+-23.2026 J -- new t 292.96 K
+-23.2024 J -- new t 292.959 K
+-23.2014 J -- new t 292.956 K
+-23.2011 J -- new t 292.956 K
+-23.2009 J -- new t 292.955 K
+-23.2004 J -- new t 292.953 K
+-23.1994 J -- new t 292.95 K
+-23.1992 J -- new t 292.949 K
+-23.1989 J -- new t 292.949 K
+-23.1987 J -- new t 292.948 K
+-23.1984 J -- new t 292.947 K
+-23.1974 J -- new t 292.944 K
+-23.1972 J -- new t 292.943 K
+-23.197 J -- new t 292.943 K
+-23.1967 J -- new t 292.942 K
+-23.1965 J -- new t 292.941 K
+-23.1962 J -- new t 292.94 K
+-23.196 J -- new t 292.94 K
+-23.1957 J -- new t 292.939 K
+-23.1955 J -- new t 292.938 K
+-23.1952 J -- new t 292.937 K
+-23.195 J -- new t 292.937 K
+-23.1947 J -- new t 292.936 K
+-23.1945 J -- new t 292.935 K
+-23.1935 J -- new t 292.932 K
+-23.1933 J -- new t 292.931 K
+-23.193 J -- new t 292.93 K
+-23.1928 J -- new t 292.93 K
+-23.1925 J -- new t 292.929 K
+-23.1923 J -- new t 292.928 K
+-23.192 J -- new t 292.927 K
+-23.1918 J -- new t 292.927 K
+-23.1915 J -- new t 292.926 K
+-23.1913 J -- new t 292.925 K
+-23.191 J -- new t 292.924 K
+-23.1908 J -- new t 292.924 K
+-23.1905 J -- new t 292.923 K
+-23.1896 J -- new t 292.92 K
+-23.1893 J -- new t 292.919 K
+-23.1891 J -- new t 292.918 K
+-23.1888 J -- new t 292.917 K
+-23.1886 J -- new t 292.917 K
+-23.1883 J -- new t 292.916 K
+-23.1881 J -- new t 292.915 K
+-23.1878 J -- new t 292.914 K
+-23.1876 J -- new t 292.914 K
+-23.1873 J -- new t 292.913 K
+-23.1871 J -- new t 292.912 K
+-23.1869 J -- new t 292.911 K
+-23.1866 J -- new t 292.911 K
+-23.1856 J -- new t 292.908 K
+-23.1854 J -- new t 292.907 K
+-23.1851 J -- new t 292.906 K
+-23.1849 J -- new t 292.905 K
+-23.1846 J -- new t 292.904 K
+-23.1844 J -- new t 292.904 K
+-23.1841 J -- new t 292.903 K
+-23.1839 J -- new t 292.902 K
+-23.1836 J -- new t 292.901 K
+-23.1834 J -- new t 292.901 K
+-23.1832 J -- new t 292.9 K
+-23.1829 J -- new t 292.899 K
+-23.1827 J -- new t 292.898 K
+-23.1817 J -- new t 292.895 K
+-23.1814 J -- new t 292.895 K
+-23.1812 J -- new t 292.894 K
+-23.1809 J -- new t 292.893 K
+-23.1807 J -- new t 292.892 K
+-23.1804 J -- new t 292.892 K
+-23.1802 J -- new t 292.891 K
+-23.18 J -- new t 292.89 K
+-23.1797 J -- new t 292.889 K
+-23.1795 J -- new t 292.888 K
+-23.1792 J -- new t 292.888 K
+-23.179 J -- new t 292.887 K
+-23.1787 J -- new t 292.886 K
+-23.1777 J -- new t 292.883 K
+-23.1775 J -- new t 292.882 K
+-23.1772 J -- new t 292.882 K
+-23.177 J -- new t 292.881 K
+-23.1768 J -- new t 292.88 K
+-23.1765 J -- new t 292.879 K
+-23.1763 J -- new t 292.879 K
+-23.176 J -- new t 292.878 K
+-23.1758 J -- new t 292.877 K
+-23.1755 J -- new t 292.876 K
+-23.1753 J -- new t 292.875 K
+-23.175 J -- new t 292.875 K
+-23.1748 J -- new t 292.874 K
+-23.1738 J -- new t 292.871 K
+-23.1736 J -- new t 292.87 K
+-23.1733 J -- new t 292.869 K
+-23.1731 J -- new t 292.869 K
+-23.1728 J -- new t 292.868 K
+-23.1726 J -- new t 292.867 K
+-23.1723 J -- new t 292.866 K
+-23.1721 J -- new t 292.866 K
+-23.1718 J -- new t 292.865 K
+-23.1716 J -- new t 292.864 K
+-23.1713 J -- new t 292.863 K
+-23.1711 J -- new t 292.863 K
+-23.1708 J -- new t 292.862 K
+-23.1699 J -- new t 292.859 K
+-23.1696 J -- new t 292.858 K
+-23.1694 J -- new t 292.857 K
+-23.1691 J -- new t 292.856 K
+-23.1689 J -- new t 292.856 K
+-23.1686 J -- new t 292.855 K
+-23.1684 J -- new t 292.854 K
+-23.1681 J -- new t 292.853 K
+-23.1679 J -- new t 292.853 K
+-23.1676 J -- new t 292.852 K
+-23.1674 J -- new t 292.851 K
+-23.1672 J -- new t 292.85 K
+-23.1669 J -- new t 292.85 K
+-23.1659 J -- new t 292.846 K
+-23.1657 J -- new t 292.846 K
+-23.1654 J -- new t 292.845 K
+-23.1652 J -- new t 292.844 K
+-23.1649 J -- new t 292.843 K
+-23.1647 J -- new t 292.843 K
+-23.1644 J -- new t 292.842 K
+-23.1642 J -- new t 292.841 K
+-23.164 J -- new t 292.84 K
+-23.1637 J -- new t 292.84 K
+-23.1635 J -- new t 292.839 K
+-23.1632 J -- new t 292.838 K
+-23.163 J -- new t 292.837 K
+-23.162 J -- new t 292.834 K
+-23.1617 J -- new t 292.834 K
+-23.1615 J -- new t 292.833 K
+-23.1612 J -- new t 292.832 K
+-23.161 J -- new t 292.831 K
+-23.1608 J -- new t 292.83 K
+-23.1605 J -- new t 292.83 K
+-23.1603 J -- new t 292.829 K
+-23.16 J -- new t 292.828 K
+-23.1598 J -- new t 292.827 K
+-23.1595 J -- new t 292.827 K
+-23.1593 J -- new t 292.826 K
+The gas pump: source entropy: 161.08 J/Kmol --> sink entropy: 182.06 J/Kmol
+The gas pump: specific entropy change = 20.99 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 300.879 mol
+The gas pump: sink stat = 292.857 K, 23.8101 mol, 289.727 kPa
+The gas pump: merged-sink stat = 292.857 K, 324.689 mol, 3950.89 kPa
+-28.4735 J -- new t 292.857 K
+-28.4723 J -- new t 292.854 K
+-28.472 J -- new t 292.853 K
+-28.4708 J -- new t 292.85 K
+-28.4705 J -- new t 292.849 K
+-28.4693 J -- new t 292.846 K
+-28.469 J -- new t 292.845 K
+-28.4678 J -- new t 292.842 K
+-28.4675 J -- new t 292.841 K
+-28.4672 J -- new t 292.841 K
+-28.4665 J -- new t 292.839 K
+-28.4653 J -- new t 292.836 K
+-28.465 J -- new t 292.835 K
+-28.4647 J -- new t 292.835 K
+-28.4644 J -- new t 292.834 K
+-28.4641 J -- new t 292.833 K
+-28.4629 J -- new t 292.83 K
+-28.4626 J -- new t 292.829 K
+-28.4623 J -- new t 292.828 K
+-28.462 J -- new t 292.828 K
+-28.4617 J -- new t 292.827 K
+-28.4614 J -- new t 292.826 K
+-28.4611 J -- new t 292.825 K
+-28.4608 J -- new t 292.825 K
+-28.4605 J -- new t 292.824 K
+-28.4602 J -- new t 292.823 K
+-28.4599 J -- new t 292.822 K
+-28.4596 J -- new t 292.822 K
+-28.4593 J -- new t 292.821 K
+-28.4581 J -- new t 292.818 K
+-28.4578 J -- new t 292.817 K
+-28.4575 J -- new t 292.816 K
+-28.4572 J -- new t 292.815 K
+-28.4569 J -- new t 292.815 K
+-28.4566 J -- new t 292.814 K
+-28.4563 J -- new t 292.813 K
+-28.456 J -- new t 292.812 K
+-28.4557 J -- new t 292.812 K
+-28.4554 J -- new t 292.811 K
+-28.4551 J -- new t 292.81 K
+-28.4548 J -- new t 292.809 K
+-28.4545 J -- new t 292.809 K
+-28.4532 J -- new t 292.806 K
+-28.4529 J -- new t 292.805 K
+-28.4526 J -- new t 292.804 K
+-28.4523 J -- new t 292.803 K
+-28.452 J -- new t 292.802 K
+-28.4517 J -- new t 292.802 K
+-28.4514 J -- new t 292.801 K
+-28.4511 J -- new t 292.8 K
+-28.4508 J -- new t 292.799 K
+-28.4505 J -- new t 292.799 K
+-28.4502 J -- new t 292.798 K
+-28.4499 J -- new t 292.797 K
+-28.4496 J -- new t 292.796 K
+-28.4484 J -- new t 292.793 K
+-28.4481 J -- new t 292.793 K
+-28.4478 J -- new t 292.792 K
+-28.4475 J -- new t 292.791 K
+-28.4472 J -- new t 292.79 K
+-28.4469 J -- new t 292.79 K
+-28.4466 J -- new t 292.789 K
+-28.4463 J -- new t 292.788 K
+-28.446 J -- new t 292.787 K
+-28.4457 J -- new t 292.786 K
+-28.4454 J -- new t 292.786 K
+-28.4451 J -- new t 292.785 K
+-28.4448 J -- new t 292.784 K
+-28.4436 J -- new t 292.781 K
+-28.4433 J -- new t 292.78 K
+-28.443 J -- new t 292.78 K
+-28.4427 J -- new t 292.779 K
+-28.4424 J -- new t 292.778 K
+-28.4421 J -- new t 292.777 K
+-28.4418 J -- new t 292.777 K
+-28.4415 J -- new t 292.776 K
+-28.4411 J -- new t 292.775 K
+-28.4408 J -- new t 292.774 K
+-28.4405 J -- new t 292.773 K
+-28.4402 J -- new t 292.773 K
+-28.4399 J -- new t 292.772 K
+-28.4387 J -- new t 292.769 K
+-28.4384 J -- new t 292.768 K
+-28.4381 J -- new t 292.767 K
+-28.4378 J -- new t 292.767 K
+-28.4375 J -- new t 292.766 K
+-28.4372 J -- new t 292.765 K
+-28.4369 J -- new t 292.764 K
+-28.4366 J -- new t 292.764 K
+-28.4363 J -- new t 292.763 K
+-28.436 J -- new t 292.762 K
+-28.4357 J -- new t 292.761 K
+-28.4354 J -- new t 292.761 K
+-28.4351 J -- new t 292.76 K
+-28.4339 J -- new t 292.757 K
+-28.4336 J -- new t 292.756 K
+-28.4333 J -- new t 292.755 K
+-28.433 J -- new t 292.754 K
+-28.4327 J -- new t 292.754 K
+-28.4324 J -- new t 292.753 K
+-28.4321 J -- new t 292.752 K
+-28.4318 J -- new t 292.751 K
+-28.4315 J -- new t 292.751 K
+-28.4312 J -- new t 292.75 K
+-28.4309 J -- new t 292.749 K
+-28.4306 J -- new t 292.748 K
+-28.4303 J -- new t 292.748 K
+-28.4291 J -- new t 292.745 K
+-28.4288 J -- new t 292.744 K
+-28.4285 J -- new t 292.743 K
+-28.4282 J -- new t 292.742 K
+-28.4279 J -- new t 292.741 K
+-28.4275 J -- new t 292.741 K
+-28.4272 J -- new t 292.74 K
+-28.4269 J -- new t 292.739 K
+-28.4266 J -- new t 292.738 K
+-28.4263 J -- new t 292.738 K
+-28.426 J -- new t 292.737 K
+-28.4257 J -- new t 292.736 K
+-28.4254 J -- new t 292.735 K
+-28.4242 J -- new t 292.732 K
+-28.4239 J -- new t 292.732 K
+-28.4236 J -- new t 292.731 K
+-28.4233 J -- new t 292.73 K
+-28.423 J -- new t 292.729 K
+-28.4227 J -- new t 292.728 K
+-28.4224 J -- new t 292.728 K
+-28.4221 J -- new t 292.727 K
+-28.4218 J -- new t 292.726 K
+-28.4215 J -- new t 292.725 K
+-28.4212 J -- new t 292.725 K
+-28.4209 J -- new t 292.724 K
+-28.4206 J -- new t 292.723 K
+-28.4194 J -- new t 292.72 K
+-28.4191 J -- new t 292.719 K
+-28.4188 J -- new t 292.719 K
+-28.4185 J -- new t 292.718 K
+-28.4182 J -- new t 292.717 K
+-28.4179 J -- new t 292.716 K
+-28.4176 J -- new t 292.716 K
+-28.4173 J -- new t 292.715 K
+-28.417 J -- new t 292.714 K
+-28.4167 J -- new t 292.713 K
+-28.4164 J -- new t 292.712 K
+-28.4161 J -- new t 292.712 K
+The gas pump: source entropy: 162.58 J/Kmol --> sink entropy: 180.87 J/Kmol
+The gas pump: specific entropy change = 18.29 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 250.732 mol
+The gas pump: sink stat = 292.736 K, 27.5064 mol, 334.565 kPa
+The gas pump: merged-sink stat = 292.736 K, 278.239 mol, 3384.27 kPa
+-32.8381 J -- new t 292.735 K
+-32.8367 J -- new t 292.732 K
+-32.8364 J -- new t 292.731 K
+-32.835 J -- new t 292.728 K
+-32.8347 J -- new t 292.728 K
+-32.8333 J -- new t 292.724 K
+-32.8329 J -- new t 292.724 K
+-32.8315 J -- new t 292.721 K
+-32.8312 J -- new t 292.72 K
+-32.8308 J -- new t 292.719 K
+-32.8301 J -- new t 292.718 K
+-32.8287 J -- new t 292.715 K
+-32.8284 J -- new t 292.714 K
+-32.828 J -- new t 292.713 K
+-32.8277 J -- new t 292.712 K
+-32.8273 J -- new t 292.712 K
+-32.8259 J -- new t 292.708 K
+-32.8256 J -- new t 292.708 K
+-32.8252 J -- new t 292.707 K
+-32.8249 J -- new t 292.706 K
+-32.8245 J -- new t 292.705 K
+-32.8242 J -- new t 292.705 K
+-32.8238 J -- new t 292.704 K
+-32.8235 J -- new t 292.703 K
+-32.8231 J -- new t 292.702 K
+-32.8228 J -- new t 292.702 K
+-32.8224 J -- new t 292.701 K
+-32.8221 J -- new t 292.7 K
+-32.8217 J -- new t 292.699 K
+-32.8203 J -- new t 292.696 K
+-32.82 J -- new t 292.695 K
+-32.8196 J -- new t 292.695 K
+-32.8193 J -- new t 292.694 K
+-32.8189 J -- new t 292.693 K
+-32.8186 J -- new t 292.692 K
+-32.8183 J -- new t 292.692 K
+-32.8179 J -- new t 292.691 K
+-32.8176 J -- new t 292.69 K
+-32.8172 J -- new t 292.689 K
+-32.8169 J -- new t 292.689 K
+-32.8165 J -- new t 292.688 K
+-32.8162 J -- new t 292.687 K
+Variable appears to be NUM.
+-32.8148 J -- new t 292.684 K
+-32.8144 J -- new t 292.683 K
+-32.8141 J -- new t 292.683 K
+-32.8137 J -- new t 292.682 K
+-32.8134 J -- new t 292.681 K
+-32.813 J -- new t 292.68 K
+-32.8127 J -- new t 292.679 K
+-32.8123 J -- new t 292.679 K
+-32.812 J -- new t 292.678 K
+-32.8116 J -- new t 292.677 K
+-32.8113 J -- new t 292.676 K
+-32.8109 J -- new t 292.676 K
+-32.8106 J -- new t 292.675 K
+-32.8092 J -- new t 292.672 K
+-32.8088 J -- new t 292.671 K
+-32.8085 J -- new t 292.67 K
+-32.8081 J -- new t 292.67 K
+-32.8078 J -- new t 292.669 K
+-32.8074 J -- new t 292.668 K
+-32.8071 J -- new t 292.667 K
+-32.8067 J -- new t 292.667 K
+-32.8064 J -- new t 292.666 K
+-32.806 J -- new t 292.665 K
+-32.8057 J -- new t 292.664 K
+-32.8053 J -- new t 292.663 K
+-32.805 J -- new t 292.663 K
+-32.8036 J -- new t 292.66 K
+-32.8033 J -- new t 292.659 K
+-32.8029 J -- new t 292.658 K
+-32.8026 J -- new t 292.657 K
+-32.8022 J -- new t 292.657 K
+-32.8019 J -- new t 292.656 K
+-32.8015 J -- new t 292.655 K
+-32.8012 J -- new t 292.654 K
+-32.8008 J -- new t 292.654 K
+-32.8005 J -- new t 292.653 K
+-32.8001 J -- new t 292.652 K
+-32.7998 J -- new t 292.651 K
+-32.7994 J -- new t 292.65 K
+-32.798 J -- new t 292.647 K
+-32.7977 J -- new t 292.647 K
+-32.7973 J -- new t 292.646 K
+-32.797 J -- new t 292.645 K
+-32.7966 J -- new t 292.644 K
+-32.7963 J -- new t 292.644 K
+-32.7959 J -- new t 292.643 K
+-32.7956 J -- new t 292.642 K
+-32.7952 J -- new t 292.641 K
+-32.7949 J -- new t 292.641 K
+### VarEdit by Berncastel: /datum/pipeline debug=0
+ADMIN LOG: Berncastel/(Matthew Vanleer) modified [0x21007a15] (/datum/pipeline)'s debug from '1' to '0' (LOC) (MOB)
+The gas pump: source entropy: 164.08 J/Kmol --> sink entropy: 179.99 J/Kmol
+The gas pump: specific entropy change = 15.91 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 208.944 mol
+The gas pump: sink stat = 292.61 K, 30.5867 mol, 371.871 kPa
+The gas pump: merged-sink stat = 293.081 K, 239.53 mol, 2916.89 kPa
+The gas pump: source entropy: 165.58 J/Kmol --> sink entropy: 179.32 J/Kmol
+The gas pump: specific entropy change = 13.74 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 174.12 mol
+The gas pump: sink stat = 292.522 K, 33.1535 mol, 402.958 kPa
+The gas pump: merged-sink stat = 293.05 K, 207.273 mol, 2523.8 kPa
+The gas pump: source entropy: 167.08 J/Kmol --> sink entropy: 178.8 J/Kmol
+The gas pump: specific entropy change = 11.72 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 145.1 mol
+The gas pump: sink stat = 292.428 K, 35.2926 mol, 428.819 kPa
+The gas pump: merged-sink stat = 293.009 K, 180.392 mol, 2196.19 kPa
+The gas pump: source entropy: 168.59 J/Kmol --> sink entropy: 178.39 J/Kmol
+The gas pump: specific entropy change = 9.8 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 120.917 mol
+The gas pump: sink stat = 292.329 K, 37.0751 mol, 450.325 kPa
+The gas pump: merged-sink stat = 292.957 K, 157.992 mol, 1923.13 kPa
+The gas pump: source entropy: 170.1 J/Kmol --> sink entropy: 178.07 J/Kmol
+The gas pump: specific entropy change = 7.97 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 100.764 mol
+The gas pump: sink stat = 292.226 K, 38.5606 mol, 468.203 kPa
+The gas pump: merged-sink stat = 292.894 K, 139.324 mol, 1695.54 kPa
+The gas pump: source entropy: 171.61 J/Kmol --> sink entropy: 177.81 J/Kmol
+The gas pump: specific entropy change = 6.2 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 83.9698 mol
+The gas pump: sink stat = 292.119 K, 39.7985 mol, 483.056 kPa
+The gas pump: merged-sink stat = 292.818 K, 123.768 mol, 1505.84 kPa
+The gas pump: source entropy: 173.12 J/Kmol --> sink entropy: 177.6 J/Kmol
+The gas pump: specific entropy change = 4.48 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 69.9748 mol
+The gas pump: sink stat = 292.008 K, 40.8301 mol, 495.388 kPa
+The gas pump: merged-sink stat = 292.729 K, 110.805 mol, 1347.71 kPa
+The gas pump: source entropy: 174.63 J/Kmol --> sink entropy: 177.42 J/Kmol
+The gas pump: specific entropy change = 2.79 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 58.3124 mol
+The gas pump: sink stat = 291.894 K, 41.6897 mol, 505.621 kPa
+The gas pump: merged-sink stat = 292.626 K, 100.002 mol, 1215.89 kPa
+The gas pump: source entropy: 176.14 J/Kmol --> sink entropy: 177.28 J/Kmol
+The gas pump: specific entropy change = 1.14 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 48.5936 mol
+The gas pump: sink stat = 291.777 K, 42.4061 mol, 514.104 kPa
+The gas pump: merged-sink stat = 292.51 K, 90.9997 mol, 1105.99 kPa
+The gas pump: source entropy: 177.65 J/Kmol --> sink entropy: 177.17 J/Kmol
+The gas pump: specific entropy change = -0.48 J/Kmol
+The gas pump: specific power = 56.5 W/mol
+The gas pump: moles transferred = 40.4947 mol
+The gas pump: sink stat = 291.658 K, 43.003 mol, 521.128 kPa
+The gas pump: merged-sink stat = 292.382 K, 83.4977 mol, 1014.37 kPa

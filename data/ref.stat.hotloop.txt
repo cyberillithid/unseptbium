@@ -1,0 +1,1011 @@
+Engine Core Vent: target dP = -100 kPa
+The gas pump: source entropy: 155.13 J/Kmol --> sink entropy: 150000 J/Kmol
+The gas pump: specific entropy change = 149845 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 623.903 mol
+The gas pump: sink stat = 0 K, 0 mol, 0 kPa
+The gas pump: merged-sink stat = 293.15 K, 623.903 mol, 7599.37 kPa
+Engine Core Vent: target dP = -100 kPa
+The gas pump: source entropy: 156.61 J/Kmol --> sink entropy: 181.98 J/Kmol
+The gas pump: specific entropy change = 25.37 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 519.919 mol
+The gas pump: sink stat = 293.15 K, 24.0425 mol, 292.847 kPa
+The gas pump: merged-sink stat = 293.15 K, 543.961 mol, 6625.66 kPa
+Engine Core Vent: target dP = -100 kPa
+Coolant Injector: source entropy: 181.98 J/Kmol --> sink entropy: 150000 J/Kmol
+Coolant Injector: specific entropy change = 149818 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 84.1487 mol
+Coolant Injector: sink stat = 2.7 K, 0 mol, 0 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 5.60991 mol, 5.46647 kPa
+The gas pump: source entropy: 158.09 J/Kmol --> sink entropy: 177.58 J/Kmol
+The gas pump: specific entropy change = 19.49 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 433.266 mol
+The gas pump: sink stat = 293.15 K, 40.8352 mol, 497.388 kPa
+The gas pump: merged-sink stat = 293.15 K, 474.101 mol, 5774.73 kPa
+Engine Core Vent: target dP = -94.5334 kPa
+Coolant Injector: source entropy: 177.58 J/Kmol --> sink entropy: 215.06 J/Kmol
+Coolant Injector: specific entropy change = 37.47 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 142.923 mol
+Coolant Injector: sink stat = 293.15 K, 5.61 mol, 5.46656 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 15.1382 mol, 14.7511 kPa
+The gas pump: source entropy: 159.58 J/Kmol --> sink entropy: 175.58 J/Kmol
+The gas pump: specific entropy change = 15.99 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 361.055 mol
+The gas pump: sink stat = 293.15 K, 52.0237 mol, 633.669 kPa
+The gas pump: merged-sink stat = 293.15 K, 413.078 mol, 5031.45 kPa
+Engine Core Vent: target dP = -85.2488 kPa
+Coolant Injector: source entropy: 175.58 J/Kmol --> sink entropy: 206.81 J/Kmol
+Coolant Injector: specific entropy change = 31.23 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 182.083 mol
+Coolant Injector: sink stat = 293.15 K, 15.1383 mol, 14.7512 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 27.2772 mol, 26.5797 kPa
+The gas pump: source entropy: 161.08 J/Kmol --> sink entropy: 174.54 J/Kmol
+The gas pump: specific entropy change = 13.47 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 300.879 mol
+The gas pump: sink stat = 293.15 K, 58.9205 mol, 717.674 kPa
+The gas pump: merged-sink stat = 293.15 K, 359.799 mol, 4382.5 kPa
+Engine Core Vent: target dP = -73.4202 kPa
+Coolant Injector: source entropy: 174.54 J/Kmol --> sink entropy: 201.91 J/Kmol
+Coolant Injector: specific entropy change = 27.37 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 206.222 mol
+Coolant Injector: sink stat = 293.15 K, 27.2773 mol, 26.5798 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 41.0254 mol, 39.9764 kPa
+The gas pump: source entropy: 162.58 J/Kmol --> sink entropy: 174.05 J/Kmol
+The gas pump: specific entropy change = 11.47 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 250.732 mol
+The gas pump: sink stat = 293.15 K, 62.5682 mol, 762.104 kPa
+The gas pump: merged-sink stat = 293.15 K, 313.301 mol, 3816.12 kPa
+Engine Core Vent: target dP = -60.0235 kPa
+Coolant Injector: source entropy: 174.05 J/Kmol --> sink entropy: 198.52 J/Kmol
+Coolant Injector: specific entropy change = 24.48 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 218.989 mol
+Coolant Injector: sink stat = 293.15 K, 41.0255 mol, 39.9765 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 55.6247 mol, 54.2024 kPa
+The gas pump: source entropy: 164.08 J/Kmol --> sink entropy: 173.89 J/Kmol
+The gas pump: specific entropy change = 9.81 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 208.944 mol
+The gas pump: sink stat = 293.15 K, 63.7915 mol, 777.004 kPa
+The gas pump: merged-sink stat = 293.15 K, 272.735 mol, 3322.02 kPa
+Engine Core Vent: target dP = -45.7975 kPa
+Coolant Injector: source entropy: 173.89 J/Kmol --> sink entropy: 195.99 J/Kmol
+Coolant Injector: specific entropy change = 22.11 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 223.27 mol
+Coolant Injector: sink stat = 293.15 K, 55.6248 mol, 54.2025 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 70.5095 mol, 68.7066 kPa
+The gas pump: source entropy: 165.58 J/Kmol --> sink entropy: 173.96 J/Kmol
+The gas pump: specific entropy change = 8.38 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 174.12 mol
+The gas pump: sink stat = 293.15 K, 63.2394 mol, 770.28 kPa
+The gas pump: merged-sink stat = 293.15 K, 237.359 mol, 2891.13 kPa
+Engine Core Vent: target dP = -31.2933 kPa
+Coolant Injector: source entropy: 173.96 J/Kmol --> sink entropy: 194.02 J/Kmol
+Coolant Injector: specific entropy change = 20.07 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 221.338 mol
+Coolant Injector: sink stat = 293.15 K, 70.5096 mol, 68.7067 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 85.2654 mol, 83.0852 kPa
+The gas pump: source entropy: 167.08 J/Kmol --> sink entropy: 174.2 J/Kmol
+The gas pump: specific entropy change = 7.11 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 145.1 mol
+The gas pump: sink stat = 293.15 K, 61.4198 mol, 748.117 kPa
+The gas pump: merged-sink stat = 293.15 K, 206.52 mol, 2515.49 kPa
+Engine Core Vent: target dP = -16.9147 kPa
+Coolant Injector: source entropy: 174.2 J/Kmol --> sink entropy: 192.44 J/Kmol
+Coolant Injector: specific entropy change = 18.24 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 214.969 mol
+Coolant Injector: sink stat = 293.15 K, 85.2655 mol, 83.0853 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 99.5968 mol, 97.0502 kPa
+The gas pump: source entropy: 168.59 J/Kmol --> sink entropy: 174.57 J/Kmol
+The gas pump: specific entropy change = 5.98 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 120.917 mol
+The gas pump: sink stat = 293.15 K, 58.7273 mol, 715.321 kPa
+The gas pump: merged-sink stat = 293.15 K, 179.644 mol, 2188.13 kPa
+Engine Core Vent: target dP = -2.94975 kPa
+Coolant Injector: source entropy: 174.57 J/Kmol --> sink entropy: 191.15 J/Kmol
+Coolant Injector: specific entropy change = 16.58 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 205.546 mol
+Coolant Injector: sink stat = 293.15 K, 99.5969 mol, 97.0503 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 113.3 mol, 110.403 kPa
+The gas pump: source entropy: 170.1 J/Kmol --> sink entropy: 175.05 J/Kmol
+The gas pump: specific entropy change = 4.95 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 100.764 mol
+The gas pump: sink stat = 293.15 K, 55.4661 mol, 675.598 kPa
+The gas pump: merged-sink stat = 293.15 K, 156.23 mol, 1902.94 kPa
+Engine Core Vent: target dP = 10.403 kPa
+Engine Core Vent: source entropy: 190.08 J/Kmol --> sink entropy: 150000 J/Kmol
+Engine Core Vent: specific entropy change = 149810 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 0.602126 mol
+Engine Core Vent: sink stat = 0 K, 0 mol, 0 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 0.6021 mol, 2.09537 kPa
+Coolant Injector: source entropy: 175.05 J/Kmol --> sink entropy: 190.09 J/Kmol
+Coolant Injector: specific entropy change = 15.04 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 194.131 mol
+Coolant Injector: sink stat = 293.15 K, 113.26 mol, 110.364 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 126.202 mol, 122.975 kPa
+The gas pump: source entropy: 171.61 J/Kmol --> sink entropy: 175.6 J/Kmol
+The gas pump: specific entropy change = 3.99 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 83.9698 mol
+The gas pump: sink stat = 293.15 K, 51.8681 mol, 631.773 kPa
+The gas pump: merged-sink stat = 293.15 K, 135.838 mol, 1654.56 kPa
+Engine Core Vent: target dP = 22.9752 kPa
+Engine Core Vent: source entropy: 189.19 J/Kmol --> sink entropy: 228.87 J/Kmol
+Engine Core Vent: specific entropy change = 39.68 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 1.3298 mol
+Engine Core Vent: sink stat = 293.15 K, 0.297859 mol, 1.03658 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 1.62766 mol, 5.66443 kPa
+Coolant Injector: source entropy: 175.6 J/Kmol --> sink entropy: 189.19 J/Kmol
+Coolant Injector: specific entropy change = 13.59 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 181.538 mol
+Coolant Injector: sink stat = 293.15 K, 126.113 mol, 122.889 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 138.216 mol, 134.682 kPa
+The gas pump: source entropy: 173.12 J/Kmol --> sink entropy: 176.23 J/Kmol
+The gas pump: specific entropy change = 3.11 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 69.9748 mol
+The gas pump: sink stat = 293.15 K, 48.1082 mol, 585.977 kPa
+The gas pump: merged-sink stat = 293.15 K, 118.083 mol, 1438.3 kPa
+Engine Core Vent: target dP = 34.682 kPa
+Engine Core Vent: source entropy: 188.43 J/Kmol --> sink entropy: 219.18 J/Kmol
+Engine Core Vent: specific entropy change = 30.75 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 2.00739 mol
+Engine Core Vent: sink stat = 293.15 K, 0.95571 mol, 3.32598 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 2.96311 mol, 10.3119 kPa
+Coolant Injector: source entropy: 176.23 J/Kmol --> sink entropy: 188.44 J/Kmol
+Coolant Injector: specific entropy change = 12.21 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 168.379 mol
+Coolant Injector: sink stat = 293.15 K, 138.082 mol, 134.552 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 149.308 mol, 145.49 kPa
+The gas pump: source entropy: 174.63 J/Kmol --> sink entropy: 176.91 J/Kmol
+The gas pump: specific entropy change = 2.28 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 58.3124 mol
+The gas pump: sink stat = 293.15 K, 44.3162 mol, 539.788 kPa
+The gas pump: merged-sink stat = 293.15 K, 102.629 mol, 1250.06 kPa
+Engine Core Vent: target dP = 45.4899 kPa
+Engine Core Vent: source entropy: 187.79 J/Kmol --> sink entropy: 213.26 J/Kmol
+Engine Core Vent: specific entropy change = 25.47 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 2.63295 mol
+Engine Core Vent: sink stat = 293.15 K, 1.94877 mol, 6.78193 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 4.58167 mol, 15.9447 kPa
+Coolant Injector: source entropy: 176.91 J/Kmol --> sink entropy: 187.8 J/Kmol
+Coolant Injector: specific entropy change = 10.89 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 155.107 mol
+Coolant Injector: sink stat = 293.15 K, 149.132 mol, 145.319 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 159.473 mol, 155.395 kPa
+The gas pump: source entropy: 176.14 J/Kmol --> sink entropy: 177.64 J/Kmol
+The gas pump: specific entropy change = 1.49 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 48.5936 mol
+The gas pump: sink stat = 293.15 K, 40.5862 mol, 494.355 kPa
+The gas pump: merged-sink stat = 293.15 K, 89.1797 mol, 1086.24 kPa
+Engine Core Vent: target dP = 55.395 kPa
+Engine Core Vent: source entropy: 187.24 J/Kmol --> sink entropy: 209.01 J/Kmol
+Engine Core Vent: specific entropy change = 21.77 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 3.20626 mol
+Engine Core Vent: sink stat = 293.15 K, 3.25126 mol, 11.3148 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 6.45746 mol, 22.4727 kPa
+Coolant Injector: source entropy: 177.64 J/Kmol --> sink entropy: 187.25 J/Kmol
+Coolant Injector: specific entropy change = 9.62 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 142.052 mol
+Coolant Injector: sink stat = 293.15 K, 159.259 mol, 155.187 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 168.729 mol, 164.415 kPa
+The gas pump: source entropy: 177.65 J/Kmol --> sink entropy: 178.41 J/Kmol
+The gas pump: specific entropy change = 0.75 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 40.4947 mol
+The gas pump: sink stat = 293.15 K, 36.9847 mol, 450.488 kPa
+The gas pump: merged-sink stat = 293.15 K, 77.4794 mol, 943.728 kPa
+Engine Core Vent: target dP = 64.4147 kPa
+Engine Core Vent: source entropy: 186.77 J/Kmol --> sink entropy: 205.71 J/Kmol
+Engine Core Vent: specific entropy change = 18.93 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 3.72832 mol
+Engine Core Vent: sink stat = 293.15 K, 4.83737 mol, 16.8346 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 8.56567 mol, 29.8095 kPa
+Coolant Injector: source entropy: 178.41 J/Kmol --> sink entropy: 186.79 J/Kmol
+Coolant Injector: specific entropy change = 8.38 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 129.446 mol
+Coolant Injector: sink stat = 293.15 K, 168.48 mol, 164.173 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 177.11 mol, 172.582 kPa
+The gas pump: source entropy: 179.17 J/Kmol --> sink entropy: 179.21 J/Kmol
+The gas pump: specific entropy change = 0.05 J/Kmol
+The gas pump: specific power = 0 W/mol
+The gas pump: moles transferred = 33.7456 mol
+The gas pump: sink stat = 293.15 K, 33.5569 mol, 408.736 kPa
+The gas pump: merged-sink stat = 293.15 K, 67.3025 mol, 819.77 kPa
+Engine Core Vent: target dP = 72.5817 kPa
+Engine Core Vent: source entropy: 186.37 J/Kmol --> sink entropy: 203.02 J/Kmol
+Engine Core Vent: specific entropy change = 16.65 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 4.20103 mol
+Engine Core Vent: sink stat = 293.15 K, 6.68176 mol, 23.2532 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 10.8828 mol, 37.8732 kPa
+Coolant Injector: source entropy: 179.21 J/Kmol --> sink entropy: 186.39 J/Kmol
+Coolant Injector: specific entropy change = 7.17 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 117.449 mol
+Coolant Injector: sink stat = 293.15 K, 176.83 mol, 172.309 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 184.66 mol, 179.939 kPa
+The gas pump: source entropy: 180.68 J/Kmol --> sink entropy: 180.05 J/Kmol
+The gas pump: specific entropy change = -0.63 J/Kmol
+The gas pump: specific power = 73.6 W/mol
+The gas pump: moles transferred = 28.1213 mol
+The gas pump: sink stat = 293.15 K, 30.3313 mol, 369.447 kPa
+The gas pump: merged-sink stat = 293.15 K, 58.4526 mol, 711.975 kPa
+Engine Core Vent: target dP = 79.9387 kPa
+Engine Core Vent: source entropy: 186.03 J/Kmol --> sink entropy: 200.77 J/Kmol
+Engine Core Vent: specific entropy change = 14.75 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 4.62685 mol
+Engine Core Vent: sink stat = 293.15 K, 8.75999 mol, 30.4857 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 13.3868 mol, 46.5875 kPa
+Coolant Injector: source entropy: 180.05 J/Kmol --> sink entropy: 186.04 J/Kmol
+Coolant Injector: specific entropy change = 5.99 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 106.16 mol
+Coolant Injector: sink stat = 293.15 K, 184.352 mol, 179.638 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 191.429 mol, 186.534 kPa
+The gas pump: source entropy: 182.19 J/Kmol --> sink entropy: 180.92 J/Kmol
+The gas pump: specific entropy change = -1.27 J/Kmol
+The gas pump: specific power = 149.5 W/mol
+The gas pump: moles transferred = 23.4344 mol
+The gas pump: sink stat = 293.15 K, 27.3241 mol, 332.818 kPa
+The gas pump: merged-sink stat = 293.15 K, 50.7585 mol, 618.257 kPa
+Engine Core Vent: target dP = 86.5345 kPa
+Engine Core Vent: source entropy: 185.73 J/Kmol --> sink entropy: 198.85 J/Kmol
+Engine Core Vent: specific entropy change = 13.12 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 5.00862 mol
+Engine Core Vent: sink stat = 293.15 K, 11.0489 mol, 38.4513 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 16.0575 mol, 55.8817 kPa
+Coolant Injector: source entropy: 180.92 J/Kmol --> sink entropy: 185.74 J/Kmol
+Coolant Injector: specific entropy change = 4.82 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 95.6342 mol
+Coolant Injector: sink stat = 293.15 K, 191.095 mol, 186.209 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 197.471 mol, 192.422 kPa
+The gas pump: source entropy: 183.71 J/Kmol --> sink entropy: 181.81 J/Kmol
+The gas pump: specific entropy change = -1.9 J/Kmol
+The gas pump: specific power = 222.4 W/mol
+The gas pump: moles transferred = 19.5287 mol
+The gas pump: sink stat = 293.15 K, 24.5418 mol, 298.928 kPa
+The gas pump: merged-sink stat = 293.15 K, 44.0705 mol, 536.795 kPa
+Engine Core Vent: target dP = 92.4218 kPa
+Engine Core Vent: source entropy: 185.47 J/Kmol --> sink entropy: 197.16 J/Kmol
+Engine Core Vent: specific entropy change = 11.7 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 5.34937 mol
+Engine Core Vent: sink stat = 293.15 K, 13.5266 mol, 47.0741 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 18.8759 mol, 65.6903 kPa
+Coolant Injector: source entropy: 181.81 J/Kmol --> sink entropy: 185.48 J/Kmol
+Coolant Injector: specific entropy change = 3.67 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 85.8963 mol
+Coolant Injector: sink stat = 293.15 K, 197.114 mol, 192.074 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 202.841 mol, 197.654 kPa
+The gas pump: source entropy: 185.22 J/Kmol --> sink entropy: 182.72 J/Kmol
+The gas pump: specific entropy change = -2.5 J/Kmol
+The gas pump: specific power = 292.8 W/mol
+The gas pump: moles transferred = 16.2739 mol
+The gas pump: sink stat = 293.15 K, 21.9843 mol, 267.777 kPa
+The gas pump: merged-sink stat = 293.15 K, 38.2582 mol, 465.999 kPa
+Engine Core Vent: target dP = 97.6544 kPa
+Engine Core Vent: source entropy: 185.25 J/Kmol --> sink entropy: 195.68 J/Kmol
+Engine Core Vent: specific entropy change = 10.43 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 5.65223 mol
+Engine Core Vent: sink stat = 293.15 K, 16.1729 mol, 56.2835 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 21.8251 mol, 75.9538 kPa
+Coolant Injector: source entropy: 182.72 J/Kmol --> sink entropy: 185.26 J/Kmol
+Coolant Injector: specific entropy change = 2.54 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 76.945 mol
+Coolant Injector: sink stat = 293.15 K, 202.464 mol, 197.287 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 207.594 mol, 202.286 kPa
+The gas pump: source entropy: 186.74 J/Kmol --> sink entropy: 183.66 J/Kmol
+The gas pump: specific entropy change = -3.08 J/Kmol
+The gas pump: specific power = 360.9 W/mol
+The gas pump: moles transferred = 13.5616 mol
+The gas pump: sink stat = 293.15 K, 19.6463 mol, 239.299 kPa
+The gas pump: merged-sink stat = 293.15 K, 33.2079 mol, 404.485 kPa
+Engine Core Vent: target dP = 102.286 kPa
+Engine Core Vent: source entropy: 185.05 J/Kmol --> sink entropy: 194.35 J/Kmol
+Engine Core Vent: specific entropy change = 9.3 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 5.9203 mol
+Engine Core Vent: sink stat = 293.15 K, 18.9691 mol, 66.0144 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 24.8894 mol, 86.6177 kPa
+Coolant Injector: source entropy: 183.66 J/Kmol --> sink entropy: 185.07 J/Kmol
+Coolant Injector: specific entropy change = 1.41 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 68.762 mol
+Coolant Injector: sink stat = 293.15 K, 207.199 mol, 201.901 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 211.783 mol, 206.368 kPa
+The gas pump: source entropy: 188.25 J/Kmol --> sink entropy: 184.61 J/Kmol
+The gas pump: specific entropy change = -3.64 J/Kmol
+The gas pump: specific power = 426.9 W/mol
+The gas pump: moles transferred = 11.3013 mol
+The gas pump: sink stat = 293.15 K, 17.5191 mol, 213.389 kPa
+The gas pump: merged-sink stat = 293.15 K, 28.8204 mol, 351.043 kPa
+Engine Core Vent: target dP = 106.368 kPa
+Engine Core Vent: source entropy: 184.89 J/Kmol --> sink entropy: 193.16 J/Kmol
+Engine Core Vent: specific entropy change = 8.27 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.15659 mol
+Engine Core Vent: sink stat = 293.15 K, 21.8978 mol, 76.2068 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 28.0544 mol, 97.6325 kPa
+Coolant Injector: source entropy: 184.61 J/Kmol --> sink entropy: 184.9 J/Kmol
+Coolant Injector: specific entropy change = 0.29 J/Kmol
+Coolant Injector: specific power = 0 W/mol
+Coolant Injector: moles transferred = 61.3168 mol
+Coolant Injector: sink stat = 293.15 K, 211.373 mol, 205.968 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 215.461 mol, 209.952 kPa
+The gas pump: source entropy: 189.76 J/Kmol --> sink entropy: 185.58 J/Kmol
+The gas pump: specific entropy change = -4.19 J/Kmol
+The gas pump: specific power = 491 W/mol
+The gas pump: moles transferred = 9.41779 mol
+The gas pump: sink stat = 293.15 K, 15.5917 mol, 189.913 kPa
+The gas pump: merged-sink stat = 293.15 K, 25.0095 mol, 304.626 kPa
+Engine Core Vent: target dP = 109.952 kPa
+Engine Core Vent: source entropy: 184.74 J/Kmol --> sink entropy: 192.08 J/Kmol
+Engine Core Vent: specific entropy change = 7.34 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.364 mol
+Engine Core Vent: sink stat = 293.15 K, 24.9435 mol, 86.8061 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 31.3075 mol, 108.953 kPa
+Coolant Injector: source entropy: 185.58 J/Kmol --> sink entropy: 184.76 J/Kmol
+Coolant Injector: specific entropy change = -0.82 J/Kmol
+Coolant Injector: specific power = 95.6 W/mol
+Coolant Injector: moles transferred = 54.571 mol
+Coolant Injector: sink stat = 293.15 K, 215.037 mol, 209.538 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 218.675 mol, 213.083 kPa
+The gas pump: source entropy: 191.28 J/Kmol --> sink entropy: 186.56 J/Kmol
+The gas pump: specific entropy change = -4.72 J/Kmol
+The gas pump: specific power = 553.4 W/mol
+The gas pump: moles transferred = 7.84816 mol
+The gas pump: sink stat = 293.15 K, 13.8517 mol, 168.719 kPa
+The gas pump: merged-sink stat = 293.15 K, 21.6999 mol, 264.313 kPa
+Engine Core Vent: target dP = 113.083 kPa
+Engine Core Vent: source entropy: 184.62 J/Kmol --> sink entropy: 191.09 J/Kmol
+Engine Core Vent: specific entropy change = 6.47 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.54526 mol
+Engine Core Vent: sink stat = 293.15 K, 28.0918 mol, 97.7624 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 34.6371 mol, 120.541 kPa
+Coolant Injector: source entropy: 186.56 J/Kmol --> sink entropy: 184.64 J/Kmol
+Coolant Injector: specific entropy change = -1.92 J/Kmol
+Coolant Injector: specific power = 225.3 W/mol
+Coolant Injector: moles transferred = 48.481 mol
+Coolant Injector: sink stat = 293.15 K, 218.238 mol, 212.658 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 221.47 mol, 215.808 kPa
+The gas pump: source entropy: 192.79 J/Kmol --> sink entropy: 187.56 J/Kmol
+The gas pump: specific entropy change = -5.24 J/Kmol
+The gas pump: specific power = 614.1 W/mol
+The gas pump: moles transferred = 6.54013 mol
+The gas pump: sink stat = 293.15 K, 12.2859 mol, 149.647 kPa
+The gas pump: merged-sink stat = 293.15 K, 18.826 mol, 229.308 kPa
+Engine Core Vent: target dP = 115.808 kPa
+Engine Core Vent: source entropy: 184.52 J/Kmol --> sink entropy: 190.19 J/Kmol
+Engine Core Vent: specific entropy change = 5.67 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.70294 mol
+Engine Core Vent: sink stat = 293.15 K, 31.3297 mol, 109.031 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 38.0327 mol, 132.358 kPa
+Coolant Injector: source entropy: 187.56 J/Kmol --> sink entropy: 184.53 J/Kmol
+Coolant Injector: specific entropy change = -3.02 J/Kmol
+Coolant Injector: specific power = 354.4 W/mol
+Coolant Injector: moles transferred = 43.0006 mol
+Coolant Injector: sink stat = 293.15 K, 221.024 mol, 215.372 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 223.89 mol, 218.166 kPa
+The gas pump: source entropy: 194.31 J/Kmol --> sink entropy: 188.56 J/Kmol
+The gas pump: specific entropy change = -5.74 J/Kmol
+The gas pump: specific power = 673.5 W/mol
+The gas pump: moles transferred = 5.45012 mol
+The gas pump: sink stat = 293.15 K, 10.8809 mol, 132.533 kPa
+The gas pump: merged-sink stat = 293.15 K, 16.331 mol, 198.917 kPa
+Engine Core Vent: target dP = 118.166 kPa
+Engine Core Vent: source entropy: 184.43 J/Kmol --> sink entropy: 189.35 J/Kmol
+Engine Core Vent: specific entropy change = 4.92 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.83943 mol
+Engine Core Vent: sink stat = 293.15 K, 34.6457 mol, 120.571 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 41.4852 mol, 144.373 kPa
+Coolant Injector: source entropy: 188.56 J/Kmol --> sink entropy: 184.44 J/Kmol
+Coolant Injector: specific entropy change = -4.12 J/Kmol
+Coolant Injector: specific power = 483.3 W/mol
+Coolant Injector: moles transferred = 38.083 mol
+Coolant Injector: sink stat = 293.15 K, 223.435 mol, 217.721 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 225.973 mol, 220.195 kPa
+The gas pump: source entropy: 195.82 J/Kmol --> sink entropy: 189.58 J/Kmol
+The gas pump: specific entropy change = -6.24 J/Kmol
+The gas pump: specific power = 731.5 W/mol
+The gas pump: moles transferred = 4.54177 mol
+The gas pump: sink stat = 293.15 K, 9.62334 mol, 117.216 kPa
+The gas pump: merged-sink stat = 293.15 K, 14.1651 mol, 172.537 kPa
+Engine Core Vent: target dP = 120.195 kPa
+Engine Core Vent: source entropy: 184.35 J/Kmol --> sink entropy: 188.58 J/Kmol
+Engine Core Vent: specific entropy change = 4.23 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 6.95691 mol
+Engine Core Vent: sink stat = 293.15 K, 38.0292 mol, 132.346 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 44.9861 mol, 156.557 kPa
+Coolant Injector: source entropy: 189.58 J/Kmol --> sink entropy: 184.37 J/Kmol
+Coolant Injector: specific entropy change = -5.22 J/Kmol
+Coolant Injector: specific power = 611.9 W/mol
+Coolant Injector: moles transferred = 33.6817 mol
+Coolant Injector: sink stat = 293.15 K, 225.51 mol, 219.744 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 227.755 mol, 221.932 kPa
+The gas pump: source entropy: 197.34 J/Kmol --> sink entropy: 190.54 J/Kmol
+The gas pump: specific entropy change = -6.8 J/Kmol
+The gas pump: specific power = 796.9 W/mol
+The gas pump: moles transferred = 3.78481 mol
+The gas pump: sink stat = 293.15 K, 8.57599 mol, 104.459 kPa
+The gas pump: merged-sink stat = 293.15 K, 12.3608 mol, 150.559 kPa
+Engine Core Vent: target dP = 121.932 kPa
+Engine Core Vent: source entropy: 184.28 J/Kmol --> sink entropy: 188.05 J/Kmol
+Engine Core Vent: specific entropy change = 3.77 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.0574 mol
+Engine Core Vent: sink stat = 293.15 K, 40.5005 mol, 140.946 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 47.5579 mol, 165.507 kPa
+Coolant Injector: source entropy: 190.54 J/Kmol --> sink entropy: 184.3 J/Kmol
+Coolant Injector: specific entropy change = -6.24 J/Kmol
+Coolant Injector: specific power = 731.8 W/mol
+Coolant Injector: moles transferred = 30.016 mol
+Coolant Injector: sink stat = 293.15 K, 227.285 mol, 221.473 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 229.286 mol, 223.423 kPa
+The gas pump: source entropy: 198.85 J/Kmol --> sink entropy: 191.33 J/Kmol
+The gas pump: specific entropy change = -7.52 J/Kmol
+The gas pump: specific power = 882.1 W/mol
+The gas pump: moles transferred = 3.15401 mol
+The gas pump: sink stat = 293.15 K, 7.80009 mol, 95.0081 kPa
+The gas pump: merged-sink stat = 293.15 K, 10.9541 mol, 133.425 kPa
+Engine Core Vent: target dP = 123.423 kPa
+Engine Core Vent: source entropy: 184.23 J/Kmol --> sink entropy: 187.96 J/Kmol
+Engine Core Vent: specific entropy change = 3.73 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.14373 mol
+Engine Core Vent: sink stat = 293.15 K, 40.9759 mol, 142.6 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 48.1197 mol, 167.462 kPa
+Coolant Injector: source entropy: 191.33 J/Kmol --> sink entropy: 184.25 J/Kmol
+Coolant Injector: specific entropy change = -7.08 J/Kmol
+Coolant Injector: specific power = 830.7 W/mol
+Coolant Injector: moles transferred = 27.3003 mol
+Coolant Injector: sink stat = 293.15 K, 228.81 mol, 222.959 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 230.63 mol, 224.733 kPa
+The gas pump: source entropy: 200.37 J/Kmol --> sink entropy: 192.01 J/Kmol
+The gas pump: specific entropy change = -8.36 J/Kmol
+The gas pump: specific power = 980.1 W/mol
+The gas pump: moles transferred = 2.62834 mol
+The gas pump: sink stat = 293.15 K, 7.18739 mol, 87.5451 kPa
+The gas pump: merged-sink stat = 293.15 K, 9.81569 mol, 119.559 kPa
+Engine Core Vent: target dP = 124.733 kPa
+Engine Core Vent: source entropy: 184.18 J/Kmol --> sink entropy: 188.07 J/Kmol
+Engine Core Vent: specific entropy change = 3.89 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.21952 mol
+Engine Core Vent: sink stat = 293.15 K, 40.4303 mol, 140.702 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 47.6498 mol, 165.826 kPa
+Coolant Injector: source entropy: 192.01 J/Kmol --> sink entropy: 184.2 J/Kmol
+Coolant Injector: specific entropy change = -7.81 J/Kmol
+Coolant Injector: specific power = 916 W/mol
+Coolant Injector: moles transferred = 25.1559 mol
+Coolant Injector: sink stat = 293.15 K, 230.148 mol, 224.264 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 231.826 mol, 225.898 kPa
+The gas pump: source entropy: 201.88 J/Kmol --> sink entropy: 192.62 J/Kmol
+The gas pump: specific entropy change = -9.26 J/Kmol
+The gas pump: specific power = 1086.2 W/mol
+The gas pump: moles transferred = 2.19029 mol
+The gas pump: sink stat = 293.15 K, 6.67858 mol, 81.3477 kPa
+The gas pump: merged-sink stat = 293.15 K, 8.86888 mol, 108.026 kPa
+Engine Core Vent: target dP = 125.898 kPa
+Engine Core Vent: source entropy: 184.14 J/Kmol --> sink entropy: 188.29 J/Kmol
+Engine Core Vent: specific entropy change = 4.15 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.28697 mol
+Engine Core Vent: sink stat = 293.15 K, 39.3892 mol, 137.079 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 46.6762 mol, 162.438 kPa
+Coolant Injector: source entropy: 192.62 J/Kmol --> sink entropy: 184.15 J/Kmol
+Coolant Injector: specific entropy change = -8.46 J/Kmol
+Coolant Injector: specific power = 992.6 W/mol
+Coolant Injector: moles transferred = 23.375 mol
+Coolant Injector: sink stat = 293.15 K, 231.34 mol, 225.425 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 232.898 mol, 226.943 kPa
+The gas pump: source entropy: 203.4 J/Kmol --> sink entropy: 193.18 J/Kmol
+The gas pump: specific entropy change = -10.21 J/Kmol
+The gas pump: specific power = 1197.7 W/mol
+The gas pump: moles transferred = 1.82524 mol
+The gas pump: sink stat = 293.15 K, 6.24073 mol, 76.0145 kPa
+The gas pump: merged-sink stat = 293.15 K, 8.06593 mol, 98.2461 kPa
+Engine Core Vent: target dP = 126.943 kPa
+Engine Core Vent: source entropy: 184.1 J/Kmol --> sink entropy: 188.55 J/Kmol
+Engine Core Vent: specific entropy change = 4.46 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.34746 mol
+Engine Core Vent: sink stat = 293.15 K, 38.1349 mol, 132.714 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 45.4824 mol, 158.284 kPa
+Coolant Injector: source entropy: 193.18 J/Kmol --> sink entropy: 184.12 J/Kmol
+Coolant Injector: specific entropy change = -9.07 J/Kmol
+Coolant Injector: specific power = 1063.1 W/mol
+Coolant Injector: moles transferred = 21.8426 mol
+Coolant Injector: sink stat = 293.15 K, 232.408 mol, 226.466 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 233.865 mol, 227.885 kPa
+The gas pump: source entropy: 204.91 J/Kmol --> sink entropy: 193.71 J/Kmol
+The gas pump: specific entropy change = -11.2 J/Kmol
+The gas pump: specific power = 1313.2 W/mol
+The gas pump: moles transferred = 1.52104 mol
+The gas pump: sink stat = 293.15 K, 5.85509 mol, 71.3172 kPa
+The gas pump: merged-sink stat = 293.15 K, 7.37609 mol, 89.8435 kPa
+Engine Core Vent: target dP = 127.885 kPa
+Engine Core Vent: source entropy: 184.06 J/Kmol --> sink entropy: 188.85 J/Kmol
+Engine Core Vent: specific entropy change = 4.78 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.40197 mol
+Engine Core Vent: sink stat = 293.15 K, 36.8178 mol, 128.13 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 44.2198 mol, 153.89 kPa
+Coolant Injector: source entropy: 193.71 J/Kmol --> sink entropy: 184.08 J/Kmol
+Coolant Injector: specific entropy change = -9.63 J/Kmol
+Coolant Injector: specific power = 1129.3 W/mol
+Coolant Injector: moles transferred = 20.4928 mol
+Coolant Injector: sink stat = 293.15 K, 233.371 mol, 227.404 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 234.737 mol, 228.735 kPa
+The gas pump: source entropy: 206.43 J/Kmol --> sink entropy: 194.22 J/Kmol
+The gas pump: specific entropy change = -12.21 J/Kmol
+The gas pump: specific power = 1431.8 W/mol
+The gas pump: moles transferred = 1.26754 mol
+The gas pump: sink stat = 293.15 K, 5.51058 mol, 67.121 kPa
+The gas pump: merged-sink stat = 293.15 K, 6.77808 mol, 82.5596 kPa
+Engine Core Vent: target dP = 128.735 kPa
+Engine Core Vent: source entropy: 184.03 J/Kmol --> sink entropy: 189.15 J/Kmol
+Engine Core Vent: specific entropy change = 5.11 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.4512 mol
+Engine Core Vent: sink stat = 293.15 K, 35.5168 mol, 123.602 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 42.968 mol, 149.533 kPa
+Coolant Injector: source entropy: 194.22 J/Kmol --> sink entropy: 184.05 J/Kmol
+Coolant Injector: specific entropy change = -10.17 J/Kmol
+Coolant Injector: specific power = 1192 W/mol
+Coolant Injector: moles transferred = 19.287 mol
+Coolant Injector: sink stat = 293.15 K, 234.241 mol, 228.251 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 235.527 mol, 229.504 kPa
+The gas pump: source entropy: 207.94 J/Kmol --> sink entropy: 194.7 J/Kmol
+The gas pump: specific entropy change = -13.24 J/Kmol
+The gas pump: specific power = 1553 W/mol
+The gas pump: moles transferred = 1.05629 mol
+The gas pump: sink stat = 293.15 K, 5.2003 mol, 63.3416 kPa
+The gas pump: merged-sink stat = 293.15 K, 6.2566 mol, 76.2078 kPa
+Engine Core Vent: target dP = 129.504 kPa
+Engine Core Vent: source entropy: 184.01 J/Kmol --> sink entropy: 189.44 J/Kmol
+Engine Core Vent: specific entropy change = 5.44 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.4957 mol
+Engine Core Vent: sink stat = 293.15 K, 34.2719 mol, 119.27 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 41.7676 mol, 145.356 kPa
+Coolant Injector: source entropy: 194.7 J/Kmol --> sink entropy: 184.02 J/Kmol
+Coolant Injector: specific entropy change = -10.67 J/Kmol
+Coolant Injector: specific power = 1251.7 W/mol
+Coolant Injector: moles transferred = 18.2011 mol
+Coolant Injector: sink stat = 293.15 K, 235.027 mol, 229.017 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 236.24 mol, 230.2 kPa
+The gas pump: source entropy: 209.46 J/Kmol --> sink entropy: 195.16 J/Kmol
+The gas pump: specific entropy change = -14.3 J/Kmol
+The gas pump: specific power = 1676.6 W/mol
+The gas pump: moles transferred = 0.880243 mol
+The gas pump: sink stat = 293.15 K, 4.9196 mol, 59.9226 kPa
+The gas pump: merged-sink stat = 293.15 K, 5.7998 mol, 70.6438 kPa
+Engine Core Vent: target dP = 130.2 kPa
+Engine Core Vent: source entropy: 183.98 J/Kmol --> sink entropy: 189.73 J/Kmol
+Engine Core Vent: specific entropy change = 5.75 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.53596 mol
+Engine Core Vent: sink stat = 293.15 K, 33.102 mol, 115.198 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 40.638 mol, 141.425 kPa
+Coolant Injector: source entropy: 195.16 J/Kmol --> sink entropy: 184 J/Kmol
+Coolant Injector: specific entropy change = -11.16 J/Kmol
+Coolant Injector: specific power = 1308.7 W/mol
+Coolant Injector: moles transferred = 17.2186 mol
+Coolant Injector: sink stat = 293.15 K, 235.738 mol, 229.71 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 236.886 mol, 230.829 kPa
+The gas pump: source entropy: 210.97 J/Kmol --> sink entropy: 195.6 J/Kmol
+The gas pump: specific entropy change = -15.37 J/Kmol
+The gas pump: specific power = 1802.5 W/mol
+The gas pump: moles transferred = 0.733543 mol
+The gas pump: sink stat = 293.15 K, 4.66511 mol, 56.8228 kPa
+The gas pump: merged-sink stat = 293.15 K, 5.39861 mol, 65.7571 kPa
+Engine Core Vent: target dP = 130.829 kPa
+Engine Core Vent: source entropy: 183.96 J/Kmol --> sink entropy: 190.01 J/Kmol
+Engine Core Vent: specific entropy change = 6.05 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.57237 mol
+Engine Core Vent: sink stat = 293.15 K, 32.0145 mol, 111.414 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 39.5869 mol, 137.767 kPa
+Coolant Injector: source entropy: 195.6 J/Kmol --> sink entropy: 183.98 J/Kmol
+Coolant Injector: specific entropy change = -11.62 J/Kmol
+Coolant Injector: specific power = 1363.1 W/mol
+Coolant Injector: moles transferred = 16.3279 mol
+Coolant Injector: sink stat = 293.15 K, 236.381 mol, 230.337 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 237.47 mol, 231.398 kPa
+The gas pump: source entropy: 212.49 J/Kmol --> sink entropy: 196.02 J/Kmol
+The gas pump: specific entropy change = -16.46 J/Kmol
+The gas pump: specific power = 1930.6 W/mol
+The gas pump: moles transferred = 0.611293 mol
+The gas pump: sink stat = 293.15 K, 4.43418 mol, 54.01 kPa
+The gas pump: merged-sink stat = 293.15 K, 5.04548 mol, 61.4558 kPa
+Engine Core Vent: target dP = 131.398 kPa
+Engine Core Vent: source entropy: 183.94 J/Kmol --> sink entropy: 190.27 J/Kmol
+Engine Core Vent: specific entropy change = 6.33 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.6053 mol
+Engine Core Vent: sink stat = 293.15 K, 31.0106 mol, 107.92 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 38.6159 mol, 134.387 kPa
+Coolant Injector: source entropy: 196.02 J/Kmol --> sink entropy: 183.96 J/Kmol
+Coolant Injector: specific entropy change = -12.07 J/Kmol
+Coolant Injector: specific power = 1415 W/mol
+Coolant Injector: moles transferred = 15.5196 mol
+Coolant Injector: sink stat = 293.15 K, 236.963 mol, 230.904 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 237.997 mol, 231.912 kPa
+The gas pump: source entropy: 214 J/Kmol --> sink entropy: 196.42 J/Kmol
+The gas pump: specific entropy change = -17.58 J/Kmol
+The gas pump: specific power = 2061.1 W/mol
+The gas pump: moles transferred = 0.509411 mol
+The gas pump: sink stat = 293.15 K, 4.22461 mol, 51.4573 kPa
+The gas pump: merged-sink stat = 293.15 K, 4.73401 mol, 57.662 kPa
+Engine Core Vent: target dP = 131.912 kPa
+Engine Core Vent: source entropy: 183.92 J/Kmol --> sink entropy: 190.52 J/Kmol
+Engine Core Vent: specific entropy change = 6.6 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.63506 mol
+Engine Core Vent: sink stat = 293.15 K, 30.0882 mol, 104.71 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 37.7233 mol, 131.281 kPa
+Coolant Injector: source entropy: 196.42 J/Kmol --> sink entropy: 183.94 J/Kmol
+Coolant Injector: specific entropy change = -12.49 J/Kmol
+Coolant Injector: specific power = 1464.3 W/mol
+Coolant Injector: moles transferred = 14.7861 mol
+Coolant Injector: sink stat = 293.15 K, 237.488 mol, 231.416 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 238.474 mol, 232.377 kPa
+The gas pump: source entropy: 215.52 J/Kmol --> sink entropy: 196.81 J/Kmol
+The gas pump: specific entropy change = -18.71 J/Kmol
+The gas pump: specific power = 2193.9 W/mol
+The gas pump: moles transferred = 0.42451 mol
+The gas pump: sink stat = 293.15 K, 4.03447 mol, 49.1414 kPa
+The gas pump: merged-sink stat = 293.15 K, 4.45897 mol, 54.3119 kPa
+Engine Core Vent: target dP = 132.377 kPa
+Engine Core Vent: source entropy: 183.9 J/Kmol --> sink entropy: 190.76 J/Kmol
+Engine Core Vent: specific entropy change = 6.86 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.66195 mol
+Engine Core Vent: sink stat = 293.15 K, 29.2435 mol, 101.77 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 36.9054 mol, 128.435 kPa
+Coolant Injector: source entropy: 196.81 J/Kmol --> sink entropy: 183.92 J/Kmol
+Coolant Injector: specific entropy change = -12.89 J/Kmol
+Coolant Injector: specific power = 1511.1 W/mol
+Coolant Injector: moles transferred = 14.1206 mol
+Coolant Injector: sink stat = 293.15 K, 237.963 mol, 231.879 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 238.905 mol, 232.796 kPa
+The gas pump: source entropy: 217.03 J/Kmol --> sink entropy: 197.17 J/Kmol
+The gas pump: specific entropy change = -19.86 J/Kmol
+The gas pump: specific power = 2329 W/mol
+The gas pump: moles transferred = 0.35376 mol
+The gas pump: sink stat = 293.15 K, 3.86205 mol, 47.0412 kPa
+The gas pump: merged-sink stat = 293.15 K, 4.21585 mol, 51.3506 kPa
+Engine Core Vent: target dP = 132.796 kPa
+Engine Core Vent: source entropy: 183.89 J/Kmol --> sink entropy: 190.98 J/Kmol
+Engine Core Vent: specific entropy change = 7.09 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.68624 mol
+Engine Core Vent: sink stat = 293.15 K, 28.4718 mol, 99.0849 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 36.158 mol, 125.834 kPa
+Coolant Injector: source entropy: 197.17 J/Kmol --> sink entropy: 183.91 J/Kmol
+Coolant Injector: specific entropy change = -13.26 J/Kmol
+Coolant Injector: specific power = 1555.4 W/mol
+Coolant Injector: moles transferred = 13.5172 mol
+Coolant Injector: sink stat = 293.15 K, 238.393 mol, 232.297 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 239.294 mol, 233.175 kPa
+The gas pump: source entropy: 218.55 J/Kmol --> sink entropy: 197.51 J/Kmol
+The gas pump: specific entropy change = -21.03 J/Kmol
+The gas pump: specific power = 2466.4 W/mol
+The gas pump: moles transferred = 0.2948 mol
+The gas pump: sink stat = 293.15 K, 3.70579 mol, 45.1379 kPa
+The gas pump: merged-sink stat = 293.15 K, 4.00059 mol, 48.7287 kPa
+Engine Core Vent: target dP = 133.175 kPa
+Engine Core Vent: source entropy: 183.87 J/Kmol --> sink entropy: 191.19 J/Kmol
+Engine Core Vent: specific entropy change = 7.32 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.70817 mol
+Engine Core Vent: sink stat = 293.15 K, 27.7682 mol, 96.6363 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 35.4764 mol, 123.462 kPa
+Coolant Injector: source entropy: 197.51 J/Kmol --> sink entropy: 183.89 J/Kmol
+Coolant Injector: specific entropy change = -13.62 J/Kmol
+Coolant Injector: specific power = 1597.3 W/mol
+Coolant Injector: moles transferred = 12.9703 mol
+Coolant Injector: sink stat = 293.15 K, 238.78 mol, 232.674 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 239.645 mol, 233.517 kPa
+The gas pump: source entropy: 220.06 J/Kmol --> sink entropy: 197.84 J/Kmol
+The gas pump: specific entropy change = -22.23 J/Kmol
+The gas pump: specific power = 2606.1 W/mol
+The gas pump: moles transferred = 0.245667 mol
+The gas pump: sink stat = 293.15 K, 3.56427 mol, 43.4141 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.80996 mol, 46.4068 kPa
+Engine Core Vent: target dP = 133.517 kPa
+Engine Core Vent: source entropy: 183.86 J/Kmol --> sink entropy: 191.38 J/Kmol
+Engine Core Vent: specific entropy change = 7.52 J/Kmol
+Engine Core Vent: specific power = 0 W/mol
+Engine Core Vent: moles transferred = 7.72797 mol
+Engine Core Vent: sink stat = 293.15 K, 27.1277 mol, 94.4073 kPa
+Engine Core Vent: merged-sink stat = 293.15 K, 34.8556 mol, 121.301 kPa
+Coolant Injector: source entropy: 197.84 J/Kmol --> sink entropy: 183.88 J/Kmol
+Coolant Injector: specific entropy change = -13.96 J/Kmol
+Coolant Injector: specific power = 1636.6 W/mol
+Coolant Injector: moles transferred = 12.4749 mol
+Coolant Injector: sink stat = 293.15 K, 239.129 mol, 233.015 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 239.961 mol, 233.826 kPa
+The circulator(131,64): inP 94.4073 kPa, outP 43.4141 kPa
+The circulator(131,64): Exp.nu 8.90509 mol, cap 0.574465 %
+The circulator(131,64): Fact.nu 8.9051 mol, energy 1490.56 J
+The gas pump: source entropy: 221.58 J/Kmol --> sink entropy: 198.14 J/Kmol
+The gas pump: specific entropy change = -23.44 J/Kmol
+The gas pump: specific power = 2748.1 W/mol
+The gas pump: moles transferred = 0.204723 mol
+The gas pump: sink stat = 293.15 K, 3.43617 mol, 41.8538 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.64087 mol, 44.3472 kPa
+Coolant Injector: source entropy: 198.14 J/Kmol --> sink entropy: 183.87 J/Kmol
+Coolant Injector: specific entropy change = -14.27 J/Kmol
+Coolant Injector: specific power = 1673.6 W/mol
+Coolant Injector: moles transferred = 12.0266 mol
+Coolant Injector: sink stat = 293.15 K, 239.445 mol, 233.322 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 240.247 mol, 234.104 kPa
+The circulator(131,64): inP 92.3806 kPa, outP 41.8538 kPa
+The circulator(131,64): Exp.nu 8.81478 mol, cap 0.581114 %
+The circulator(131,64): Fact.nu 8.8148 mol, energy 1458.56 J
+The gas pump: source entropy: 223.09 J/Kmol --> sink entropy: 198.43 J/Kmol
+The gas pump: specific entropy change = -24.67 J/Kmol
+The gas pump: specific power = 2892.3 W/mol
+The gas pump: moles transferred = 0.170606 mol
+The gas pump: sink stat = 293.15 K, 3.32029 mol, 40.4424 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.49089 mol, 42.5203 kPa
+Coolant Injector: source entropy: 198.43 J/Kmol --> sink entropy: 183.86 J/Kmol
+Coolant Injector: specific entropy change = -14.57 J/Kmol
+Coolant Injector: specific power = 1708.1 W/mol
+Coolant Injector: moles transferred = 11.621 mol
+Coolant Injector: sink stat = 293.15 K, 239.729 mol, 233.6 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 240.504 mol, 234.354 kPa
+The circulator(131,64): inP 90.5402 kPa, outP 40.4424 kPa
+The circulator(131,64): Exp.nu 8.73173 mol, cap 0.58734 %
+The circulator(131,64): Fact.nu 8.7317 mol, energy 1429.51 J
+The gas pump: source entropy: 224.61 J/Kmol --> sink entropy: 198.69 J/Kmol
+The gas pump: specific entropy change = -25.91 J/Kmol
+The gas pump: specific power = 3038.7 W/mol
+The gas pump: moles transferred = 0.142173 mol
+The gas pump: sink stat = 293.15 K, 3.21552 mol, 39.1663 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.35772 mol, 40.8983 kPa
+Coolant Injector: source entropy: 198.69 J/Kmol --> sink entropy: 183.85 J/Kmol
+Coolant Injector: specific entropy change = -14.84 J/Kmol
+Coolant Injector: specific power = 1740.4 W/mol
+Coolant Injector: moles transferred = 11.2543 mol
+Coolant Injector: sink stat = 293.15 K, 239.986 mol, 233.849 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 240.736 mol, 234.58 kPa
+The circulator(131,64): inP 88.8706 kPa, outP 39.1663 kPa
+The circulator(131,64): Exp.nu 8.65554 mol, cap 0.593153 %
+The circulator(131,64): Fact.nu 8.6555 mol, energy 1403.14 J
+The gas pump: source entropy: 226.12 J/Kmol --> sink entropy: 198.94 J/Kmol
+The gas pump: specific entropy change = -27.18 J/Kmol
+The gas pump: specific power = 3187.3 W/mol
+The gas pump: moles transferred = 0.118477 mol
+The gas pump: sink stat = 293.15 K, 3.12085 mol, 38.0132 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.23935 mol, 39.4566 kPa
+Coolant Injector: source entropy: 198.94 J/Kmol --> sink entropy: 183.84 J/Kmol
+Coolant Injector: specific entropy change = -15.1 J/Kmol
+Coolant Injector: specific power = 1770.5 W/mol
+Coolant Injector: moles transferred = 10.923 mol
+Coolant Injector: sink stat = 293.15 K, 240.217 mol, 234.075 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 240.945 mol, 234.784 kPa
+The circulator(131,64): inP 87.3572 kPa, outP 38.0132 kPa
+The circulator(131,64): Exp.nu 8.58576 mol, cap 0.598565 %
+The circulator(131,64): Fact.nu 8.5857 mol, energy 1379.25 J
+The gas pump: source entropy: 227.64 J/Kmol --> sink entropy: 199.17 J/Kmol
+The gas pump: specific entropy change = -28.47 J/Kmol
+The gas pump: specific power = 3337.9 W/mol
+The gas pump: moles transferred = 0.0987309 mol
+The gas pump: sink stat = 293.15 K, 3.03535 mol, 36.9717 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.13405 mol, 38.1739 kPa
+Coolant Injector: source entropy: 199.17 J/Kmol --> sink entropy: 183.84 J/Kmol
+Coolant Injector: specific entropy change = -15.34 J/Kmol
+Coolant Injector: specific power = 1798.4 W/mol
+Coolant Injector: moles transferred = 10.6237 mol
+Coolant Injector: sink stat = 293.15 K, 240.425 mol, 234.277 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.133 mol, 234.968 kPa
+The circulator(131,64): inP 85.9864 kPa, outP 36.9717 kPa
+The circulator(131,64): Exp.nu 8.52201 mol, cap 0.603591 %
+The circulator(131,64): Fact.nu 8.522 mol, energy 1357.61 J
+The gas pump: source entropy: 229.15 J/Kmol --> sink entropy: 199.39 J/Kmol
+The gas pump: specific entropy change = -29.77 J/Kmol
+The gas pump: specific power = 3490.4 W/mol
+The gas pump: moles transferred = 0.0822809 mol
+The gas pump: sink stat = 293.15 K, 2.95817 mol, 36.0316 kPa
+The gas pump: merged-sink stat = 293.15 K, 3.04047 mol, 37.034 kPa
+Coolant Injector: source entropy: 199.39 J/Kmol --> sink entropy: 183.83 J/Kmol
+Coolant Injector: specific entropy change = -15.56 J/Kmol
+Coolant Injector: specific power = 1824.2 W/mol
+Coolant Injector: moles transferred = 10.3536 mol
+Coolant Injector: sink stat = 293.15 K, 240.612 mol, 234.46 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.303 mol, 235.133 kPa
+The circulator(131,64): inP 84.7456 kPa, outP 36.0316 kPa
+The circulator(131,64): Exp.nu 8.46381 mol, cap 0.608246 %
+The circulator(131,64): Fact.nu 8.4638 mol, energy 1338.02 J
+The gas pump: source entropy: 230.67 J/Kmol --> sink entropy: 199.58 J/Kmol
+The gas pump: specific entropy change = -31.08 J/Kmol
+The gas pump: specific power = 3644.8 W/mol
+The gas pump: moles transferred = 0.0685674 mol
+The gas pump: sink stat = 293.15 K, 2.88851 mol, 35.1832 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.95711 mol, 36.0187 kPa
+Coolant Injector: source entropy: 199.58 J/Kmol --> sink entropy: 183.82 J/Kmol
+Coolant Injector: specific entropy change = -15.76 J/Kmol
+Coolant Injector: specific power = 1848.1 W/mol
+Coolant Injector: moles transferred = 10.1098 mol
+Coolant Injector: sink stat = 293.15 K, 240.781 mol, 234.625 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.455 mol, 235.281 kPa
+The circulator(131,64): inP 83.6233 kPa, outP 35.1832 kPa
+The circulator(131,64): Exp.nu 8.41077 mol, cap 0.612546 %
+The circulator(131,64): Fact.nu 8.4107 mol, energy 1320.3 J
+The gas pump: source entropy: 232.18 J/Kmol --> sink entropy: 199.77 J/Kmol
+The gas pump: specific entropy change = -32.42 J/Kmol
+The gas pump: specific power = 3801 W/mol
+The gas pump: moles transferred = 0.0571395 mol
+The gas pump: sink stat = 293.15 K, 2.82568 mol, 34.4179 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.88278 mol, 35.1134 kPa
+Coolant Injector: source entropy: 199.77 J/Kmol --> sink entropy: 183.82 J/Kmol
+Coolant Injector: specific entropy change = -15.95 J/Kmol
+Coolant Injector: specific power = 1870.2 W/mol
+Coolant Injector: moles transferred = 9.88988 mol
+Coolant Injector: sink stat = 293.15 K, 240.933 mol, 234.773 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.593 mol, 235.415 kPa
+The circulator(131,64): inP 82.6088 kPa, outP 34.4179 kPa
+The circulator(131,64): Exp.nu 8.36252 mol, cap 0.616512 %
+The circulator(131,64): Fact.nu 8.3625 mol, energy 1304.28 J
+The gas pump: source entropy: 233.7 J/Kmol --> sink entropy: 199.94 J/Kmol
+The gas pump: specific entropy change = -33.76 J/Kmol
+The gas pump: specific power = 3958.8 W/mol
+The gas pump: moles transferred = 0.0476229 mol
+The gas pump: sink stat = 293.15 K, 2.76902 mol, 33.7277 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.81662 mol, 34.3075 kPa
+Coolant Injector: source entropy: 199.94 J/Kmol --> sink entropy: 183.81 J/Kmol
+Coolant Injector: specific entropy change = -16.12 J/Kmol
+Coolant Injector: specific power = 1890.5 W/mol
+Coolant Injector: moles transferred = 9.69158 mol
+Coolant Injector: sink stat = 293.15 K, 241.07 mol, 234.906 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.716 mol, 235.536 kPa
+The circulator(131,64): inP 81.692 kPa, outP 33.7277 kPa
+The circulator(131,64): Exp.nu 8.31863 mol, cap 0.620159 %
+The circulator(131,64): Fact.nu 8.3186 mol, energy 1289.8 J
+The gas pump: source entropy: 235.21 J/Kmol --> sink entropy: 200.09 J/Kmol
+The gas pump: specific entropy change = -35.12 J/Kmol
+The gas pump: specific power = 4118.2 W/mol
+The gas pump: moles transferred = 0.0396895 mol
+The gas pump: sink stat = 293.15 K, 2.71795 mol, 33.1056 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.75765 mol, 33.5892 kPa
+Coolant Injector: source entropy: 200.09 J/Kmol --> sink entropy: 183.81 J/Kmol
+Coolant Injector: specific entropy change = -16.28 J/Kmol
+Coolant Injector: specific power = 1909.1 W/mol
+Coolant Injector: moles transferred = 9.51282 mol
+Coolant Injector: sink stat = 293.15 K, 241.194 mol, 235.026 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.828 mol, 235.644 kPa
+The circulator(131,64): inP 80.8643 kPa, outP 33.1056 kPa
+The circulator(131,64): Exp.nu 8.27882 mol, cap 0.623509 %
+The circulator(131,64): Fact.nu 8.2788 mol, energy 1276.74 J
+The gas pump: source entropy: 236.73 J/Kmol --> sink entropy: 200.23 J/Kmol
+The gas pump: specific entropy change = -36.49 J/Kmol
+The gas pump: specific power = 4279.3 W/mol
+The gas pump: moles transferred = 0.0330746 mol
+The gas pump: sink stat = 293.15 K, 2.67192 mol, 32.5451 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.70502 mol, 32.9482 kPa
+Coolant Injector: source entropy: 200.23 J/Kmol --> sink entropy: 183.81 J/Kmol
+Coolant Injector: specific entropy change = -16.43 J/Kmol
+Coolant Injector: specific power = 1926.2 W/mol
+Coolant Injector: moles transferred = 9.35174 mol
+Coolant Injector: sink stat = 293.15 K, 241.304 mol, 235.134 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 241.928 mol, 235.742 kPa
+The circulator(131,64): inP 80.1171 kPa, outP 32.5451 kPa
+The circulator(131,64): Exp.nu 8.24269 mol, cap 0.626577 %
+The circulator(131,64): Fact.nu 8.2427 mol, energy 1264.94 J
+The gas pump: source entropy: 238.24 J/Kmol --> sink entropy: 200.36 J/Kmol
+The gas pump: specific entropy change = -37.88 J/Kmol
+The gas pump: specific power = 4441.7 W/mol
+The gas pump: moles transferred = 0.0275622 mol
+The gas pump: sink stat = 293.15 K, 2.63046 mol, 32.0401 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.65806 mol, 32.3762 kPa
+Coolant Injector: source entropy: 200.36 J/Kmol --> sink entropy: 183.8 J/Kmol
+Coolant Injector: specific entropy change = -16.56 J/Kmol
+Coolant Injector: specific power = 1941.8 W/mol
+Coolant Injector: moles transferred = 9.20662 mol
+Coolant Injector: sink stat = 293.15 K, 241.404 mol, 235.232 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 242.018 mol, 235.83 kPa
+The circulator(131,64): inP 79.4429 kPa, outP 32.0401 kPa
+The circulator(131,64): Exp.nu 8.20993 mol, cap 0.629383 %
+The circulator(131,64): Fact.nu 8.2099 mol, energy 1254.29 J
+The gas pump: source entropy: 239.76 J/Kmol --> sink entropy: 200.48 J/Kmol
+The gas pump: specific entropy change = -39.28 J/Kmol
+The gas pump: specific power = 4605.4 W/mol
+The gas pump: moles transferred = 0.0229685 mol
+The gas pump: sink stat = 293.15 K, 2.59312 mol, 31.5852 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.61612 mol, 31.8653 kPa
+Coolant Injector: source entropy: 200.48 J/Kmol --> sink entropy: 183.8 J/Kmol
+Coolant Injector: specific entropy change = -16.68 J/Kmol
+Coolant Injector: specific power = 1956.1 W/mol
+Coolant Injector: moles transferred = 9.07592 mol
+Coolant Injector: sink stat = 293.15 K, 241.494 mol, 235.319 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 242.099 mol, 235.909 kPa
+The circulator(131,64): inP 78.835 kPa, outP 31.5852 kPa
+The circulator(131,64): Exp.nu 8.18031 mol, cap 0.631948 %
+The circulator(131,64): Fact.nu 8.1803 mol, energy 1244.7 J
+The gas pump: source entropy: 241.27 J/Kmol --> sink entropy: 200.59 J/Kmol
+The gas pump: specific entropy change = -40.68 J/Kmol
+The gas pump: specific power = 4770.3 W/mol
+The gas pump: moles transferred = 0.0191404 mol
+The gas pump: sink stat = 293.15 K, 2.55949 mol, 31.1756 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.57859 mol, 31.4082 kPa
+Coolant Injector: source entropy: 200.59 J/Kmol --> sink entropy: 183.8 J/Kmol
+Coolant Injector: specific entropy change = -16.79 J/Kmol
+Coolant Injector: specific power = 1969.2 W/mol
+Coolant Injector: moles transferred = 8.95823 mol
+Coolant Injector: sink stat = 293.15 K, 241.575 mol, 235.398 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 242.172 mol, 235.98 kPa
+The circulator(131,64): inP 78.2868 kPa, outP 31.1756 kPa
+The circulator(131,64): Exp.nu 8.15347 mol, cap 0.634285 %
+The circulator(131,64): Fact.nu 8.1535 mol, energy 1236.04 J
+The gas pump: source entropy: 242.78 J/Kmol --> sink entropy: 200.69 J/Kmol
+The gas pump: specific entropy change = -42.09 J/Kmol
+The gas pump: specific power = 4936 W/mol
+The gas pump: moles transferred = 0.0159571 mol
+The gas pump: sink stat = 293.15 K, 2.52922 mol, 30.8068 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.54522 mol, 31.0017 kPa
+Coolant Injector: source entropy: 200.69 J/Kmol --> sink entropy: 183.79 J/Kmol
+Coolant Injector: specific entropy change = -16.89 J/Kmol
+Coolant Injector: specific power = 1981.1 W/mol
+Coolant Injector: moles transferred = 8.85227 mol
+Coolant Injector: sink stat = 293.15 K, 241.647 mol, 235.469 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 242.237 mol, 236.044 kPa
+The circulator(131,64): inP 77.7926 kPa, outP 30.8068 kPa
+The circulator(131,64): Exp.nu 8.12917 mol, cap 0.636413 %
+The circulator(131,64): Fact.nu 8.1292 mol, energy 1228.24 J
+The gas pump: source entropy: 244.3 J/Kmol --> sink entropy: 200.78 J/Kmol
+The gas pump: specific entropy change = -43.52 J/Kmol
+The gas pump: specific power = 5103 W/mol
+The gas pump: moles transferred = 0.0132976 mol
+The gas pump: sink stat = 293.15 K, 2.50197 mol, 30.475 kPa
+The gas pump: merged-sink stat = 293.15 K, 2.51527 mol, 30.637 kPa
+Coolant Injector: source entropy: 200.78 J/Kmol --> sink entropy: 183.79 J/Kmol
+Coolant Injector: specific entropy change = -16.99 J/Kmol
+Coolant Injector: specific power = 1991.9 W/mol
+Coolant Injector: moles transferred = 8.75691 mol
+Coolant Injector: sink stat = 293.15 K, 241.713 mol, 235.532 kPa
+Coolant Injector: merged-sink stat = 293.15 K, 242.296 mol, 236.101 kPa
