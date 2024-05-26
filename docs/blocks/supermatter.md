@@ -50,7 +50,8 @@ EER is just variable `power` ($\mathcal{P}$ in these designations) displayed.
 
 EPR is claimed to `show real amount of coolant in the core (in standard canisters worth)`.
 
-EPR is calculated from surrounding gas mixture properties  as $\nu_1 / (V/V_1) / 23.1$, where $V_1=2.5$ m³, $\nu_1$ is amount of substance in $V_1$. Since usually $V=n_tV_1$, where $n_t$ is number of tiles in core room
+EPR is calculated from surrounding gas mixture properties  as $\nu_1 / (V/V_1) / 23.1$, where $V_1=2.5$ m³, $\nu_1$ is amount of substance in $V_1$. Since usually $V=n_tV_1$, where $n_t$ is number of tiles in core room, we can rewrite this in terms of molar volume $V_m = V/\nu$  (m³/mol):
+$\nu_1 = V_1/V_m$; EPR = $\dfrac{V_1}{V_m}\dfrac{V_1}{V}\dfrac{1}{23.1} = \dfrac{V_1^2}{V^2}\dfrac{\nu}{23.1\text{ mol}}$
 
 
 

@@ -57,24 +57,33 @@ STEFAN_BOLTZMANN_CONSTANT = 5.6704e-8 * u.W / u.m**2 / u.K**4
 
 ATMOS_PUMP_EFFICIENCY = 2.5
 
-KnownGas = Literal['N2'] | Literal['O2'] | Literal['Ph']
+KnownGas = Literal['N2'] | Literal['O2'] | Literal['Ex*'] | Literal['He']
 
 @dataclass
 class GasSpecies:
     name: KnownGas
     mu: Quantity[u.kg/u.mol]
     cv: Quantity[u.J/u.mol/u.K] = 20 * u.J/u.mol/u.K
+    is_fuel: bool = False
+    is_oxy: bool  = False
+    burn_product: KnownGas|None = None
     @classmethod
     def get(cls, n: KnownGas):
         match n:
             case 'O2': return GasO2
             case 'N2': return GasN2
-            case 'Ph': return GasPh
+            case 'Ex*': return GasPh
+            case 'He': return GasHe
             case _: raise NotImplementedError
 
-GasO2 = GasSpecies('O2', 0.032 *u.kg/u.mol)
-GasN2 = GasSpecies('N2', 0.028 *u.kg/u.mol)
-GasPh = GasSpecies('Ph', 0.405 *u.kg/u.mol, 200*u.J/u.mol/u.K)
+GasO2 = GasSpecies('O2',  0.032 *u.kg/u.mol, is_oxy=True)
+GasN2 = GasSpecies('N2',  0.028 *u.kg/u.mol)
+GasHe = GasSpecies('He',  0.004 *u.kg/u.mol, cv= 80*u.J/u.mol/u.K)
+GasPh = GasSpecies('Ex*', 0.405 *u.kg/u.mol, cv=200*u.J/u.mol/u.K, is_fuel=True)
+
+FLAMMABLE_GAS_MINIMUM_BURN_TEMPERATURE = (273.15 + 126)*u.K
+FIRE_FUEL_ENERGY_RELEASE = 866000 * u.J/u.mol
+MIN_REACT_FUEL = 0.005 * u.mol
 
 @dataclass
 class GasMixture:
@@ -82,6 +91,7 @@ class GasMixture:
     T: Quantity[u.K]
     V: Quantity[u.L] = CELL_VOLUME
     nus: dict[KnownGas, Quantity[u.mol]] = None
+    _gr = 1
     _V0 = None
     @classmethod
     def pure(cls, gas: KnownGas, T: Quantity[u.K], V: Quantity[u.L], P: Quantity[u.Pa]):
@@ -95,6 +105,13 @@ class GasMixture:
     def Nu(self) -> Quantity[u.mol]:
         if self.nus is None or len(self.nus) == 0: return 0*u.mol
         return sum(self.nus.values()).to(u.mol)
+    @property
+    def X(self) -> dict[KnownGas, float]:
+        if len(self.nus) == 0: return {}
+        nu = self.Nu
+        if nu == 0 * u.mol: return {}
+        return {k: (v/nu).value for k,v in self.nus.items()}
+
     @property
     def p(self) -> Quantity[u.Pa]:
         return (self.Nu*R_IDEAL_GAS*self.T/self.V).to(u.Pa)
@@ -182,6 +199,75 @@ class GasMixture:
         self.nus = nus
         return self
 
+    def react(self):
+        if self.T < FLAMMABLE_GAS_MINIMUM_BURN_TEMPERATURE: return
+        fuel, oxy = 0*u.mol, 0*u.mol
+        for k,v in self.nus.items():
+            g = GasSpecies.get(k)
+            if g.is_fuel: fuel += v
+            if g.is_oxy:  oxy += v
+        if fuel <= MIN_REACT_FUEL: return 
+        start_E = self.thermal_E
+        rxn_max = min(fuel, oxy*(FUEL_STOICHIO/OXY_STOICHIO))
+        firelevel = self.calc_firelevel(fuel, oxy, rxn_max, self.V)
+        min_burn = 0.3*u.mol * self.V/CELL_VOLUME
+        tot_rxn_prog = min(max(min_burn, firelevel*fuel), fuel)
+        used_fuel = min(tot_rxn_prog, rxn_max)
+        used_oxy = used_fuel*(OXY_STOICHIO/FUEL_STOICHIO)
+        used_fuel = min(used_fuel, fuel)
+        self.remove(used_oxy, is_oxy=True)
+        rm_fuel = self.remove(used_fuel, is_fuel=True).nus
+        add_els = [(GasSpecies.get(k).burn_product,v) for k,v in rm_fuel.items()]
+        add_nus = {k: v for (k,v) in add_els if k is not None}
+        if len(add_nus)>0:
+            self += GasMixture(self.T, 0*u.L, add_nus)
+        self.thermal_E = start_E + FIRE_FUEL_ENERGY_RELEASE*used_fuel
+
+    def remove(self, qty: Quantity[u.mol], is_oxy=False, is_fuel=False) -> Self:
+        ref = {}
+        # print(qty)
+        for k,v in self.nus.items():
+            g = GasSpecies.get(k)
+            if (is_oxy and g.is_oxy) or (is_fuel and g.is_fuel):
+                ref[k] = v.to(u.mol).value
+        refqty = sum(ref.values())
+        if refqty * u.mol < qty: 
+            SmLogger.warn('asked to remove by flag too much')
+            qty = refqty
+        self.nus.update({
+            k: max(0*u.mol,self.nus[k] - (v*qty/refqty)) for k,v in ref.items()
+            })
+        
+        return GasMixture(
+            self.T, self.V, 
+            nus={k: v*qty/refqty for k,v in ref.items()}
+            )
+    
+    def calc_firelevel(self, fuel: Quantity[u.mol], oxy: Quantity[u.mol], rxn_lim: Quantity[u.mol], V: Quantity[u.L]):
+        """/datum/gas_mixture/proc/calculate_firelevel(total_fuel, total_oxidizers, reaction_limit, gas_volume)"""
+        total = fuel+oxy
+        active = (1 + OXY_STOICHIO/FUEL_STOICHIO)*rxn_lim
+        firelevel = 0
+        if total>0*u.mol:
+            damping = min (1, active / (self.Nu/self._gr))
+            damping = damping*(2 - damping)
+            mix_mult = 1 / (1 + (5 * ((fuel / total) ** 2)))
+            firelevel = mix_mult * damping
+        return max(firelevel, 0)
+
+    def _repr_latex_(self) -> str:
+        s = 'Gas mixture:\n $T = ' + self.T.to(u.K).round(2)._repr_latex_().strip('$') + '$, '
+        s += ' $V = ' + self.V.to(u.L).round(2)._repr_latex_().strip('$') + '$;\n'
+        s += ' $p = ' + self.p.to(u.kPa).round(2)._repr_latex_().strip('$') + '$, '
+        s += ' $\\nu = ' + self.Nu.to(u.mol).round(2)._repr_latex_().strip('$') + '$\n'
+        s += '(Mole fractions:\n'
+        s += ', '.join([f'{k}: {100*v:.2f}%' for k,v in self.X.items()])
+        s += ')'
+        return s
+
+FUEL_STOICHIO = 2
+OXY_STOICHIO = 3
+
 @dataclass
 class PipeNetwork:
     gases: dict[str, GasMixture]
@@ -210,7 +296,16 @@ class PipeNetwork:
     @property
     def V(self) -> Quantity[u.L]:
         return sum([k.V for k in self.gases.values() if k])
-            
+    def _repr_latex_(self) -> str:
+        s = "Pipe network with members {" + ', '.join([
+            k + " $(V=" + v.V.to(u.L).round(2)._repr_latex_().strip('$') + "$ ) " 
+            for k,v in self.gases.items()
+            ]) + "}"
+        if len(self.gases) > 0:
+            s += ", total volume " + self.V.to(u.L).round(2)._repr_latex_()
+            k0 = [*self.gases.keys()][0]
+            s += ";\n- first member props: " + self.gases[k0]._repr_latex_()[12:]
+        return s
 class HeatExchanger:
     n: int
 
@@ -487,6 +582,11 @@ SM_REF_TEMP = 800 * u.K
 SM_EER_OXY = 450 * EER
 SM_EER_N2 = 200 * EER
 
+def calc_epr(q: GasMixture):
+    if q.V == 0 : return 0*atm
+    # Vm = q.V/q.Nu
+    return CELL_VOLUME**2 / q.V**2 * q.Nu / (23.1 * u.mol)
+
 @dataclass
 class Supermatter:
     room: GasMixture
@@ -523,7 +623,7 @@ class Supermatter:
         ET = (self.room.T - 273.15*u.K) * EER / u.K
         nu_Ex = max(EP/SM_USB_K, 0*u.mol)
         nu_O2 = max((EP+ET)/SM_OXY_K, 0*u.mol)
-        self.room.nus['Ph'] = self.room.nus.get('Ph', 0*u.mol) + nu_Ex
+        self.room.nus['Ex*'] = self.room.nus.get('Ex*', 0*u.mol) + nu_Ex
         self.room.nus['O2'] = self.room.nus.get('O2', 0*u.mol) + nu_O2
         self.room.thermal_E += SM_THERM_K * EP
         if self.room.T > 1e4*u.K:
@@ -531,3 +631,12 @@ class Supermatter:
             self.room.T = 1e4*u.K
     def decay(self):
         self.eer -= (self.eer / SM_LAMDA)**3
+    def _repr_latex_(self) -> str:
+        comps = ', '.join([
+            'temp ' + self.room.T.to(u.K).round(2)._repr_latex_(),
+            'pres ' + self.room.p.to(u.kPa).round(2)._repr_latex_(),
+            self.eer.to(EER).round(2)._repr_latex_(),
+            'EPR ' + calc_epr(self.room).round(2)._repr_latex_(),
+            ', '.join([f'{k}: {100*v:.2f}%' for k,v in self.room.X.items()])
+        ])
+        return "Supermatter Core: " + comps

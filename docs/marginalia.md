@@ -42,12 +42,15 @@ so we deem it to be a bit less than full 2.5 x 1x1 m ?
 ref.stat -- expansion... into hot loop, I think. or something. yeah, bad choice. gotta re-`debug` it for cold loop later.
 
 
-## Things to change (probably)
+## Things to change (probably) / questions to ask
 
-/datum/codex_entry/supermatter
+- `/datum/codex_entry/supermatter` looks dated
+- `calculate_transfer_moles` always overshoots (by adding sink_vol_mod to sink.volume)
 
-SM core monitoring template to use `Ex*` instead of `PH`
+- SM core monitoring template to use `Ex*` instead of `PH`
 @ `nano\templates\supermatter_monitor.tmpl` : 63
 
+- `(total_moles/group_multiplier)` <-- the f? (Fire.dm:318 now)
+    - [mwerezak's commit](https://github.com/NebulaSS13/Nebula/blob/953e8be44eec5b0c131f2e139be8fc910136ce52/code/ZAS/Fire.dm)
 
 metodika-teplovogo-raschyota-teploobmennogo-apparata-dlya-ohlazhdeniya-vozduha-pered-kompressorom-dvigatelya-vozdushno-kosmicheskogo-samolyota.pdf
