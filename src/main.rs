@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 use ss13_usb::test_reference;
 use dmm_tools::dmm::Map;
+use dmm_tools::dmi::IconFile;
 
 /// parses a fixed-name thing to generate map.json
 fn old_main() {
@@ -34,5 +35,11 @@ fn old_main() {
 fn main() {
     let neb_root = "E:\\Code\\opensource\\games\\Nebula\\";
     let path = "/code/_helpers/unsorted.dm";
+    let i = IconFile::from_file(
+        std::path::Path::new(
+            &(neb_root.to_owned() + "icons/obj/closets/bases/crate.dmi")
+        ));
+    let i = i.unwrap();
+    println!("{:?}", i.metadata);
     // neb_root + path
 }

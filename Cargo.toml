@@ -21,10 +21,10 @@ png = "0.17.9"
 
 [dependencies.dreammaker]
 git = "https://github.com/SpaceManiac/SpacemanDMM.git"
-tag = "suite-1.8"
+# tag = "suite-1.8"
 package = "dreammaker"
 
 [dependencies.dmm-tools]
 git = "https://github.com/SpaceManiac/SpacemanDMM.git"
-tag = "suite-1.8"
+# tag = "suite-1.8"
 package = "dmm-tools"

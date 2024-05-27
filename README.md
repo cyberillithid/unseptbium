@@ -10,7 +10,7 @@ mode of operation.
 The project (currently) consists of:
 - Rust package, which implements (using [Spacemaniac's DMM tools](https://github.com/SpaceManiac/SpacemanDMM), ):
   - a dynamic library with Python bindings for map parsing (inspired by [StrongDMM](https://github.com/SpaiR/StrongDMM) SpacemanDMM bindings) (status: WIP, some dirty hacks),
-- Python realisation of blocks of supermatter core mathematical model (status: to be reimplemented),
+- Python realisation of blocks of supermatter core mathematical model (status: to be reimplemented in Rust for speed and zero-cost sanity checks),
 - a plethora of Jupyter Notebook scripts with tests.
 
 Planned extra features:
